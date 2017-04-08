@@ -1,4 +1,4 @@
-package DesignPatterns.Adapter;
+package DesignPatterns.Structural.Adapter;
 
 /**
  * Created by timmanas on 2017-04-08.

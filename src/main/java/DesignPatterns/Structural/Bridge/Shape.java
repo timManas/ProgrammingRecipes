@@ -1,6 +1,4 @@
-package DesignPatterns.Bridge;
-
-import sun.security.provider.SHA;
+package DesignPatterns.Structural.Bridge;
 
 /**
  * Created by timmanas on 2017-04-08.

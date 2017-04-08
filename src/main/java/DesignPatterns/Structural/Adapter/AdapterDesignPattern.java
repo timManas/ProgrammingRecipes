@@ -1,4 +1,4 @@
-package DesignPatterns.Adapter;
+package DesignPatterns.Structural.Adapter;
 
 /**
  * Created by timmanas on 2017-04-07.
@@ -43,7 +43,7 @@ public class AdapterDesignPattern {
  How much should Adapter do ?
  - If the Target and Adaptee are similar -> Adapter class should just delegate the specific request
  - If the Target and Adaptee are completely different -> Adapter needs to convert the data structures and operations required by the Target not implemented in the Adaptee
- 
+
 
  References
  https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm
