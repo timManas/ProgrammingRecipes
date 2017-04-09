@@ -43,5 +43,5 @@ public class PrototypeDesignPattern {
  Notes
  - Notice the "Clone" method used to create a duplicate object
  - Prototype only requires an object to duplicate, not a class unlike other creational patterns
- 
+
  */
