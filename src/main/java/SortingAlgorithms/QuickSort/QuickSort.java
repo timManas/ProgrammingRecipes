@@ -61,9 +61,12 @@ public class QuickSort {
             }
         }
 
+        // What are these for ?
+        // This sorts the left half of the array
         if(lowerIndex < j)
             quickSort(lowerIndex, j);
 
+        // This sorts the second half of the array
         if(i < higherIndex)
             quickSort(i, higherIndex);
 

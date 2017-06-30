@@ -10,6 +10,14 @@ public class SelectionSort {
     //endregion
 
     //region Main
+
+    /**
+        We actually need three pointers
+        1. To point to the currentMinimumIndex
+        2. Another to traverse the input array and compare
+        3. To swap the places with from start to finish
+
+     */
     public static void main (String [] args) {
 
         int [] input = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
@@ -48,9 +56,6 @@ public class SelectionSort {
         input[orderedIndex] = input[currentMinimumIndex];
         input[currentMinimumIndex] = temp;
     }
-
-
-
 
     private static void printSortedArray(int[] array) {
         for (int i = 0; i < array.length; i++)
