@@ -5,7 +5,7 @@ package DesignPatterns.Structural.Proxy;
  */
 public class ProxyImage implements Image {
 
-    private RealImage realImage;
+    private RealImage realImage;        // We need to keep a reference to the original object
     private String fileName;
 
     public ProxyImage(String fileName){
@@ -19,7 +19,5 @@ public class ProxyImage implements Image {
             realImage = new RealImage(fileName);
 
         realImage.display();
-
-
     }
 }

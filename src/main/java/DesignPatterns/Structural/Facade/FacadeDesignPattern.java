@@ -20,7 +20,7 @@ public class FacadeDesignPattern {
 
 /**
 
- Facade Design Pattern
+ Facade Design Pattern .. i.e Simple Interface for Dumbasses / "Cellphone .. Beep Beep"
 
  What ?
  - Structural

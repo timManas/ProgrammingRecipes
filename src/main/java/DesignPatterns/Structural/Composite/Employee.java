@@ -11,7 +11,7 @@ public class Employee {
     private String name;
     private String dept;
     private int salary;
-    private List<Employee> subordinates;
+    private List<Employee> subordinates;            // This List is what allows the object to store multiple objects of the same type.
 
     public Employee(String name, String dept, int salary){
         this.name = name;

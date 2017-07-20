@@ -34,3 +34,29 @@ public class FlyweightDesignPattern {
 
 
 }
+
+/**
+
+ Flyweight Design Pattern ... i.e Security @ Private Party / "Are you on the guestlist ? No duplicates allowed"
+
+ What ?
+ - Structural
+ - Used to reduce the number of objects created & decrease memory footprint
+ - Tries to reuse existing objects
+
+ Why ?
+ - For performance reasons
+
+ When ?
+ - We need to create a very LARGE number of similar objects efficiently
+ - Many similar objects are used and memory is expensive
+
+
+ Notes
+ - Notice we had to create a Factory for this to work
+ - Only if the object does not exist do we create an new object and add it to the map (kinda like an object pool)
+
+ References
+ https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm
+
+ */

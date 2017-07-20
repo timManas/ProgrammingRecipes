@@ -8,18 +8,23 @@ public class DecoratorDesignPattern {
     public static void main(String[] args){
         System.out.println("::: Decorator Design Pattern :::");
 
+        // This is our object
         Shape circle = new Circle();
         System.out.println("Circle with normal border");
         circle.draw();
 
+        // This is what we decorate our object with
         Shape redCircle = new RedShapeDecorator(circle);
         System.out.println("Circle of Red border");
         redCircle.draw();
 
+
+        // Another original object
         Shape rectangle = new Rectangle();
         System.out.println("\nRectangle with normal border");
         rectangle.draw();
 
+        // This is what we decorate our object with
         Shape redRectangle = new RedShapeDecorator(rectangle);
         System.out.println("Rectangle with Red border");
         redRectangle.draw();
@@ -30,7 +35,7 @@ public class DecoratorDesignPattern {
 
 /**
 
- Decorator Design Pattern
+ Decorator Design Pattern ... I.E  Tony Stark & the Iron Man Suits / Same man different Suits.
 
  What ?
  - Structural

@@ -12,7 +12,6 @@ public class RealImage implements Image {
         loadFromDisk();
     }
 
-
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }

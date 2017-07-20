@@ -42,7 +42,7 @@ public class CompositeDesignPattern {
 
 /**
 
- Composite Design Pattern
+ Composite Design Pattern ... i.e Group of Objects as One Entity / "Composing Off"
 
  What ?
  - Creates a class that contains group of it's own objects
@@ -51,6 +51,7 @@ public class CompositeDesignPattern {
  Why ?
  - Compose objects into tree structures to represent hierarchies
  - Able to identify leaf / nodes in a hierarchy
+ - Can use Recursion to find information about a subtree (i.e Salaries of IT department only..managers + all employees under his chain)
  
 
  When ?

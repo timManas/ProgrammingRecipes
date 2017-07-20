@@ -21,7 +21,7 @@ public class BridgeDesignPattern {
 
 /**
 
- Bride Design Pattern
+ Bride Design Pattern .... i.e "Same Abstraction Different Implementation / 'SA-DI'"
 
  What ?
  - Structural

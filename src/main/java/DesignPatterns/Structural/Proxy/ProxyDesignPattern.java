@@ -20,7 +20,7 @@ public class ProxyDesignPattern {
 
 /**
 
- Proxy Design Pattern
+ Proxy Design Pattern ... i.e Credit Card / Object which represents Money
 
  What ?
  - Structural
@@ -31,7 +31,6 @@ public class ProxyDesignPattern {
  Why ?
  - Add security access to an exisiting object
  - Provide an interface for modifiying behaviour
- 
 
  When ?
  - We do not want the client to modify the original object but allow communication and modified behaviour using a proxt
