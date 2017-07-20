@@ -25,7 +25,7 @@ public class BuilderDesignPattern {
 
 /**
  *
- Builder Design Pattern
+ Builder Design Pattern .... i.e  "Customizer" Design Pattern
 
  What ?
  - Creational
@@ -33,7 +33,9 @@ public class BuilderDesignPattern {
  - Allows encapsulation
 
  Why ?
+ - CUSTOMIZATION
  - Allows user to customize the object they wish to build
+ - We want an object which can be customized any way we Wish
 
  When ?
  - When you need to build an object made of several mini objects which the client can customize
@@ -42,5 +44,10 @@ public class BuilderDesignPattern {
  Notes
  - Builder returns the product as a final step, while Abstract returns the product immediately
  - Builder often use a composite
+
+ Analogy
+ - Think of ordering a meal at McDonalds.
+ - We place our meal with the cashier (Builder) and customized our burger, friends, drink
+ - The cook prepares the meal and returns back to the cashier who returns it to us
 
  */
