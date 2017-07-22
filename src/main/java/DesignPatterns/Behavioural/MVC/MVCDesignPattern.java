@@ -39,18 +39,12 @@ public class MVCDesignPattern {
    Controller       - Controls data flow from the model object to the view whenever data changes
 
  Why ?
+ - Very Loose coupling
  - All three components are independent of each other and can be changed without affecting the other components
 
  Notes
  - The view can provide a visual interface
  - The controller receives user inputs and makes calls to model objects
-
-
- Good example
- - Image a photographer with his camera in a studio taking phots of a box
- - The box is the model which does not know of the photographer or the camera
- - The photographer is the controller
- - The camera is the view
 
 
  References

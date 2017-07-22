@@ -22,7 +22,7 @@ public class TemplateDesignPattern {
 
 /**
 
- Template Design Pattern
+ Template Design Pattern ... i.e Little Shits / Different subclasses can have different behaviours. But parent defines events
 
  What ?
  - Behavioural

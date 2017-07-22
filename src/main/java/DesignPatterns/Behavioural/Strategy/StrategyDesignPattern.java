@@ -21,17 +21,16 @@ public class StrategyDesignPattern {
 
 /**
 
- Strategy Design Pattern
+ Strategy Design Pattern ... i.e Algorithm Manager / Client tells what Algorithm they want.
 
  What ?
  - Behavioural
  - Object behaviour can change at run time.
  - We create various objects which represent various strategies a context object whos behaviour changes as per its strategy object
 
-
  Why ?
  - We have various algorithms which need to performed on the same object
- - Algorithm can vary independetly from the clients which use it
+ - Algorithm can vary independently from the clients which use it
 
  When ?
  - We have a family of algorithms

@@ -9,7 +9,7 @@ public class NullObjectDesignPattern {
 
         AbstractCustomer customer1 = CustomerFactory.getCustomer("Tim");
         AbstractCustomer customer2 = CustomerFactory.getCustomer("John");
-        AbstractCustomer customer3 = CustomerFactory.getCustomer("Romero");
+        AbstractCustomer customer3 = CustomerFactory.getCustomer("Franis UnderWood");
         AbstractCustomer customer4 = CustomerFactory.getCustomer("Manas");
 
         System.out.println("Customers");
@@ -23,7 +23,7 @@ public class NullObjectDesignPattern {
 
 /**
 
- Null Object
+ Null Object ...  i.e "Default Behaviour" / Instead of doing nothing, do something default
 
  What ?
  - Behavioural

@@ -26,7 +26,8 @@ public class ObserverDesignPattern {
 
 /**
 
- Observer Design Pattern
+ Observer Design Pattern  .... i.e "Broadcast receivers" / If one object changes, the others related objects change as well
+
 
  What ?
  - Behavioural
@@ -40,7 +41,9 @@ public class ObserverDesignPattern {
 
  Notes
  - Notice that everytime subject is modified, the observers produces different results for change
- 
+ - Also notice the subject contains a list of all the Objects which is to be modified.
+ -
+
  References
  https://www.tutorialspoint.com/design_pattern/observer_pattern.htm
 

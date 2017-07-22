@@ -43,7 +43,7 @@ public class MementoDesignPattern {
 
 /**
 
- Memento Design Pattern
+ Memento Design Pattern .... i.e "Save Button" / Save a state of an object for use later
 
  What ?
  - Behavioural
@@ -60,9 +60,10 @@ public class MementoDesignPattern {
  - Notice that we use a List to store all the previous states of the objects
  - Very similar to saving a game. We can save the gane in various states
  - We have three objects "Originator", "Caretaker" & "Memento".
-   The originator is some object that has an internal state
-   The Caretaker manipulates the originator but has the ability to undo changes
-   The memento is an opaque object which the care taker cannot & shouldnot change
+ - The originator is some object that has an internal state
+ - The Caretaker manipulates the originator but has the ability to undo changes
+    - They also have  list of all memento objects
+ - Memento is actually an OBJECT which has reference to single state. This SHOULD NOT CHANGE
 
  References
  https://www.tutorialspoint.com/design_pattern/memento_pattern.htm

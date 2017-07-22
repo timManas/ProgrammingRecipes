@@ -22,7 +22,7 @@ public class MediatorDesignPattern {
 
 /**
 
- Mediator Design Pattern
+ Mediator Design Pattern ... it literally is what it is "Mediator" ... i.e "Middle Man" Especially in Divorce =)
 
  What ?
  - Behavioural
@@ -35,9 +35,12 @@ public class MediatorDesignPattern {
  - Promotes many to many relationships
 
  When ?
+ - Objects cannot refer to each other and need loose coupling
+ - Need a "middle man"
  - A mediator class handles the communication between objects/classes
 
  Notes
+ - Remember, communication is between object to object. Not class to class
 
  References
 

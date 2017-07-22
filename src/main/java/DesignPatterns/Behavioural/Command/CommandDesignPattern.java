@@ -32,11 +32,11 @@ public class CommandDesignPattern {
 
 /**
 
- Command Design Pattern
+ Command Design Pattern ... i.e "Fruit Basket" / Single Object with multiple request
 
  What ?
  - Behavioural
- - Encapsulate a request as an Object
+ - Encapsulate a request as an Object, each with it's own customization (ex. Printing Paper Colour, size, Formatt)
 
  Why ?
  - Allows you to you group request together for clients

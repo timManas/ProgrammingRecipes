@@ -24,13 +24,12 @@ public class StateDesignPattern {
 
 /**
 
- State Design Pattern
+ State Design Pattern ... i.e schizophrenic Design Pattern / State changes, behaviour changes
 
  What ?
  - Behavioural
  - Depending on the current state of the object, the behaviour changes
  - We create various objects which represent states and a context object whose behaviour changes when the state changes
- -
 
  Why ?
  - We want the object to behaviour differently depending on it's state

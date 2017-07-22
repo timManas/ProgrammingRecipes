@@ -32,7 +32,7 @@ public class ChainOfResponsibilityDesignPattern {
 
 /**
 
- Chain of Responsibility Design Pattern
+ Chain of Responsibility Design Pattern .... i.e Blunt Circle / Everyone has chance to handle goods *wink*
 
  What ?
  - Behavioural

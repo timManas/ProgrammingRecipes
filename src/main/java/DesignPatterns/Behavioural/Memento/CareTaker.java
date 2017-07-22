@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class CareTaker {
 
-    private List<Memento> mementoList = new ArrayList<>();
+    private List<Memento> mementoList = new ArrayList<>();      // Reference to all the memento Objects
 
     public void add(Memento momento) {
         mementoList.add(momento);

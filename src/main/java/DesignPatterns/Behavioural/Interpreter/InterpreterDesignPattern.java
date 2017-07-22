@@ -33,7 +33,7 @@ public class InterpreterDesignPattern {
 
 /**
 
- Interpreter Design Pattern
+ Interpreter Design Pattern ... it literally is what it is "Interpreter"
 
  What ?
  - Behavioural
@@ -41,8 +41,10 @@ public class InterpreterDesignPattern {
  - Basic idea is that we have a class for each symbol (Terminal or non terminal).
  - Used in conjunction with the composite design pattern
 
-
  Why ?
+ - Language translation. We have a class for every symbol
+ - Need to evaluate sentences in a language
+
 
  When ?
  - In SQL
