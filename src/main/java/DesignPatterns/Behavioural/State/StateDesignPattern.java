@@ -24,7 +24,7 @@ public class StateDesignPattern {
 
 /**
 
- State Design Pattern ... i.e schizophrenic Design Pattern / State changes, behaviour changes
+ State Design Pattern ... i.e schizophrenic / State changes, behaviour changes
 
  What ?
  - Behavioural

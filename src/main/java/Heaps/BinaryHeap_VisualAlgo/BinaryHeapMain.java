@@ -22,14 +22,13 @@ public class BinaryHeapMain {
 //        createHeap_LogN(input);
 //        heap.printBinaryHeap();
 
+        // Insert
+        insertHeap(100);
+        heap.printBinaryHeap();
 
-//        // Insert
-//        insertHeap(100);
-//        heap.printBinaryHeap();
-
-//        // Extract Max
-//        extractMax();
-//        heap.printBinaryHeap();
+        // Extract Max
+        extractMax();
+        heap.printBinaryHeap();
 
         // Heap Sort - To Sort the heap, we simply call ExtractMax until there is no Elements left =)
         sort(); //
