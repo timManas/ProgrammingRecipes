@@ -16,19 +16,20 @@ public class BinaryHeapMain {
 
         // Create O(N Log N)
         createHeap_NLogN(input);
+        heap.printBinaryHeap();
 
 //        // Create O(Log N)
 //        createHeap_LogN(input);
+//        heap.printBinaryHeap();
 
-        heap.printBinaryHeap();
-        
-        // Insert
-        insertHeap(100);
 
-        heap.printBinaryHeap();
+//        // Insert
+//        insertHeap(100);
+//        heap.printBinaryHeap();
 
-        // Extract Max
-        extractMax();
+//        // Extract Max
+//        extractMax();
+//        heap.printBinaryHeap();
 
         // Heap Sort - To Sort the heap, we simply call ExtractMax until there is no Elements left =)
         sort(); //
@@ -57,11 +58,16 @@ public class BinaryHeapMain {
     }
 
     private static void extractMax() {
-
+        int maxValue = heap.getMaxElement();
+        System.out.print("Max Value: " + maxValue + " \n");
     }
 
     private static void sort() {
-
+        System.out.println("==== Sorted Binary Heap ====");
+        int maxNumElements = heap.getObjList().size();
+        for(int i = 0; i < maxNumElements - 1; i++) {
+            extractMax();
+        }
     }
 
     //endregion
@@ -76,8 +82,6 @@ public class BinaryHeapMain {
  - Binary Tree with Additional contraints
     - Each layer with the exception of the root layer should have max two children
     - Each Layer should be greater than child layers
-
-
 
  Notes
  - Generally implemented as an Array

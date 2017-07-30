@@ -33,26 +33,32 @@ public class BinaryHeap {
     }
 
     public int getMaxElement() {
+
+        // Save the first Element
         int root = objList.get(0);
-        removeRoot();
-        sortHeap();
+
+        // Swap the first & Last Element
+        swap(0, objList.size() - 1);
+
+        // Delete the Last Element
+        objList.remove(objList.size() - 1);
+
+        // Percolate down
+        percolateDown(0);
+
         return root;
-    }
-
-    private int getLeftChild(int index) {
-        return objList.get((2 * index) + 1);
-    }
-
-    private int getRightChild(int index) {
-        return objList.get((2 * index) + 2);
-    }
-
-    private int getParent(int index) {
-        return objList.get(getParentIndex(index));
     }
 
     public int getParentIndex(int index) {
         return (index - 1)/2;
+    }
+
+    public int getLeftIndex(int parentIndex) {
+        return (2 * parentIndex) + 1;
+    }
+
+    public int getRightIndex(int parentIndex) {
+        return (2 * parentIndex) + 2;
     }
 
     //endregion
@@ -98,6 +104,27 @@ public class BinaryHeap {
 
     private void percolateDown (int index) {
 
+        int currentIndex = index; // Start at the Root
+        int leftIndex = getLeftIndex(currentIndex);
+        int rightIndex = getRightIndex(currentIndex);
+
+
+        try {
+
+            int maxElementIndex = leftIndex;
+            if(objList.get(leftIndex) < objList.get(rightIndex)) {
+                maxElementIndex = rightIndex;
+            }
+
+            if(objList.get(currentIndex) < objList.get(maxElementIndex)) {                     // Compare to the Left Child
+                swap(currentIndex, maxElementIndex);
+                percolateDown(maxElementIndex);
+            }
+
+        } catch (Exception e) {
+           System.out.println("Reached Leaf.... Ending");
+        }
+
     }
 
     private void swap(int parentIndex, int currentIndex) {
@@ -105,11 +132,6 @@ public class BinaryHeap {
         objList.set(parentIndex, objList.get(currentIndex));
         objList.set(currentIndex, temp);
     }
-
-    private void sortHeap() {
-
-    }
-
 
     protected void printBinaryHeap() {
         System.out.println("============");
