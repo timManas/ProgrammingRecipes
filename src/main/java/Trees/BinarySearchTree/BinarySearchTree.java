@@ -23,6 +23,10 @@ public class BinarySearchTree {
 
     //region Getters
 
+    public Node getRootNode() {
+        return rootNode;
+    }
+
     //endregion
 
     //region Helpers
@@ -44,7 +48,8 @@ public class BinarySearchTree {
         Node childNode = null;
 
         // Traverse BST until Leaf's are reached
-      do {
+        do {
+
 
           currentNode = childNode != null ? childNode : currentNode;
 
@@ -70,19 +75,58 @@ public class BinarySearchTree {
 
               childNode = currentNode.getRightChildNode();
 
-
-          } else {
+          } else
               System.out.println("We'll tackle this Bull Shit Later");
-          }
-        }   while(currentNode.getLeftChildNode() != null || currentNode.getRightChildNode() != null);
+
+        } while(currentNode.getLeftChildNode() != null || currentNode.getRightChildNode() != null);
 
         System.out.println("Finished Creating Binary Search Tree .... \n");
     }
 
-    public void search(int i) {
+    public boolean search(int target, Node node) {
+
+        boolean result = false;
+
+        // Start from the Root Node
+        Node currentNode = node;
+
+        // Compare Value from the Tree
+        do {
+
+            // If you reach a null node, then the Element does Not Exist in the Binary Treee
+            if(currentNode == null)
+                return false;
+
+            if(currentNode.getValue() == target) {
+//                System.out.println("Found Target: " + target);
+                return true;
+            } else if (currentNode.getValue() > target) {           // Traverse Left Node
+//                System.out.println("Searching Left Subtree - " + target);
+                result = search(target, currentNode.getLeftChildNode());
+                break;
+            } else if (currentNode.getValue() < target) {           // Traverse Right Node
+//                System.out.println("Searching Right Subtree - " + target);
+                result = search(target, currentNode.getRightChildNode());
+                break;
+            }
+        } while (currentNode != null);
+
+        return result;
     }
 
-    public void remove(int i) {
+
+
+    public void remove(int key) {
+
+        // Search for Element
+
+        // Case # 1 - Node is a Leaf
+
+        // Case # 2 - Node has one child leaf
+
+        // Case # 3 - Node is an intermeditary Node
+
+
     }
 
     public void findPredecessor(int i) {

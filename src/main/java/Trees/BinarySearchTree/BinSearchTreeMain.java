@@ -23,9 +23,7 @@ public class BinSearchTreeMain {
         binarySearchTree.add(1);
 
         // Search
-        binarySearchTree.search(15);
-        binarySearchTree.search(4);
-        binarySearchTree.search(2);
+        testSearch();
 
         // Remove
         binarySearchTree.remove(47);
@@ -50,6 +48,32 @@ public class BinSearchTreeMain {
 
         // Post Order Traversal
         binarySearchTree.postOrderTraversal();
+
+    }
+
+    private static void testSearch() {
+
+        int target = 3;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 6;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 97;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 12434;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 10;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 23;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
+        target = 5;
+        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+
 
     }
     //endregion
