@@ -76,7 +76,7 @@ public class GenericsExample {
         Notes
         - Bounded Type Parameters Generics - You want to restrict the type of object as input parameters
         - You could also have Generic Classes
-            - Notice you have to directly specify the type of elements received in Generic Classes  
+            - Notice you have to directly specify the type of elements received in Generic Classes
 
         References
         - https://www.tutorialspoint.com/java/java_generics.htm
