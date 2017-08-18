@@ -72,6 +72,9 @@ public class InterfaceExample {
  - Specifies what a class MUST do, not How
  - If class cannot provide bodies to method signatures, then the class MUST be declared abstract
  - Variables in interfaces are final, public and static
+ - Methods in Interfaces are implicily defined as Abstract unless it is defined as Default or Static.
+ - Interface can be inside  other interfaces or classes ...this is called "Nested interfaces"
+
 
  References
 
