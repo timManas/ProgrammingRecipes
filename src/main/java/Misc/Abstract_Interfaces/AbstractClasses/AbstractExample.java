@@ -32,7 +32,6 @@ public class AbstractExample {
         System.out.println("Derived Info: " + derived.info);
         System.out.println("Derived Case: " + derived.derivedCase);
 
-
     }
 
 }
