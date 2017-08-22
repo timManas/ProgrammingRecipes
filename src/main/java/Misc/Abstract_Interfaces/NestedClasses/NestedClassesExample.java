@@ -47,7 +47,7 @@ public class NestedClassesExample {
  Inner Nested Classes
  - To instantiate an Inner class, you need to   1. Instantiate outer class first
                                                 2. Instantiate inner class
- - Has access to Outerclass members  !!! 
+ - Has access to Outerclass members  !!!
 
 
 
