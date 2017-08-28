@@ -1,0 +1,28 @@
+
+Life Cycle of Threads
+
+Threads can have one of the following states at any point
+1. New
+2. Runnable
+3. Blocked
+4. Wait
+5. Timed Waiting
+6. Terminated
+
+
+1. New  - When new thread is created
+        - Thread has not started running
+
+2. Runnable - Thread could be ready to Run or Already Running
+
+3. Blocked / Waiting State  - Thread is Temporary InActive
+                            - Could be waiting for lock
+                            - Could be waiting for notification
+                            - Responsibility of the thread scheduler to reactivate the thread
+
+4. Timed Waiting    - Called when thread calls a method with a time out parameter
+                    - Stays in this state until time has completed or notification has received
+
+5. Terminated State - When thread exits normally if the code has been executed
+                    - When thread exists abnormally due to erronoeus event (i.e Unhandlded exception)
+

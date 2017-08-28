@@ -1,0 +1,19 @@
+Java Concurrency - yield(), sleep()  & join()
+
+- We can prevent execution of a thread using
+1. yield()
+2. sleep()
+
+I. yield() - If a thread is not doing anything important & if other threads or processes needs to run,
+             they should run. Otherwise, the current thread will execute
+
+             Ex. Thread1 takes 5hrs to execute
+                 Thread2 takes 1min to execute
+                 Thus, Thread2 has to wait 5hrs to complete =( ...not Good . This is what yield is for
+                 To Allow other higher priorities to execute if the current thread is not doing anything important
+
+           - If yield is called, it hints at the thread scheduler to pause execution
+           - If yield is executed, thread scheduler checks if there are higher or same priorities and new
+             thread on run/runnable state. Otherwise, it will keep executing
+
+2. sleep() -
