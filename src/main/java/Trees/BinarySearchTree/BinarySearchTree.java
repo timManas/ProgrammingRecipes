@@ -1,5 +1,7 @@
 package Trees.BinarySearchTree;
 
+import static sun.misc.Version.println;
+
 /**
  * Created by timmanas on 2017-07-30.
  */
@@ -80,38 +82,38 @@ public class BinarySearchTree {
 
         } while(currentNode.getLeftChildNode() != null || currentNode.getRightChildNode() != null);
 
-        System.out.println("Finished Creating Binary Search Tree .... \n");
+        System.out.println("Finished Adding value Binary Search Tree: " + value );
     }
 
-    public boolean search(int target, Node node) {
-
-        boolean result = false;
+    public Node search(int target, Node node) {
 
         // Start from the Root Node
         Node currentNode = node;
 
         // Compare Value from the Tree
         do {
-
             // If you reach a null node, then the Element does Not Exist in the Binary Treee
-            if(currentNode == null)
-                return false;
+            if(currentNode == null) {
+//                System.out.println("Current Node is Null ... Exiting");
+                return null;
+            }
+
 
             if(currentNode.getValue() == target) {
 //                System.out.println("Found Target: " + target);
-                return true;
+                return currentNode;
             } else if (currentNode.getValue() > target) {           // Traverse Left Node
-//                System.out.println("Searching Left Subtree - " + target);
-                result = search(target, currentNode.getLeftChildNode());
+//                System.out.println("Searching Left Subtree for value - " + target);
+                currentNode = search(target, currentNode.getLeftChildNode());
                 break;
             } else if (currentNode.getValue() < target) {           // Traverse Right Node
-//                System.out.println("Searching Right Subtree - " + target);
-                result = search(target, currentNode.getRightChildNode());
+//                System.out.println("Searching Right Subtree for value- " + target);
+                currentNode = search(target, currentNode.getRightChildNode());
                 break;
             }
         } while (currentNode != null);
 
-        return result;
+        return currentNode;
     }
 
 
@@ -119,6 +121,7 @@ public class BinarySearchTree {
     public void remove(int key) {
 
         // Search for Element
+
 
         // Case # 1 - Node is a Leaf
 

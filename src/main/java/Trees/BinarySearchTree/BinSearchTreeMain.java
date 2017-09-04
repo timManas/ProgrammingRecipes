@@ -54,25 +54,25 @@ public class BinSearchTreeMain {
     private static void testSearch() {
 
         int target = 3;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
         target = 6;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
-        target = 97;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        target = 57;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
         target = 12434;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
         target = 10;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
         target = 23;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
         target = 5;
-        System.out.println("Search Result for Target: " + target + "    = " + binarySearchTree.search(target, binarySearchTree.getRootNode()));
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
 
 
     }
