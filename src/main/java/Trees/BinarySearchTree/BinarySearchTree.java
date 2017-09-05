@@ -120,10 +120,42 @@ public class BinarySearchTree {
     }
 
 
+    /**
+        If you want to destroy the object, destroy the references TO THAT OBject
+        i.e ... Go to the ParentNode and the destroy the references to the Current Object
+     */
 
-    public void remove(int key, Node node) {
+    public void remove(int target, String type) {
 
-        Node currentNode = search(key, node);
+        Node currentNode = rootNode;
+
+        if(type.equalsIgnoreCase("Iterative")) {
+
+            // This assumes that the while loop will FIND the value ...we need a way to stop the Loop when node is null ..hence the != null
+            while (currentNode != null && currentNode.getValue() != target) {
+
+                // Traverse Left Node
+                if(target < currentNode.getValue()) {
+                    currentNode = currentNode.getLeftChildNode();
+
+                    // Traverse Right Node
+                } else if (target > currentNode.getValue()) {
+                    currentNode = currentNode.getRightChildNode();
+
+                } else {
+                    System.out.println("WTF !!! You missed Typed ");
+                    return;
+                }
+            }
+
+        } else if(type.equalsIgnoreCase("Recursive")) {
+            currentNode = search(target, rootNode);
+        }
+
+        /**
+         * Notice that even when we found a solution, we still a reference to the Object we need !!!
+         * Let me repeat ... we are still receiving a REFERENCE (i.e currentNode) .... not a value
+         */
 
         // Search for Element
         if(currentNode == null) {
@@ -131,17 +163,26 @@ public class BinarySearchTree {
             return;
         }
 
-        System.out.println("Element is found in Binary Tree - " + key);
+        // Go to ParentNode to free the object being referenced
+        Node parentNode = currentNode.getParentNode();
 
         // Case # 1 - Node is a Leaf
         if(currentNode.getLeftChildNode() == null && currentNode.getRightChildNode() == null) {
-            System.out.println("Removing Leaf Node of Value: " + key);
-            currentNode.destroy();
+            System.out.println("Removing Leaf Node of Value: " + target);
+
+            if(parentNode.getLeftChildNode().getValue() == target) {
+                parentNode.setLeftChildNode(null);
+
+            } else if (parentNode.getRightChildNode().getValue() == target) {
+                parentNode.setRightChildNode(null);
+            }
+            
         }
 
         // Case # 2 - Node has one child leaf
 
-        // Case # 3 - Node is an two Node children
+
+        // Case # 3 - Node has two Node children
 
 
 

@@ -27,7 +27,7 @@ public class BinSearchTreeMain {
         testSearch();
 
         // Remove
-        binarySearchTree.remove(4, binarySearchTree.getRootNode());
+        binarySearchTree.remove(4, "Recursive");
 
         // Find Predecessor
         binarySearchTree.findPredecessor(56);
