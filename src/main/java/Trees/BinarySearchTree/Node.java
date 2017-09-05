@@ -74,5 +74,13 @@ public class Node {
 
     //endregion
 
+    //region Helper
+    public void destroy() {
+        this.parentNode = null;
+        this.leftChildNode = null;
+        this.rightChildNode = null;
+    }
+    //endregion
+
 
 }

@@ -102,14 +102,17 @@ public class BinarySearchTree {
             if(currentNode.getValue() == target) {
 //                System.out.println("Found Target: " + target);
                 return currentNode;
+
             } else if (currentNode.getValue() > target) {           // Traverse Left Node
 //                System.out.println("Searching Left Subtree for value - " + target);
                 currentNode = search(target, currentNode.getLeftChildNode());
                 break;
+
             } else if (currentNode.getValue() < target) {           // Traverse Right Node
 //                System.out.println("Searching Right Subtree for value- " + target);
                 currentNode = search(target, currentNode.getRightChildNode());
                 break;
+
             }
         } while (currentNode != null);
 
@@ -118,16 +121,28 @@ public class BinarySearchTree {
 
 
 
-    public void remove(int key) {
+    public void remove(int key, Node node) {
+
+        Node currentNode = search(key, node);
 
         // Search for Element
+        if(currentNode == null) {
+            System.out.println("Remove Functionality - Element is Not found");
+            return;
+        }
 
+        System.out.println("Element is found in Binary Tree - " + key);
 
         // Case # 1 - Node is a Leaf
+        if(currentNode.getLeftChildNode() == null && currentNode.getRightChildNode() == null) {
+            System.out.println("Removing Leaf Node of Value: " + key);
+            currentNode.destroy();
+        }
 
         // Case # 2 - Node has one child leaf
 
-        // Case # 3 - Node is an intermeditary Node
+        // Case # 3 - Node is an two Node children
+
 
 
     }
@@ -144,13 +159,49 @@ public class BinarySearchTree {
     public void findMax() {
     }
 
-    public void inOrderTraversal() {
+    public void preOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        System.out.println("Element: " + currentNode.getValue());
+        preOrderTraversal(false, currentNode.getLeftChildNode());
+        preOrderTraversal(false, currentNode.getRightChildNode());
     }
 
-    public void preOrderTraversal() {
+    public void inOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        inOrderTraversal(false, currentNode.getLeftChildNode());
+        System.out.println("Element: " + currentNode.getValue());
+        inOrderTraversal(false, currentNode.getRightChildNode());
     }
 
-    public void postOrderTraversal() {
+    public void postOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        postOrderTraversal(false, currentNode.getLeftChildNode());
+        postOrderTraversal(false, currentNode.getRightChildNode());
+        System.out.println("Element: " + currentNode.getValue());
     }
 
     //endregion

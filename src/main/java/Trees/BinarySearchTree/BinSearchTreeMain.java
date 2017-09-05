@@ -12,6 +12,7 @@ public class BinSearchTreeMain {
     //region Main
     public static void main(String [] args) {
 
+        // List - 44, 38, 5, 47, 15, 36, 42, 57, 2, 46, 4, 60, 50, 48, 99, 1
         int [] input = {44, 38, 5, 47, 15, 36, 42, 57, 2, 46, 4, 60, 50, 48};
 
         // Create Binary Search Tree
@@ -26,7 +27,7 @@ public class BinSearchTreeMain {
         testSearch();
 
         // Remove
-        binarySearchTree.remove(47);
+        binarySearchTree.remove(4, binarySearchTree.getRootNode());
 
         // Find Predecessor
         binarySearchTree.findPredecessor(56);
@@ -40,14 +41,18 @@ public class BinSearchTreeMain {
         // Find Max Value
         binarySearchTree.findMax();
 
-        // In Order Traversal
-        binarySearchTree.inOrderTraversal();
-
         // Pre Order Traversal
-        binarySearchTree.preOrderTraversal();
+        System.out.println("\nPrinting PreOrder Traversal");
+        binarySearchTree.preOrderTraversal(true, null);
+
+        // In Order Traversal
+        System.out.println("\nPrinting InOrder Traversal");
+        binarySearchTree.inOrderTraversal(true, null);
 
         // Post Order Traversal
-        binarySearchTree.postOrderTraversal();
+        System.out.println("\nPrinting PostOrder Traversal");
+        binarySearchTree.postOrderTraversal(true, null);
+
 
     }
 
@@ -92,6 +97,17 @@ public class BinSearchTreeMain {
     - Right Child Node > Parent Node
 
  Why ?
+
+ PreOrderTraversal
+ 1. Visit Node
+ 2. Visit Left Subtree
+ 3. Visit Right Subtree
+
+
+ InOrder Traversal
+
+ PostOrder Traversal
+
 
  Notes
  - Search, Insert, Delete - O(LogN)
