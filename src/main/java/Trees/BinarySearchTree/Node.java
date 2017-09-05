@@ -74,6 +74,21 @@ public class Node {
 
     //endregion
 
+    //region Verifiers
+    public int hasChildren() {
+
+        if(this.getLeftChildNode() == null && this.getRightChildNode() == null)
+            return 0;
+
+        if(this.getLeftChildNode() != null && this.rightChildNode != null)
+            return 2;
+
+        return 1;
+    }
+
+
+    //endregion
+
     //region Helper
     public void destroy() {
         this.parentNode = null;

@@ -167,7 +167,8 @@ public class BinarySearchTree {
         Node parentNode = currentNode.getParentNode();
 
         // Case # 1 - Node is a Leaf
-        if(currentNode.getLeftChildNode() == null && currentNode.getRightChildNode() == null) {
+//        if(currentNode.getLeftChildNode() == null && currentNode.getRightChildNode() == null) {
+        if(currentNode.hasChildren() == 0) {
             System.out.println("Removing Leaf Node of Value: " + target);
 
             if(parentNode.getLeftChildNode().getValue() == target) {
@@ -176,15 +177,28 @@ public class BinarySearchTree {
             } else if (parentNode.getRightChildNode().getValue() == target) {
                 parentNode.setRightChildNode(null);
             }
-            
         }
 
         // Case # 2 - Node has one child leaf
+        else if(currentNode.hasChildren() == 1) {
+            Node childNode = null;
 
+            if(currentNode.getLeftChildNode() != null) {
+                childNode = currentNode.getLeftChildNode();
+                parentNode.setLeftChildNode(childNode);
+
+            } else if (currentNode.getRightChildNode() != null) {
+                childNode = currentNode.getRightChildNode();
+                parentNode.setRightChildNode(childNode);
+            }
+
+            childNode.setParentNode(parentNode);            // Setting this allows us to have bi-directional flow ... Otherwise we constantly have to iterate from the top
+        }
 
         // Case # 3 - Node has two Node children
-
-
+        else if(currentNode.hasChildren() == 2) {
+        
+        }
 
     }
 

@@ -27,7 +27,8 @@ public class BinSearchTreeMain {
         testSearch();
 
         // Remove
-        binarySearchTree.remove(4, "Recursive");
+        binarySearchTree.remove(15, "Recursive");
+        binarySearchTree.remove(50, "Iterative");
 
         // Find Predecessor
         binarySearchTree.findPredecessor(56);
@@ -78,7 +79,6 @@ public class BinSearchTreeMain {
 
         target = 5;
         System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, binarySearchTree.getRootNode()) != null));
-
 
     }
     //endregion
