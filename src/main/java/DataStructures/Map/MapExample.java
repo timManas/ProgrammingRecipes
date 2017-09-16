@@ -52,13 +52,13 @@ public class MapExample {
         linkedHashMap = new LinkedHashMap<Integer, String>();
         treeMap = new TreeMap<Integer, String>();
 
-        addElementsToMap();
+        populateMaps();
 
         // Create a HashMap from another Map
         map4 = new HashMap(map1);
     }
 
-    private static void addElementsToMap() {
+    private static void populateMaps() {
 
         map1.put(1, "Hello");
         map1.put(4,"Mr.");
@@ -168,7 +168,6 @@ public class MapExample {
         System.out.println("PutAll() ::: Put all Values of map2 into map1 (Notice we replace & add values as well ? ");
         map1.putAll(map2);
 
-        
         // clear
         System.out.println("Clearing Map");
         map1.clear();
