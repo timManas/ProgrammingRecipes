@@ -138,8 +138,9 @@ public class ListExample {
 
     private static void usefulMethods(List list, List temp) {
 
-        System.out.println("\n====== Useful Methods ====== ");
+        System.out.println("\nUseful Methods for List ======================= ");
 
+        // Print All Elements
         System.out.println("Original List: " + list);
         System.out.println("Original Temp: " + temp);
 

@@ -115,6 +115,11 @@ public class SetExample {
 
     private static void usefulMethods(Set set) {
 
+        System.out.println("\nUseful Methods for Sets ======================= ");
+
+        //Print all Elements
+        System.out.println("\nSet: " + linkedHashSet);
+
         // add()
         set.add("Extra1");
 
@@ -163,7 +168,7 @@ public class SetExample {
  - Insertion/Removal for HashSet & LinkedHashSet is O(1). For TreeSet it is O(logn)
 
  Why ?
- 
+
 
  Notes -
  - HashSet do not care about the ordering at all

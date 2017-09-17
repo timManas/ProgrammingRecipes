@@ -197,7 +197,7 @@ public class QueueExample {
 
  What ?
  - Follows the principle of FIFO (First In & First Out)
- 
+
  Why ?
 
  Notes

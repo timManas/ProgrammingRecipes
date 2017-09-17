@@ -30,7 +30,7 @@ public class MapExample {
         compareMap(map1, map1);
 
         // Useful Methods
-        usefulMethods(linkedHashMap, treeMap);
+        usefulMethods();
 //        usefulMethods(map3, map4);
 
     }
@@ -129,49 +129,53 @@ public class MapExample {
         Collections.sort(values2);
         System.out.println("CompareMap :: Convert to List Method - Map1 & Map2: " + values1.equals(values2));
 
-
     }
 
-    private static void usefulMethods(Map map1, Map map2) {
+    private static void usefulMethods() {
+
+        System.out.println("\nUseful Methods for Maps ======================= ");
+
+        //Print all Elements
+        System.out.println("\nLinkedHashMap: " + linkedHashMap);
 
         // clone
         System.out.println("Cloning Map -- We dont use the clone(), since that is broken anyway");
-        LinkedHashMap tempLinkedHashMap = new LinkedHashMap(map1);
+        LinkedHashMap tempLinkedHashMap = new LinkedHashMap(linkedHashMap);
 
         // containsKey
-        System.out.println("ContainsKey() :: map1 contain key '6': " + map1.containsKey(6));
-        System.out.println("ContainsKey() :: map1 contain key '1': " + map1.containsKey(1));
-        System.out.println("ContainsKey() :: map1 contain key '99': " + map1.containsKey(99));
+        System.out.println("ContainsKey() :: map1 contain key '6': " + linkedHashMap.containsKey(6));
+        System.out.println("ContainsKey() :: map1 contain key '1': " + linkedHashMap.containsKey(1));
+        System.out.println("ContainsKey() :: map1 contain key '99': " + linkedHashMap.containsKey(99));
 
         // containsValue
-        System.out.println("ContainsValue() :: map1 contains value 'Again': " + map1.containsValue("Again !!"));
-        System.out.println("ContainsValue() :: map1 contains value 'Mr.': " + map1.containsValue("Mr."));
-        System.out.println("ContainsValue() :: map1 contains value 'Tim': " + map1.containsValue("Amanda"));
+        System.out.println("ContainsValue() :: map1 contains value 'Again': " + linkedHashMap.containsValue("Again !!"));
+        System.out.println("ContainsValue() :: map1 contains value 'Mr.': " + linkedHashMap.containsValue("Mr."));
+        System.out.println("ContainsValue() :: map1 contains value 'Tim': " + linkedHashMap.containsValue("Amanda"));
 
         // get
-        System.out.println("get() ::: Getting the Value from Key '2': " + map1.get(2));
+        System.out.println("get() ::: Getting the Value from Key '2': " + linkedHashMap.get(2));
 
         // keySet
         System.out.println("\nKeySet :: Get List of All Kets");
-        for(Object key : map1.keySet())
+        for(Object key : linkedHashMap.keySet())
             System.out.println("Key: " + key);
 
         // replace
-        System.out.println("Replace() ::: Replace key'5' from Tim to 'Romero': " + map1.replace(5, "Tim", "Romero"));
-        System.out.println("Replace() ::: Replace key'5' from Tim to 'Manas' (Should be false since Tim doesent Exist anymore): " + map1.replace(5, "Tim", "Manas"));
-        System.out.println("Replace() ::: Replace key'5'  to 'BadMon': " + map1.replace(5, "BadMon"));
+        System.out.println("Replace() ::: Replace key'5' from Tim to 'Romero': " + linkedHashMap.replace(5, "Tim", "Romero"));
+        System.out.println("Replace() ::: Replace key'5' from Tim to 'Manas' (Should be false since Tim doesent Exist anymore): " + linkedHashMap.replace(5, "Tim", "Manas"));
+        System.out.println("Replace() ::: Replace key'5'  to 'BadMon': " + linkedHashMap.replace(5, "BadMon"));
 
         // put
-        System.out.println("Put() ::: Put Key '99': " + map1.put(99, "For Realz ?"));
+        System.out.println("Put() ::: Put Key '99': " + linkedHashMap.put(99, "For Realz ?"));
 
         // putAll
         System.out.println("PutAll() ::: Put all Values of map2 into map1 (Notice we replace & add values as well ? ");
-        map1.putAll(map2);
+        linkedHashMap.putAll(treeMap);
 
         // clear
         System.out.println("Clearing Map");
-        map1.clear();
-        map2.clear();
+        linkedHashMap.clear();
+        treeMap.clear();
 
     }
 
