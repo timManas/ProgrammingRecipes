@@ -10,7 +10,7 @@ public class QueueExample {
     //region Members
     private static Queue<String> queue1;
     private static Queue<Integer> queue2;
-    private static Queue<String> tempQueue;
+    private static LinkedList<Integer> tempQueue;
 
     private static LinkedList<String> linkedList;
     private static PriorityQueue<String> priorityQueue;
@@ -29,8 +29,8 @@ public class QueueExample {
         // Comparator
         compareQueue(tempQueue, queue2);
 
-//        // Useful Methods
-//        usefulMethods();
+        // Useful Methods
+        usefulMethods();
     }
     //endregion
 
@@ -74,12 +74,11 @@ public class QueueExample {
         priorityQueue.add("Romero");
         priorityQueue.add("Manas");
 
-        tempQueue.add("Me");
-        tempQueue.add("A");
-        tempQueue.add("Reason");
-        tempQueue.add("Bonjour");
-        tempQueue.add("AL");
-        tempQueue.add("Give");
+        tempQueue.add(3);
+        tempQueue.add(7);
+        tempQueue.add(9);
+        tempQueue.add(1);
+        tempQueue.add(6);
 
     }
 
@@ -120,6 +119,9 @@ public class QueueExample {
         System.out.println("\nUseful Methods for Queue ======================= ");
         // Printing all Elements
         System.out.println("\nQueue1: " + queue1);
+        System.out.println("Queue2: " + queue2);
+        System.out.println("LinkedList: " + linkedList);
+        System.out.println("PriorityQueue: " + priorityQueue);
 
 
         // addFirst() - ONLY EXIST FOR LinkedList
@@ -130,7 +132,7 @@ public class QueueExample {
         System.out.println("LinkedList: " + linkedList);
 
         // size()
-        System.out.println("size() :: Queue1 Size: " + queue1.size());
+        System.out.println("\nsize() :: Queue1 Size: " + queue1.size());
         System.out.println("size() :: Queue2 Size: " + queue2.size());
         System.out.println("size() :: LinkedList Size: " + linkedList.size());
         System.out.println("size() :: Priority Size: " + priorityQueue.size());
@@ -154,7 +156,75 @@ public class QueueExample {
         System.out.println("LinkedList: " + linkedList);
 
         // Convert to ArrayList()
-        System.out.println("toArrary() : " + new ArrayList<>(linkedList));
+        System.out.println("\ntoArrary() :: linkedList: " + new ArrayList<>(linkedList));
+        System.out.println("toArray() :: prioirtyQueue: " + new ArrayList<>(priorityQueue));
+
+
+        // Sort LINKED LIST - Use Collection.sort(). ONLY WORKS ON LINKEDLIST
+        Collections.sort(tempQueue);
+        System.out.println("\nSort() :: Using Collections.sort() :: linkedList: " + tempQueue);
+
+        // Sort() - 1. Use PriorityList(For Sorting) and Convert back to LinkedList
+        System.out.println("\nSort() - 1. Use PriorityList(For Sorting) and Convert back to LinkedList ");
+        LinkedList<Integer> newLinkedList = new LinkedList<>();
+        PriorityQueue<Integer> tempPriorityQueue = new PriorityQueue<>(queue2);
+        System.out.println("tempPrioirtyQueue: " + tempPriorityQueue);
+
+        tempPriorityQueue.add(9);
+        tempPriorityQueue.add(3);
+        tempPriorityQueue.add(1);
+        System.out.println("After elements was added :: tempPrioirtyQueue: " + tempPriorityQueue);
+
+        // ONLY BY REMOVING THE ELEMENTS WILL THE ELEMENTS COME OUT SORTED
+        for(int i = tempPriorityQueue.size(); i > 0; i--) {
+            int element = tempPriorityQueue.remove();
+            newLinkedList.add(element);
+        }
+        System.out.println("newLinkedList: " + newLinkedList);
+
+        // Sort() - 2. Use TreeSet(For Sorting) and Convert back to LinkedList (NOTE: THIS SOLUTION DOES NOT ALLOW FOR DUPLICATES BECAUSE OF SETS)
+        System.out.println("\nSort() - 2. Use TreeSet(For Sorting) and Convert back to LinkedList");
+        TreeSet<Integer> tempTreeSet = new TreeSet<>(queue2);
+        tempTreeSet.add(9);
+        tempTreeSet.add(3);
+        tempTreeSet.add(1);
+        System.out.println("tempTreeSet: " + tempTreeSet);
+        LinkedList<Integer> newLinkedListII = new LinkedList<>(tempTreeSet);
+        System.out.println("newLinkedListII: " + newLinkedListII);
+
+        // Sort() - 3. Use ArrayList(For Sorting) and Convert back to LinkedList
+        System.out.println("\nSort() - 3. Use ArrayList(For Sorting) and Convert back to LinkedList ");
+        ArrayList<Integer> tempArrayList = new ArrayList<>(queue2);
+        tempArrayList.add(9);
+        tempArrayList.add(3);
+        tempArrayList.add(1);
+        System.out.println("tempArrayList: " + tempArrayList);
+        Collections.sort(tempArrayList);
+        LinkedList<Integer> newLinkedListIII = new LinkedList<>(tempArrayList);
+        System.out.println("newLinkedListIII: " + newLinkedListIII);
+
+        // Convert LinkedList to String (Or Int)
+        StringBuilder stringBuilder = new StringBuilder();
+        for(String element : linkedList)
+            stringBuilder.append(element);
+        System.out.println("Convert LinkedList to String: " + stringBuilder.toString());
+
+        // SubQueue
+        LinkedList <String> subQueue = new LinkedList<>(priorityQueue);
+
+        // Concatenate two Queues
+        Queue<String> concatentatedQueue = new LinkedList<>(linkedList);
+        concatentatedQueue.addAll(priorityQueue);
+        System.out.println("\nConcatenate two Queues together :: " + concatentatedQueue);
+
+        // Reverse a LinkedList Order ....1. Use a Stack ?
+        LinkedList<String> reverseList = new LinkedList<>(linkedList);
+        Collections.reverse(reverseList);
+        System.out.println("\nReverse of LinkedList: " + reverseList);
+
+        // Swap values in a Queue (Applies to LinkedList Only =/)
+        Collections.swap(linkedList, 0, linkedList.size() - 1);
+        System.out.println("Swapped LinkedList: " + linkedList);
 
         // remove() - Similar to Poll but Returns an exception if List is Empty
         System.out.println("\nRemoves() :: Remove head  " + linkedList.remove());
@@ -184,6 +254,7 @@ public class QueueExample {
         // clear() - Much more Faster than RemoveAll()
         priorityQueue.clear();
         System.out.println("Clear() ::: Is PriorityQueue Empty ? " + priorityQueue.isEmpty());
+
 
     }
     //endregion

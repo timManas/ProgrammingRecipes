@@ -13,7 +13,7 @@ public class SetExample {
     private static Set set3;
 
     private static HashSet hashSet;
-    private static LinkedHashSet linkedHashSet;
+    private static LinkedHashSet<String> linkedHashSet;
     private static TreeSet treeSet;
 
     //endregion
@@ -32,7 +32,7 @@ public class SetExample {
         compareSets(set1, set1);
 
         // Useful Methods
-        usefulMethods(linkedHashSet);
+        usefulMethods();
 
     }
 
@@ -46,8 +46,8 @@ public class SetExample {
         set2 = new HashSet();
 
         hashSet = new HashSet();
-        linkedHashSet = new LinkedHashSet();
-        treeSet = new TreeSet();
+        linkedHashSet = new LinkedHashSet<String>();
+        treeSet = new TreeSet<String>();
 
         populateSet();
     }
@@ -113,44 +113,90 @@ public class SetExample {
         System.out.println("Compare using contains() method ::: Set1 & Set2 equals ? " + set1.containsAll(set2));
     }
 
-    private static void usefulMethods(Set set) {
+    private static void usefulMethods() {
 
         System.out.println("\nUseful Methods for Sets ======================= ");
 
         //Print all Elements
-        System.out.println("\nSet: " + linkedHashSet);
+        System.out.println("\nhashSet: " + hashSet);
+        System.out.println("linkedHashSet: " + linkedHashSet);
+        System.out.println("treeSet: " + treeSet);
 
         // add()
-        set.add("Extra1");
+        linkedHashSet.add("Extra1");
 
         // contains()
-        System.out.println("\nContains() ::: Set contains 'Timothy'? " + set.contains("Timothy"));
-        System.out.println("Contains() ::: Set contains 'Bond'? " + set.contains("Bond"));
-        System.out.println("Contains() ::: Set contains 'Sam Smith'? " + set.contains("Sam Smith"));
+        System.out.println("\nContains() ::: Set contains 'Timothy'? " + linkedHashSet.contains("Timothy"));
+        System.out.println("Contains() ::: Set contains 'Bond'? " + linkedHashSet.contains("Bond"));
+        System.out.println("Contains() ::: Set contains 'Sam Smith'? " + linkedHashSet.contains("Sam Smith"));
 
         // size()
-        System.out.println("Size of Set: " + set.size());
+        System.out.println("Size of Set: " + linkedHashSet.size());
 
-        // How to find the difference between two sets ?
-        String[] array =  new String[]{"Again", "Romero", "Extra1", "Timothy"};
-        List<String> list = Arrays.asList(array);
-        set.removeAll(list);
 
         // iterator()
         System.out.println("\nIterate :: Using the iterator");
-        Iterator<String> iterator = set.iterator();
+        Iterator<String> iterator = linkedHashSet.iterator();
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
+        //SubSet
+
+        //Concatenate two Sets
+        Set<String> concatenateSets = new LinkedHashSet<>(linkedHashSet);
+        concatenateSets.addAll(treeSet);
+        System.out.println("\nConcatenatedSet: " + concatenateSets);
+
+        // Convert Set to List
+        ArrayList<String> setToList = new ArrayList<>(linkedHashSet);
+        System.out.println("Set to List: " + setToList);
+
+        // Convert Set to one String
+        StringBuilder stringBuilder = new StringBuilder();
+        for(String element : linkedHashSet)
+            stringBuilder.append(element);
+        System.out.println("Set to String: " + stringBuilder);
+
+        // Reverse a Set Order
+        System.out.println("\nReverse an Order of Set (Only for LinkedHashSets)");
+
+        // Reverse() # 1
+        ArrayList<String> tempList = new ArrayList<>(linkedHashSet);
+        Collections.reverse(tempList);
+        Set<String> sortedSetI = new LinkedHashSet<>(tempList);
+        System.out.println("Method #1 - Convert to ArrayList -> Sort -> Add to new Set :: SortedSetI: " + sortedSetI);
+
+        // Reverse() #2
+        ArrayList<String> tempListII = new ArrayList<>(linkedHashSet);
+        Stack<String> stack = new Stack<>();
+        for(String element : tempListII)
+            stack.push(element);
+        System.out.println("Stack: " + stack);
+
+        LinkedHashSet<String> sortedLinkedHashSetII = new LinkedHashSet<>();
+        while(!stack.isEmpty()){
+            String element = stack.pop();
+            System.out.println(element);
+            sortedLinkedHashSetII.add(element);
+        }
+        System.out.println("Method #2 - Convert to ArrayList -> Stack -> Add to new Set :: sortedLinkedHashSet: " + sortedLinkedHashSetII);
+
+        // How to find the difference between two sets ?
+        String[] array =  new String[]{"Again", "Romero", "Extra1", "Timothy"};
+        List<String> list = Arrays.asList(array);
+        linkedHashSet.removeAll(list);
+        System.out.println("\nDifference Between two sets: " + linkedHashSet);
+
         // remove()
-        System.out.println("\nRemoved Element 'Hello': " + set.remove("Hello"));
+        System.out.println("\nRemoved Element 'Hello': " + linkedHashSet.remove("Hello"));
 
         // clear()
-        set.clear();
+        linkedHashSet.clear();
 
         // isEmpty()
-        System.out.println("Is Set Empty: " + set.isEmpty());
+        System.out.println("Is Set Empty: " + linkedHashSet.isEmpty());
+
 
     }
     //endregion

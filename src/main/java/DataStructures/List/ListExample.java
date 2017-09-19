@@ -14,6 +14,8 @@ public class ListExample {
     private static List numericList2;
     private static List stringList1;
     private static List stringList2;
+
+    private static Stack stack1;
     //endregion
 
     //region Main
@@ -30,8 +32,7 @@ public class ListExample {
         compareList(numericList1, numericList1);
 
         // Useful Methods
-        usefulMethods(numericList1, numericList1);
-        usefulMethods(stringList1, numericList1);
+        usefulMethods();
 
     }
 
@@ -43,7 +44,7 @@ public class ListExample {
     private static void createList() {
 
         // Creating a List
-        numericList1 = new ArrayList();
+        numericList1 = new ArrayList<Integer>();
         numericList1.add(1);
         numericList1.add(3);
         numericList1.add(9);
@@ -51,14 +52,13 @@ public class ListExample {
         numericList1.add(8);
 
         // Create  List using Generics
-        stringList1 = new ArrayList<>();
+        stringList1 = new ArrayList<String>();
         stringList1.add("Hello");
         stringList1.add("Mr.");
         stringList1.add("Manas");
-        stringList1.add("You are the Best");
+        stringList1.add("Show me the money");
 
-
-        numericList2 = new ArrayList();
+        numericList2 = new ArrayList<Integer>();
         numericList2.add(4);
         numericList2.add(5);
         numericList2.add(6);
@@ -66,11 +66,18 @@ public class ListExample {
         numericList2.add(2);
 
         // Create  List using Generics
-        stringList2 = new ArrayList<>();
+        stringList2 = new ArrayList<String>();
         stringList2.add("Yo");
-        stringList2.add("Mr.");
+        stringList2.add("Dr.");
         stringList2.add("Tim");
         stringList2.add("You are a Beast !!");
+
+        stack1 = new Stack();
+        stack1.add(3);
+        stack1.add(6);
+        stack1.add(9);
+        stack1.add(1);
+        stack1.add(8);
 
     }
 
@@ -111,6 +118,7 @@ public class ListExample {
 
         System.out.println("\nOriginal List1: " + list1);
         System.out.println("Original list2: " + list2);
+        System.out.println("Original stack1: " + stack1);
 
         // Using the Equals
         System.out.println("\nUsing Equals comparator: " + list1.equals(list2));
@@ -119,7 +127,6 @@ public class ListExample {
         Object [] arrayObj1 = list1.toArray();
         Object [] arrayObj2 = list1.toArray();
         System.out.println("Using the Arrays.equals() **Converted to List to Array: " + Arrays.deepEquals(arrayObj1, arrayObj2));
-
 
         // Using the good old fashion way
         if(list1 == null || list2 == null) {
@@ -136,68 +143,75 @@ public class ListExample {
     }
 
 
-    private static void usefulMethods(List list, List temp) {
+    private static void usefulMethods() {
 
-        System.out.println("\nUseful Methods for List ======================= ");
+        System.out.println("\n======================= Useful Methods for List ======================= ");
 
         // Print All Elements
-        System.out.println("Original List: " + list);
-        System.out.println("Original Temp: " + temp);
+        System.out.println("numericList1: " + numericList1);
+        System.out.println("numericList2: " + numericList2);
+
+        System.out.println("stringList1: " + stringList1);
+        System.out.println("stringList2: " + stringList2);
 
         // IndexOf - This works better if there are no duplicates
         System.out.println("\nIndexOf()");
-        int index1 = list.indexOf("\nMr.");
-        System.out.println("First Index of e: " + index1);
+        int index1 = stringList1.indexOf("Manas");
+        System.out.println("First Index of 'Manas': " + index1);
 
-        int index2 = list.indexOf(8);
+        int index2 = numericList1.indexOf(8);
         System.out.println("First Index of 8: " + index2);
 
         // lastIndexOf - Returns the last index of the object detected
         System.out.println("\nLastIndexOf()");
-        int index3 = list.lastIndexOf("Mr.");
-        System.out.println("Last Index of e: " + index3);
+        int index3 = stringList1.lastIndexOf("Tim.");
+        System.out.println("Last Index of Tim: " + index3);
 
-        int index4 = list.lastIndexOf(8);
-        System.out.println("Last Index of 8: " + index4);
+        int index4 = numericList2.lastIndexOf(2);
+        System.out.println("Last Index of 2: " + index4);
 
         // SubList
-        System.out.println("\nSubList1: " + list.subList(2,4));
-        System.out.println("SubList2: " + list.subList(1,3));
+        System.out.println("\nSubList1: " + stringList1.subList(2,4));
+        System.out.println("SubList2: " + numericList1.subList(1,3));
 
         // Contains
-        System.out.println("\nContains 'Mr.': " + list.contains("Mr."));
-        System.out.println("Contains '8': " + list.contains(8));
+        System.out.println("\nContains 'Mr.': " + stringList1.contains("Mr."));
+        System.out.println("Contains '8': " + numericList1.contains(8));
 
         // Concatenate two arrays
-        List tempList = new ArrayList(list);
-        tempList.addAll(temp);
+        List tempList = new ArrayList<>(stringList1);
+        tempList.addAll(stringList2);
+        System.out.println("Concatenate() :: TempList: " + tempList);
 
         // Convert List to Array
         System.out.println("\nConverting List to Array using toArray() using Object[]");
-        Object [] newArray = list.toArray();
-        for(Object element : newArray )
+        Object[] intArray = numericList1.toArray();
+        for(Object element : intArray )
             System.out.println("Element: " + element);
 
-        if(list.get(0) instanceof  String) {
-            System.out.println("\nConverting List to Array using toArray() using type[]");
-            String [] newArray2 = new String[list.size()];
-            list.toArray(newArray2);
-            for(String element : newArray2 )
-                System.out.println("Element: " + element);
-        }
+        System.out.println("\nConverting List to Array using toArray() using Object[] --- If you take away the size. You get an exception error");
+        String[] intArray2 = (String[]) stringList2.toArray(new String[stringList2.size()]);
+        for(String element : intArray2 )
+            System.out.println("Element: " + element);
+
+        System.out.println("\nConverting List to Array using toArray() using type[]");
+        String [] stringArray2 = new String[stringList2.size()];
+        stringList2.toArray(stringArray2);
+        for(String element : stringArray2 )
+            System.out.println("Element: " + element);
 
         // Reverse an array
-        Collections.reverse(temp);
-        System.out.println("\nReverse List: " + temp);
+        Collections.reverse(tempList);
+        System.out.println("\nReverse() :: using Collections.reverse() ::: TempList: " + tempList);
 
-        if(list.get(0) instanceof String) {
-            // Convert List to Set
-            System.out.println("\nConverting List to Set");
-            Set<String> set1 = new HashSet<String>(list);
-            for(String element : set1)
-                System.out.println(element);
-        }
+        // Swap values in an array
+        Collections.swap(tempList, 0, tempList.size() - 1);
+        System.out.println("\nSwap() TempList: " + tempList);
 
+        // Convert List to Set
+        System.out.println("\nConverting List to Set");
+        Set<String> set1 = new HashSet<>(stringList1);
+        System.out.println("Set: " + set1);
 
     }
 

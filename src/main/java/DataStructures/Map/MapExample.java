@@ -14,6 +14,7 @@ public class MapExample {
     private static HashMap map4;
     private static LinkedHashMap linkedHashMap;
     private static TreeMap treeMap;
+    private static LinkedHashMap<Integer, String> tempLinkedHashMap;
     //endregion
 
     //region Main
@@ -31,7 +32,6 @@ public class MapExample {
 
         // Useful Methods
         usefulMethods();
-//        usefulMethods(map3, map4);
 
     }
 
@@ -47,10 +47,13 @@ public class MapExample {
         // Create a NEW Object (Not a reference) HashMap with a predefined size
         map2 = new HashMap(5);
 
+        // Create a TreeMap
         map3 = new TreeMap<String, String>();
 
         linkedHashMap = new LinkedHashMap<Integer, String>();
         treeMap = new TreeMap<Integer, String>();
+
+        tempLinkedHashMap = new LinkedHashMap<Integer, String>();
 
         populateMaps();
 
@@ -89,6 +92,12 @@ public class MapExample {
         treeMap.put(9, "Bond");
         treeMap.put(6, "How would you like to");
         treeMap.put(2, "Die !!");
+
+        tempLinkedHashMap.put(1, "Hello");
+        tempLinkedHashMap.put(4,"Mr.");
+        tempLinkedHashMap.put(5, "Tim");
+        tempLinkedHashMap.put(6, "We meet");
+        tempLinkedHashMap.put(2, "Again !!");
 
     }
 
@@ -136,14 +145,23 @@ public class MapExample {
         System.out.println("\nUseful Methods for Maps ======================= ");
 
         //Print all Elements
-        System.out.println("\nLinkedHashMap: " + linkedHashMap);
+        System.out.println("\nHashMap: " + map3);
+        System.out.println("LinkedHashMap: " + linkedHashMap);
+        System.out.println("TreeMap: " + treeMap);
+
+        // Get all Keys
+        System.out.println("\nKeys of linkedHashMap: " + linkedHashMap.keySet());
+
+        // Get all Values
+        System.out.println("Values of linkedHahMap:"  + linkedHashMap.values());
 
         // clone
-        System.out.println("Cloning Map -- We dont use the clone(), since that is broken anyway");
-        LinkedHashMap tempLinkedHashMap = new LinkedHashMap(linkedHashMap);
+        System.out.println("\nCloning Map -- We dont use the clone(), since that is broken anyway");
+        LinkedHashMap clonedLinkedHashMap = new LinkedHashMap(linkedHashMap);
+        System.out.println("TempLinkedHashMap: " + clonedLinkedHashMap);
 
         // containsKey
-        System.out.println("ContainsKey() :: map1 contain key '6': " + linkedHashMap.containsKey(6));
+        System.out.println("\nContainsKey() :: map1 contain key '6': " + linkedHashMap.containsKey(6));
         System.out.println("ContainsKey() :: map1 contain key '1': " + linkedHashMap.containsKey(1));
         System.out.println("ContainsKey() :: map1 contain key '99': " + linkedHashMap.containsKey(99));
 
@@ -161,21 +179,51 @@ public class MapExample {
             System.out.println("Key: " + key);
 
         // replace
-        System.out.println("Replace() ::: Replace key'5' from Tim to 'Romero': " + linkedHashMap.replace(5, "Tim", "Romero"));
+        System.out.println("\nReplace() ::: Replace key'5' from Tim to 'Romero': " + linkedHashMap.replace(5, "Tim", "Romero"));
         System.out.println("Replace() ::: Replace key'5' from Tim to 'Manas' (Should be false since Tim doesent Exist anymore): " + linkedHashMap.replace(5, "Tim", "Manas"));
         System.out.println("Replace() ::: Replace key'5'  to 'BadMon': " + linkedHashMap.replace(5, "BadMon"));
+        System.out.println("Replace() :: linkedHashMap() :: " + linkedHashMap);
 
         // put
-        System.out.println("Put() ::: Put Key '99': " + linkedHashMap.put(99, "For Realz ?"));
+        System.out.println("\nPut() ::: Put Key '99': " + linkedHashMap.put(99, "For Realz ?"));
+        System.out.println("Put() :: linkedHashMap() :: " + linkedHashMap);
 
-        // putAll
-        System.out.println("PutAll() ::: Put all Values of map2 into map1 (Notice we replace & add values as well ? ");
+        // putAll() - Concatenate two Maps
+        System.out.println("\nPutAll() ::: Put all Values of map2 into map1 (Notice we replace & add values as well ? ");
         linkedHashMap.putAll(treeMap);
+        System.out.println("PutAll() ::: LinkedHashMap: " + linkedHashMap);
+
+
+        // SubMap ?
+
+        // Convert Map Keys to Linked List
+        System.out.println("\nConvert Map Keys to List");
+        List<Integer> treeMapkeyList = new LinkedList<>(treeMap.keySet());
+        List<Integer> linkedHashMapKeyList = new LinkedList<>(linkedHashMap.keySet());
+        System.out.println("treeMapkeyList: " + treeMapkeyList);
+        System.out.println("linkedHashMapKeyList: " + linkedHashMapKeyList);
+
+        // Convert Map Values to List
+        List<String> treeMapValueList = new ArrayList<>(treeMap.values());
+        List<String> linkedHashMapValueList = new ArrayList<>(linkedHashMap.values());
+        System.out.println("treeMapValueList: " + treeMapValueList);
+        System.out.println("linkedHashMapValueList: " + linkedHashMapValueList);
+
+        // Reverse a Key/Value to Value/Key
+        LinkedHashMap<String,Integer> reverseLinkedHashMap = new LinkedHashMap<>();
+        for(Map.Entry<Integer, String> entry : tempLinkedHashMap.entrySet()) {
+            reverseLinkedHashMap.put(entry.getValue(), entry.getKey());
+        }
+        System.out.println("Reverse a Key/Value to Value/Key: " + reverseLinkedHashMap);
 
         // clear
-        System.out.println("Clearing Map");
+        System.out.println("\nClearing Map");
         linkedHashMap.clear();
         treeMap.clear();
+
+        //isEmpty
+        System.out.println("isEmpty() :: linkedHashMap :: " + linkedHashMap.isEmpty());
+        System.out.println("isEmpty() :: treeMap :: " + treeMap.isEmpty());
 
     }
 
