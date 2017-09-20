@@ -9,7 +9,7 @@ public class Graph {
 
     //region Members
     int numNodes;
-    AdjacencyList array[];
+    AdjacencyList adjacencyList[];
     //endregion
 
     //region Constructor
@@ -23,11 +23,11 @@ public class Graph {
      */
     public Graph(int numNodes) {
         this.numNodes = numNodes;
-        array = new AdjacencyList[numNodes];
+        adjacencyList = new AdjacencyList[numNodes];
 
         for (int i = 0; i < numNodes; i++) {
-            array[i] = new AdjacencyList();
-            array[i].head = null;
+            adjacencyList[i] = new AdjacencyList();
+            adjacencyList[i].head = null;
         }
     }
     //endregion
@@ -40,8 +40,8 @@ public class Graph {
         AdjacencyNode node = new AdjacencyNode(source, destination);
 
         // add this node to the source adj List
-        node.next = array[source].head;
-        array[source].head = node;
+        node.next = adjacencyList[source].head;
+        adjacencyList[source].head = node;
     }
 
     public void printGraph() {
@@ -50,7 +50,7 @@ public class Graph {
         AdjacencyNode node;
 
         for (int i = 0; i < vertex; i++) {
-            node = this.array[i].head;
+            node = this.adjacencyList[i].head;
 
             if(node!=null){
 
