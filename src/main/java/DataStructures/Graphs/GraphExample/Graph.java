@@ -1,5 +1,7 @@
 package DataStructures.Graphs.GraphExample;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 /**
@@ -8,85 +10,51 @@ import java.util.LinkedList;
 public class Graph {
 
     //region Members
-    int numNodes;
-    AdjacencyList adjacencyList[];
+    private LinkedHashMap<String, ArrayList<Node>> adjacencyList;
     //endregion
 
     //region Constructor
-
-    /**
-     * We should have a Graph Object which contains an Array of Adjacency List with inputs
-     * 0,1,2,3,4
-     * Yes I know thats pretty shit =(
-     * @param numNodes
-     *
-     */
-    public Graph(int numNodes) {
-        this.numNodes = numNodes;
-        adjacencyList = new AdjacencyList[numNodes];
-
-        for (int i = 0; i < numNodes; i++) {
-            adjacencyList[i] = new AdjacencyList();
-            adjacencyList[i].head = null;
-        }
+    public Graph() {
+        adjacencyList = new LinkedHashMap<>();
     }
     //endregion
 
 
     //region Helpers
-    public void addEdge(int source, int destination) {
+    public void addToGraph(String source, String destination, int weight) {
 
-        // Create a new Node while Setting the Source and Destination
-        AdjacencyNode node = new AdjacencyNode(source, destination);
+        // Create a Node
+        Node newNode = new Node(destination, weight);
 
-        // add this node to the source adj List
-        node.next = adjacencyList[source].head;
-        adjacencyList[source].head = node;
+        // Check if source Already exists in the MAP
+        ArrayList<Node> neighbourList = adjacencyList.get(source);
+        if(neighbourList == null) {
+
+            // Create a ArrayList if Source does not Exist in the Map
+           neighbourList = new ArrayList<>();
+        }
+
+        // Add notes which have not yet appeared in the Map
+        if(!neighbourList.contains(newNode))       // Note: contains here checks for both the "VALUE and the Weight". So if the one of those is different it adds it to the list
+            neighbourList.add(newNode);
+
+        adjacencyList.put(source, neighbourList);
     }
 
     public void printGraph() {
 
-        int vertex = this.numNodes;
-        AdjacencyNode node;
+        if(adjacencyList == null)
+            return;
 
-        for (int i = 0; i < vertex; i++) {
-            node = this.adjacencyList[i].head;
-
-            if(node!=null){
-
-                System.out.println("\nNodes connected to Vertex " + node.source + " are :");
-
-                while (node != null) {
-                    System.out.print("  " + node.destination);
-                    node = node.next;
-                }
-            }
-
+        // Get KeySet
+        for(String source : adjacencyList.keySet()) {
+            System.out.println("Source:  " + source + "     Neighbours: " + adjacencyList.get(source));
         }
+
     }
     //endregion
 
 
-    //region Inner Classes
 
-    // Create adjacency node
-    static class AdjacencyNode {
-
-        int source;
-        int destination;
-        AdjacencyNode next;
-
-        public AdjacencyNode(int source, int destination) {
-            this.source = source;
-            this.destination = destination;
-            next = null;
-        }
-    }
-
-    static class AdjacencyList {
-        AdjacencyNode head;
-    }
-
-    //endregion
 
 }

@@ -9,12 +9,28 @@ public class GraphExample {
 
 
     public static void main(String args[]) {
-        Graph graph = new Graph(5);  // Inputs are (0,1,2,3,4)
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(0, 3);
-        graph.addEdge(1, 2);
-        graph.addEdge(2, 5);
+
+        Graph graph = new Graph();
+
+        // Populate Graph
+        graph.addToGraph("Toronto", "Vancouver", 100);
+        graph.addToGraph("Toronto", "Dubai", 100);
+        graph.addToGraph("Toronto", "Montreal", 100);
+
+        graph.addToGraph("Vancouver", "Edmonton", 100);
+        graph.addToGraph("Edmonton", "Vancouver", 100);
+        graph.addToGraph("Dubai", "Vancouver", 100);
+
+        graph.addToGraph("New YorK", "Dubai", 100);
+        graph.addToGraph("Edmonton", "Toronto", 100);
+        graph.addToGraph("Dubai", "Paris", 100);
+
+        // Duplicates here
+        graph.addToGraph("Paris", "Toronto", 100);
+        graph.addToGraph("Paris", "Toronto", 100);
+
+
+        // Print Adjacency List
         graph.printGraph();
     }
 
