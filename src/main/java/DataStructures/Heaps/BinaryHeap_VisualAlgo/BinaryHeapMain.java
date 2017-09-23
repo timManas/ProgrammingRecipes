@@ -18,10 +18,6 @@ public class BinaryHeapMain {
         createHeap_NLogN(input);
         heap.printBinaryHeap();
 
-//        // Create O(Log N)
-//        createHeap_LogN(input);
-//        heap.printBinaryHeap();
-
         // Insert
         insertHeap(100);
         heap.printBinaryHeap();
@@ -42,11 +38,9 @@ public class BinaryHeapMain {
         heap = new BinaryHeap(BinaryHeap.RUNTIME_NLogN, input);
     }
 
-    private static void createHeap_LogN(int[] input) {
-        heap = new BinaryHeap(BinaryHeap.RUNTIME_N, input);
-    }
-
     private static void insertHeap(int element) {
+
+        // Create a new Binary Heap if the size is 0
         if(heap.getObjList().size() <= 0) {
             int [] array = {element};
             heap = new BinaryHeap(BinaryHeap.RUNTIME_NLogN, array);

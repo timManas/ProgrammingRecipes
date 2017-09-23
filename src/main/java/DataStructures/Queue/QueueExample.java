@@ -148,6 +148,10 @@ public class QueueExample {
         System.out.println("peakFirst() :: Peeking at the Head LinkedList:" + linkedList.peekFirst());
         System.out.println("peakLast() :: Peeking at the Head LinkedList:" + linkedList.peekLast());
 
+        System.out.println("\npeak() :: Peeking at the Head PriorityQueue:" + priorityQueue.peek());
+//        System.out.println("peakFirst() :: Peeking at the Head LinkedList:" + priorityQueue.peekFirst());
+//        System.out.println("peakLast() :: Peeking at the Head LinkedList:" + priorityQueue.peekLast());
+
         // element() - Similar to Peek . Returns No Element if Queue is Empty
         System.out.println("element() :: Views head of queue without removing :: " + linkedList.element());
 
@@ -217,7 +221,7 @@ public class QueueExample {
         concatentatedQueue.addAll(priorityQueue);
         System.out.println("\nConcatenate two Queues together :: " + concatentatedQueue);
 
-        // Reverse a LinkedList Order ....1. Use a Stack ?
+        // Reverse a LinkedList Order ....
         LinkedList<String> reverseList = new LinkedList<>(linkedList);
         Collections.reverse(reverseList);
         System.out.println("\nReverse of LinkedList: " + reverseList);

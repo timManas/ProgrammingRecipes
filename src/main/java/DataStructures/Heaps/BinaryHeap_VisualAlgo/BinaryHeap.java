@@ -18,6 +18,7 @@ public class BinaryHeap {
     //region Constructor
     public BinaryHeap(String runtime, int[] input) {
         objList = new ArrayList<>();
+
         if(runtime.equalsIgnoreCase(RUNTIME_N)) {
             createOptBinHeap(input);
         } else {
@@ -108,9 +109,7 @@ public class BinaryHeap {
         int leftIndex = getLeftIndex(currentIndex);
         int rightIndex = getRightIndex(currentIndex);
 
-
         try {
-
             int maxElementIndex = leftIndex;
             if(objList.get(leftIndex) < objList.get(rightIndex)) {
                 maxElementIndex = rightIndex;
@@ -124,7 +123,6 @@ public class BinaryHeap {
         } catch (Exception e) {
            System.out.println("Reached Leaf.... Ending");
         }
-
     }
 
     private void swap(int parentIndex, int currentIndex) {
