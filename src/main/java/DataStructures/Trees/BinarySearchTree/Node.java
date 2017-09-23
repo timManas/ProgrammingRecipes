@@ -1,4 +1,4 @@
-package Trees.BinarySearchTree;
+package DataStructures.Trees.BinarySearchTree;
 
 /**
  * Created by timmanas on 2017-07-30.
@@ -10,7 +10,7 @@ public class Node {
     public static final String RIGHTCHILD = "RIGHT_CHILD";
 
     private int value;
-    private Node parentNode;
+    private int parentValue;
     private Node leftChildNode;
     private Node rightChildNode;
     //endregion
@@ -20,9 +20,9 @@ public class Node {
     public Node() {
     }
 
-    public Node(int value, Node parentNode, Node leftChildNode, Node rightChildNode) {
+    public Node(int value, int parentValue, Node leftChildNode, Node rightChildNode) {
         this.value = value;
-        this.parentNode = parentNode;
+        this.parentValue = parentValue;
         this.leftChildNode = leftChildNode;
         this.rightChildNode = rightChildNode;
     }
@@ -34,8 +34,8 @@ public class Node {
         return value;
     }
 
-    public Node getParentNode() {
-        return parentNode;
+    public int getParentValue() {
+        return parentValue;
     }
 
     public Node getLeftChildNode() {
@@ -53,8 +53,8 @@ public class Node {
         this.value = value;
     }
 
-    public void setParentNode(Node parentNode) {
-        this.parentNode = parentNode;
+    public void setParentValue(int value) {
+        this.parentValue = value;
     }
 
     public void setLeftChildNode(Node leftChildNode) {
@@ -86,15 +86,15 @@ public class Node {
         return 1;
     }
 
+    public boolean isLeaf() {
+        return (leftChildNode == null && rightChildNode == null);
+    }
 
     //endregion
 
     //region Helper
-    public void destroy() {
-        this.parentNode = null;
-        this.leftChildNode = null;
-        this.rightChildNode = null;
-    }
+
+
     //endregion
 
 

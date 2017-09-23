@@ -1,0 +1,305 @@
+package DataStructures.Trees.BinarySearchTree;
+
+/**
+ * Created by timmanas on 2017-07-30.
+ */
+public class BinarySearchTree {
+
+    //region Members
+    private Node rootNode;
+    //endregion
+
+    //region Constructors
+
+    public BinarySearchTree() {
+        rootNode = new Node();
+    }
+
+    public BinarySearchTree(int value) {
+        rootNode = new Node(value, 0, null,null);
+    }
+
+    //endregion
+
+    //region Getters
+
+    public Node getRootNode() {
+        return rootNode;
+    }
+
+    //endregion
+
+    //region Helpers
+    public void create(int [] input) {
+        for(int value : input) {
+            add(value);
+        }
+    }
+
+    public void add(int value) {
+
+        if(rootNode.getValue() == 0) {
+            rootNode = null;
+            rootNode = new Node(value, 0, null,null);
+            return;
+        }
+
+        Node currentNode = rootNode;
+        Node childNode = null;
+
+        // Traverse BST until Leaf's are reached
+        do {
+
+          currentNode = childNode != null ? childNode : currentNode;
+
+          if(value < currentNode.getValue()) {                        // Check if the target Value is smaller than currentNode Value
+
+              // Check if the there is a Left Child Node∂
+              if(currentNode.getLeftChildNode() == null) {
+                  Node newNode = new Node(value, currentNode.getValue(), null, null);
+                  currentNode.setLeftChildNode(newNode);
+                  break;
+              }
+
+              childNode = currentNode.getLeftChildNode();
+
+          } else if (value > currentNode.getValue()) {                // Check if the target Value is smaller than currentNode Value
+
+              // Check if there is a right Child Node
+              if(currentNode.getRightChildNode() == null) {
+                  Node newNode = new Node(value, currentNode.getValue(), null, null);
+                  currentNode.setRightChildNode(newNode);
+                  break;
+              }
+
+              childNode = currentNode.getRightChildNode();
+
+          } else
+              System.out.println("We'll tackle this Bull Shit Later");
+
+        } while(currentNode.getLeftChildNode() != null || currentNode.getRightChildNode() != null);
+
+        System.out.println("Finished Adding value Binary Search Tree: " + value );
+    }
+
+    public Node search(int target, String type, Node node) {
+
+        // Start from the Latest Node
+        Node currentNode;
+
+        // Iterative Search
+        if(type.equalsIgnoreCase("Iterative")) {
+            currentNode = rootNode;
+
+            // This assumes that the while loop will FIND the value ...we need a way to stop the Loop when node is null ..hence the != null
+            while (currentNode != null && currentNode.getValue() != target) {
+
+                // Traverse Left Node
+                if(target < currentNode.getValue()) {
+                    currentNode = currentNode.getLeftChildNode();
+
+                    // Traverse Right Node
+                } else if (target > currentNode.getValue()) {
+                    currentNode = currentNode.getRightChildNode();
+
+                } else {
+                    System.out.println("Target Node Found - " + currentNode.getValue());
+                }
+
+            }
+
+            // Current Node could be null
+            return currentNode;
+        }
+
+        // Recursive Search
+        currentNode = node;
+
+        // Compare Value from the Tree
+        do {
+            // If you reach a null node, then the Element does Not Exist in the Binary Treee
+            if(currentNode == null) {
+                return null;
+            }
+
+            if(currentNode.getValue() == target) {
+                return currentNode;
+
+            } else if (currentNode.getValue() > target) {           // Traverse Left Node
+                currentNode = search(target, type, currentNode);
+                break;
+
+            } else if (currentNode.getValue() < target) {           // Traverse Right Node
+                currentNode = search(target, type, currentNode);
+                break;
+
+            }
+        } while (currentNode != null);
+
+        return currentNode;
+    }
+
+
+    /**
+        If you want to destroy the object, destroy the references TO THAT OBject
+        i.e ... Go to the ParentNode and the destroy the references to the Current Object
+     */
+
+    public void remove(int target) {
+        System.out.println("\nRemoving Element: " + target);
+        Node currentNode = search(target, "Iterative", rootNode);
+
+        // Find Successor of curretNode
+
+        // Replace current Node with successor
+
+        // Delete the duplicated node
+
+
+        System.out.println("Removal complete");
+    }
+
+    public Node findPredecessor(int target) {
+        return search(target, "Iterative", rootNode);
+    }
+
+    public Node findSuccessor(int target) {
+
+        // Find the Node with the value of "target"
+        Node currentNode = search(target, "Iterative", rootNode);
+
+
+        // If the right subtree is NOT null -> Find the smallest Node
+        if(currentNode.getRightChildNode() != null) {
+            currentNode = findSmallestNode(currentNode.getRightChildNode());
+            System.out.println("Target: " + target + "      Successor Node: " + currentNode.getValue());
+
+            return currentNode;
+        }
+
+        // If right Subtree is Null -> Return the current Node
+        // Why ? Because the target being passed is the direct Parent Node
+
+
+        // Check if the current Node is smaller than the target
+        while (currentNode != null && currentNode.getValue() <= target) {
+            currentNode = search(currentNode.getParentValue(), "Iterative", rootNode);
+        }
+
+        if(currentNode != null)
+            System.out.println("Target: " + target + "      Successor Node: " + currentNode.getValue());
+        else
+            System.out.println("No Successor Found for value: " + target );
+
+        return currentNode;
+    }
+
+
+    public void findMin() {
+        Node currentNode = rootNode;
+        while(currentNode.getLeftChildNode() != null) {
+            currentNode = currentNode.getLeftChildNode();
+        }
+        System.out.println("\nMinimum Value in BST: " + currentNode.getValue());
+    }
+
+    public void findMax() {
+        Node currentNode = rootNode;
+        while (currentNode.getRightChildNode() != null) {
+            currentNode = currentNode.getRightChildNode();
+        }
+        System.out.println("Maximum Value in BST: " + currentNode.getValue());
+    }
+
+    public void preOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        System.out.println("Element: " + currentNode.getValue());
+        preOrderTraversal(false, currentNode.getLeftChildNode());
+        preOrderTraversal(false, currentNode.getRightChildNode());
+    }
+
+    public void inOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        inOrderTraversal(false, currentNode.getLeftChildNode());
+        System.out.println("Element: " + currentNode.getValue());
+        inOrderTraversal(false, currentNode.getRightChildNode());
+    }
+
+    public void postOrderTraversal(boolean isRoot, Node node) {
+
+        Node currentNode = node;
+
+        if(isRoot)
+            currentNode = rootNode;
+
+        if(currentNode == null)
+            return;
+
+        postOrderTraversal(false, currentNode.getLeftChildNode());
+        postOrderTraversal(false, currentNode.getRightChildNode());
+        System.out.println("Element: " + currentNode.getValue());
+    }
+
+    /**
+     Dont forget to check if the Current Node is THE SMALLEST Node
+     */
+    public Node findSmallestNode(int target) {
+
+        // Start from the current Node
+        Node currentNode = search(target, "Iterative", rootNode);
+
+        // Determine which subtree we are in
+
+
+        if(target < rootNode.getValue()) {      //Check Left Subtree
+
+            while (currentNode.getRightChildNode() != null) {
+                currentNode = currentNode.getRightChildNode();
+            }
+            System.out.println("Smallest Element In LEFT Subtree: " + currentNode.getValue());
+
+        } else if(target > rootNode.getValue()) {  // Check Right Subtree
+
+            while (currentNode.getLeftChildNode() != null) {
+                currentNode = currentNode.getLeftChildNode();
+            }
+
+            System.out.println("Smallest Element In RIGHT Subtree: " + currentNode.getValue());
+        }
+
+
+        return currentNode;
+    }
+
+    public Node findSmallestNode(Node target) {
+
+        Node currentNode = target;
+        while(currentNode.getLeftChildNode() != null) {
+            currentNode = currentNode.getLeftChildNode();
+        }
+        System.out.println("\nMinimum Node in BST: " + currentNode.getValue());
+
+
+        return currentNode;
+    }
+
+    //endregion
+
+
+}
