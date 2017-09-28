@@ -16,20 +16,28 @@ public class BinSearchTreeMain {
         int [] input = {5,8,7,9,3,1,4};
 
         // Create Binary Search Tree
+        System.out.println("============= CreateBST =============");
         binarySearchTree = new BinarySearchTree();
         binarySearchTree.create(input);
 
         // Insert
+        System.out.println("\n============= INSERT =============");
         binarySearchTree.add(99);
         binarySearchTree.add(2);
 
         // Search
+        System.out.println("\n============= SEARCH =============");
         testSearch();
 
         // Find Predecessor
-        binarySearchTree.findPredecessor(56);
+        System.out.println("\n============= SEARCH PREDECESSOR =============");
+        System.out.println(binarySearchTree.findPredecessor(1).getValue());
+        System.out.println(binarySearchTree.findPredecessor(5).getValue());
+        System.out.println(binarySearchTree.findPredecessor(7).getValue());
+        System.out.println(binarySearchTree.findPredecessor(4).getValue());
 
         // Find Successor
+        System.out.println("\n============= SEARCH SUCCESSOR =============");
         binarySearchTree.findSuccessor(5);
         binarySearchTree.findSuccessor(3);
         binarySearchTree.findSuccessor(8);
@@ -39,32 +47,33 @@ public class BinSearchTreeMain {
         binarySearchTree.findSuccessor(99);
 
         // Find Min Value
+        System.out.println("\n============= MIN VALUE =============");
         binarySearchTree.findMin();
 
         // Find Max Value
+        System.out.println("\n============= MAX VALUE =============");
         binarySearchTree.findMax();
 
         // Remove
-
-
-        binarySearchTree.remove(3);    // Upto here is good
-        binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(8);
+        System.out.println("\n============= REMOVE =============");
+        binarySearchTree.remove(2);    // Upto here is good
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(9);
         binarySearchTree.preOrderTraversal(true, null);
 
+        binarySearchTree.remove(99);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(8);
+        binarySearchTree.preOrderTraversal(true, null);
+
         binarySearchTree.remove(7);
         binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(4);
-        binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(8);            // Removing Root Node when there are no left elements Left
-        binarySearchTree.preOrderTraversal(true, null);
-
+//
+//        binarySearchTree.remove(8);            // Removing Root Node when there are no left elements Left
+//        binarySearchTree.preOrderTraversal(true, null);
+//
 //        // Pre Order Traversal
 //        System.out.println("\nPrinting PreOrder Traversal");
 //        binarySearchTree.preOrderTraversal(true, null);

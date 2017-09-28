@@ -93,7 +93,10 @@ public class Node {
     //endregion
 
     //region Helper
-
+    public void deleteNode() {
+        this.parentValue = Integer.parseInt(null);
+        this.value = Integer.parseInt(null);
+    }
 
     //endregion
 
