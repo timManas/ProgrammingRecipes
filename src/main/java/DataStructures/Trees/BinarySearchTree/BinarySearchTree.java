@@ -160,7 +160,10 @@ public class BinarySearchTree {
         if(targetNode.hasChildren() == 0) {
 
             // Scenario #1 - Root Node (This scenario - only one node exists)
-//            rootNode = null;
+            if(parentTargetNode ==  null) {
+                rootNode = null;
+                return;
+            }
 
             // Scenario #2 - Child Node
             if(parentTargetNode.getLeftChildNode() != null &&
@@ -175,6 +178,10 @@ public class BinarySearchTree {
         } else if(targetNode.hasChildren() == 1) {
 
             // Scenario #1 - Root Node
+            if(parentTargetNode == null) {
+
+                return;
+            }
 
             // Scenario #2 - Child Node
             if(parentTargetNode.getLeftChildNode() != null &&
@@ -207,16 +214,95 @@ public class BinarySearchTree {
         } else if (targetNode.hasChildren() == 2 ) {
 
 
-            // Find Successor of currentNode
-            Node successorNode = findSuccessor(targetNode.getValue());
-            System.out.println("SuccessorNode: " + successorNode.getValue());
-
-            // Replace current Node with successor
-            targetNode.setValue(successorNode.getValue());
-
             // Scenario #1 - Root Node
+            if(parentTargetNode == null) {
+                return;
+            }
 
             // Scenario #2 - Child Node
+
+
+            // Find Successor of currentNode
+            Node successorNode = findSuccessor(targetNode.getValue());
+            int successorValue = successorNode.getValue();
+            System.out.println("SuccessorNode: " + successorValue);
+
+
+            // Locate the parentSuccessor Node
+            Node parentSuccessorNode = search(successorNode.getParentValue(), BinarySearchTree.ITERATION_TYPE_ITERATIVE, rootNode);
+
+            //If successor Node has  zero child
+            if(successorNode.hasChildren() == 0) {
+                if(parentSuccessorNode.getLeftChildNode() != null &&
+                        parentSuccessorNode.getLeftChildNode().getValue() == successorNode.getValue()) {
+                    parentSuccessorNode.setLeftChildNode(null);
+
+                }else if(parentSuccessorNode.getRightChildNode() != null &&
+                        parentSuccessorNode.getRightChildNode().getValue() == successorNode.getValue()) {
+                    parentSuccessorNode.setRightChildNode(null);
+                }
+
+                // Replace current Node with successor
+                targetNode.setValue(successorValue);
+
+            } else if(successorNode.hasChildren() == 1) {
+
+                if(parentSuccessorNode.getLeftChildNode() != null &&
+                        parentSuccessorNode.getLeftChildNode().getValue() == successorNode.getValue()) {
+
+                    if(successorNode.getLeftChildNode() != null) {
+                        parentSuccessorNode.setLeftChildNode(successorNode.getLeftChildNode());
+
+                        // Replace current Node with successor
+                        targetNode.setValue(successorValue);
+
+                        parentSuccessorNode.getLeftChildNode().setParentValue(parentSuccessorNode.getValue());
+
+                    } else if(successorNode.getRightChildNode() != null) {
+                        parentSuccessorNode.setRightChildNode(successorNode.getRightChildNode());
+
+                        // Replace current Node with successor
+                        targetNode.setValue(successorValue);
+
+                        parentSuccessorNode.getRightChildNode().setParentValue(parentSuccessorNode.getValue());
+                    }
+
+                } else if(parentSuccessorNode.getRightChildNode() != null &&
+                        parentSuccessorNode.getRightChildNode().getValue() == successorNode.getValue()) {
+
+                    if(successorNode.getLeftChildNode() != null) {
+                        parentSuccessorNode.setRightChildNode(successorNode.getLeftChildNode());
+
+                        // Replace current Node with successor
+                        targetNode.setValue(successorValue);
+
+                        parentSuccessorNode.getLeftChildNode().setParentValue(parentSuccessorNode.getValue());
+
+
+                    } else if(successorNode.getRightChildNode() != null) {
+                        parentSuccessorNode.setRightChildNode(successorNode.getRightChildNode());
+
+                        // Replace current Node with successor
+                        targetNode.setValue(successorValue);
+
+                        parentSuccessorNode.getRightChildNode().setParentValue(parentSuccessorNode.getValue());
+                    }
+
+                }
+
+
+            } else if (successorNode.hasChildren() == 2) {
+                System.out.println("Wtf ???");
+            }
+
+
+
+
+
+
+
+
+
 
 
         } else {

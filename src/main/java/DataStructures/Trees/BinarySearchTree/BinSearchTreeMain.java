@@ -56,24 +56,26 @@ public class BinSearchTreeMain {
 
         // Remove
         System.out.println("\n============= REMOVE =============");
-        binarySearchTree.remove(2);    // Upto here is good
+        binarySearchTree.remove(5);    // Upto here is good
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(9);
+        binarySearchTree.remove(3);
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(99);
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(8);
+        binarySearchTree.remove(9);
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(7);
+        binarySearchTree.remove(2);
         binarySearchTree.preOrderTraversal(true, null);
-//
-//        binarySearchTree.remove(8);            // Removing Root Node when there are no left elements Left
-//        binarySearchTree.preOrderTraversal(true, null);
-//
+
+        binarySearchTree.remove(7);            // Removing Root Node when there are no left elements Left
+        binarySearchTree.preOrderTraversal(true, null);
+
+
+////
 //        // Pre Order Traversal
 //        System.out.println("\nPrinting PreOrder Traversal");
 //        binarySearchTree.preOrderTraversal(true, null);
