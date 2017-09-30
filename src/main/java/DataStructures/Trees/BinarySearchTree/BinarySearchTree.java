@@ -153,7 +153,7 @@ public class BinarySearchTree {
 
         // Find Parent of TargetNode
         Node parentTargetNode = search(targetNode.getParentValue(), BinarySearchTree.ITERATION_TYPE_ITERATIVE, rootNode);
-        System.out.println("ParentNode: " + parentTargetNode.getValue());
+
 
 
         // Find number of Children
@@ -164,6 +164,8 @@ public class BinarySearchTree {
                 rootNode = null;
                 return;
             }
+
+            System.out.println("ParentNode: " + parentTargetNode.getValue());
 
             // Scenario #2 - Child Node
             if(parentTargetNode.getLeftChildNode() != null &&
@@ -180,8 +182,18 @@ public class BinarySearchTree {
             // Scenario #1 - Root Node
             if(parentTargetNode == null) {
 
+                // Find the Predecessor
+
+                // Move the Root Node to the Second Value
+
+                // Create tempNode Reference to delete the Root Node
+
+                // Delete tempNode
+
                 return;
             }
+
+            System.out.println("ParentNode: " + parentTargetNode.getValue());
 
             // Scenario #2 - Child Node
             if(parentTargetNode.getLeftChildNode() != null &&
@@ -213,21 +225,32 @@ public class BinarySearchTree {
 
         } else if (targetNode.hasChildren() == 2 ) {
 
-
-            // Scenario #1 - Root Node
-            if(parentTargetNode == null) {
-                return;
-            }
-
-            // Scenario #2 - Child Node
-
-
             // Find Successor of currentNode
             Node successorNode = findSuccessor(targetNode.getValue());
             int successorValue = successorNode.getValue();
             System.out.println("SuccessorNode: " + successorValue);
 
 
+            // Scenario #1 - Root Node
+            if(parentTargetNode == null) {
+
+                // Delete the Successor Node
+                remove(successorNode.getValue());
+
+                // Set the value of the Root Node to the value of the Successor
+                targetNode.setValue(successorValue);
+                if(targetNode.getLeftChildNode() != null)
+                        targetNode.getLeftChildNode().setParentValue(targetNode.getValue());
+
+                if(targetNode.getRightChildNode() != null)
+                    targetNode.getRightChildNode().setParentValue(targetNode.getValue());
+
+                return;
+            }
+
+            System.out.println("ParentNode: " + parentTargetNode.getValue());
+
+            // Scenario #2 - Child Node
             // Locate the parentSuccessor Node
             Node parentSuccessorNode = search(successorNode.getParentValue(), BinarySearchTree.ITERATION_TYPE_ITERATIVE, rootNode);
 
@@ -299,12 +322,6 @@ public class BinarySearchTree {
 
 
 
-
-
-
-
-
-
         } else {
             System.out.println("Node has Some Weird ass number of Kids");
         }
@@ -314,7 +331,27 @@ public class BinarySearchTree {
     }
 
     public Node findPredecessor(int target) {
-        return search(target, ITERATION_TYPE_ITERATIVE, rootNode);
+
+        Node currentNode = search(target, ITERATION_TYPE_ITERATIVE, rootNode);
+
+        // If the Left subtree is NOT Null -> Find the Larges Node in the Left Subtree
+        if(currentNode.getLeftChildNode() != null) {
+            currentNode = findLargestNode(currentNode.getLeftChildNode());
+            System.out.println("Target: " + target + "     Predecessor Node: " + currentNode.getValue());
+
+            return currentNode;
+        }
+
+        while(currentNode != null && currentNode.getValue() >= target) {
+            currentNode = search(currentNode.getParentValue(), ITERATION_TYPE_ITERATIVE, rootNode);
+        }
+
+        if(currentNode != null)
+            System.out.println("Target: " + target + "      Predecessor Node: " + currentNode.getValue());
+        else
+            System.out.println("No Successor Found for value: " + target );
+
+        return currentNode;
     }
 
     public Node findSuccessor(int target) {
@@ -323,7 +360,7 @@ public class BinarySearchTree {
         Node currentNode = search(target, ITERATION_TYPE_ITERATIVE, rootNode);
 
 
-        // If the right subtree is NOT null -> Find the smallest Node
+        // If the right subtree is NOT null -> Find the smallest Node in the Right Subtree
         if(currentNode.getRightChildNode() != null) {
             currentNode = findSmallestNode(currentNode.getRightChildNode());
             System.out.println("Target: " + target + "      Successor Node: " + currentNode.getValue());
@@ -447,7 +484,16 @@ public class BinarySearchTree {
         while(currentNode.getLeftChildNode() != null) {
             currentNode = currentNode.getLeftChildNode();
         }
-//        System.out.println("\nMinimum Node in BST: " + currentNode.getValue());
+        return currentNode;
+    }
+
+
+    public Node findLargestNode(Node target) {
+
+        Node currentNode = target;
+        while(currentNode.getRightChildNode() != null) {
+            currentNode = currentNode.getRightChildNode();
+        }
         return currentNode;
     }
 

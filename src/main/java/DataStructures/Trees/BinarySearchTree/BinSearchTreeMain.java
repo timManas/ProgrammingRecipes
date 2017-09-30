@@ -12,8 +12,8 @@ public class BinSearchTreeMain {
     //region Main
     public static void main(String [] args) {
 
-        // List - 5,8,7,9,3,1,4,99,2
-        int [] input = {5,8,7,9,3,1,4};
+        // List - 15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 5, 99, 18
+        int [] input = {15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9};
 
         // Create Binary Search Tree
         System.out.println("============= CreateBST =============");
@@ -22,8 +22,9 @@ public class BinSearchTreeMain {
 
         // Insert
         System.out.println("\n============= INSERT =============");
+        binarySearchTree.add(5);
         binarySearchTree.add(99);
-        binarySearchTree.add(2);
+        binarySearchTree.add(18);
 
         // Search
         System.out.println("\n============= SEARCH =============");
@@ -31,19 +32,22 @@ public class BinSearchTreeMain {
 
         // Find Predecessor
         System.out.println("\n============= SEARCH PREDECESSOR =============");
-        System.out.println(binarySearchTree.findPredecessor(1).getValue());
-        System.out.println(binarySearchTree.findPredecessor(5).getValue());
-        System.out.println(binarySearchTree.findPredecessor(7).getValue());
-        System.out.println(binarySearchTree.findPredecessor(4).getValue());
+        binarySearchTree.findPredecessor(15).getValue();
+        binarySearchTree.findPredecessor(5).getValue();
+        binarySearchTree.findPredecessor(9).getValue();
+        binarySearchTree.findPredecessor(4).getValue();
+        binarySearchTree.findPredecessor(20).getValue();
+        binarySearchTree.findPredecessor(13).getValue();
+        binarySearchTree.findPredecessor(3).getValue();
 
         // Find Successor
         System.out.println("\n============= SEARCH SUCCESSOR =============");
         binarySearchTree.findSuccessor(5);
         binarySearchTree.findSuccessor(3);
-        binarySearchTree.findSuccessor(8);
-        binarySearchTree.findSuccessor(4);
-        binarySearchTree.findSuccessor(2);
-        binarySearchTree.findSuccessor(1);
+        binarySearchTree.findSuccessor(15);
+        binarySearchTree.findSuccessor(19);
+        binarySearchTree.findSuccessor(3);
+        binarySearchTree.findSuccessor(18);
         binarySearchTree.findSuccessor(99);
 
         // Find Min Value
@@ -65,7 +69,7 @@ public class BinSearchTreeMain {
         binarySearchTree.remove(99);
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(9);
+        binarySearchTree.remove(8);
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(2);
@@ -74,6 +78,8 @@ public class BinSearchTreeMain {
         binarySearchTree.remove(7);            // Removing Root Node when there are no left elements Left
         binarySearchTree.preOrderTraversal(true, null);
 
+        binarySearchTree.remove(9);
+        binarySearchTree.preOrderTraversal(true, null);
 
 ////
 //        // Pre Order Traversal
