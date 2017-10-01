@@ -14,6 +14,7 @@ public class AbstractExample {
         Base base = new Derived();      // Note that the Base Constructor gets called first then the Derived Constructor
         base.baseHelperMethod();        // This works
         base.finalBaseMethod();
+        base.staticMethod();            // When a method is declared static, Runtime Polymorphism does not Happen !!!
 
         System.out.println("\n =========\n");
 
@@ -31,6 +32,7 @@ public class AbstractExample {
 //        System.out.println("Derived Type: " + derived.type);     // Does not work since type is private
         System.out.println("Derived Info: " + derived.info);
         System.out.println("Derived Case: " + derived.derivedCase);
+
 
     }
 
@@ -56,8 +58,7 @@ public class AbstractExample {
  - If class contains an abstract method, then the class MUST be declared Abstract
  - Abstract Classes can contain constructors
  - When you instantiate the SubClass, the Parent class constructor is called first then the subclass constructor ex.  Base base = new Derived();
-
-
+ - When a method is declared static, Runtime Polymorphism does not Happen !!!
 
 
  References

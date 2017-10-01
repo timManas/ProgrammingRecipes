@@ -43,6 +43,8 @@ public class Derived extends Base {
 //    public void finalBaseHelperMethod () {
 //    }
 
+    public static void staticMethod() {System.out.println("Derived Static Method is called");}
+
     //endregion
 
     //region Helpers

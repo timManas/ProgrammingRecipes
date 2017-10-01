@@ -33,6 +33,8 @@ public abstract class Base {
         System.out.println("Base Final Helper Method is called");
     }
 
+    public static void staticMethod() { System.out.println("Base Static Helper Method is called");}
+
 
     //endregion
 
