@@ -192,8 +192,6 @@ public class MapExample {
         System.out.println("\nPutAll() ::: Put all Values of map2 into map1 (Notice we replace & add values as well ? ");
         linkedHashMap.putAll(treeMap);
         System.out.println("PutAll() ::: LinkedHashMap: " + linkedHashMap);
-
-
         // SubMap ?
 
         // Convert Map Keys to Linked List

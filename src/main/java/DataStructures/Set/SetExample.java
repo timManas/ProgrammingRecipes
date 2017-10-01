@@ -21,7 +21,7 @@ public class SetExample {
     //region Main
     public static void main(String [] args) {
 
-        // Create a Map
+        // Create a Set
         createSet();
 
         // Iterator
@@ -50,6 +50,7 @@ public class SetExample {
         treeSet = new TreeSet<String>();
 
         populateSet();
+
     }
 
     private static void populateSet() {
@@ -85,6 +86,39 @@ public class SetExample {
         treeSet.add("I");
         treeSet.add("miss");
         treeSet.add("you");
+
+
+        // You can also Create Set from List, Maps and Queues
+        ArrayList<String> tempArrayList= new ArrayList<>();
+        tempArrayList.add("Yo");
+        tempArrayList.add("Whats up");
+        tempArrayList.add("Love ?");
+        LinkedHashSet<String> tempSet1 = new LinkedHashSet<>(tempArrayList);
+        System.out.println("Convert from List to Set: " + tempSet1);
+
+        LinkedHashMap<String, String> tempMap = new LinkedHashMap<>();
+        tempMap.put("First", "Hello World");
+        tempMap.put("Second", "Bonjour Tim");
+        tempMap.put("Third", "Bonsoir Kira");
+        LinkedHashSet<String> keys = new LinkedHashSet<>(tempMap.keySet());
+        LinkedHashSet<String> values = new LinkedHashSet<>(tempMap.values());
+        System.out.println("Convert Map Keys to Set: " + keys);
+        System.out.println("Convert Map Values to Set: " + values);
+
+        LinkedList<String> tempLinkedList = new LinkedList<>();
+        tempLinkedList.add("Hello");
+        tempLinkedList.add("World");
+        tempLinkedList.add("Hi");
+        LinkedHashSet<String> tempSet2 = new LinkedHashSet<>(tempLinkedList);
+        System.out.println("Convert LinkedList to Set: " + tempSet2);
+
+        PriorityQueue<String> tempQueue = new PriorityQueue<>();
+        tempQueue.add("First");
+        tempQueue.add("Second");
+        tempQueue.add("Third");
+        LinkedHashSet<String> tempSet3 = new LinkedHashSet<>(tempQueue);
+        System.out.println("Convert Queue to Set: " + tempSet3);
+
     }
 
     private static void iterateSet(Set<String> set) {
@@ -133,7 +167,6 @@ public class SetExample {
         // size()
         System.out.println("Size of Set: " + linkedHashSet.size());
 
-
         // iterator()
         System.out.println("\nIterate :: Using the iterator");
         Iterator<String> iterator = linkedHashSet.iterator();
@@ -161,9 +194,9 @@ public class SetExample {
         // Reverse a Set Order
         System.out.println("\nReverse an Order of Set (Only for LinkedHashSets)");
 
-        // Reverse() # 1
+        // Reverse() # 1 -
         ArrayList<String> tempList = new ArrayList<>(linkedHashSet);
-        Collections.reverse(tempList);
+        Collections.reverse(tempList);                                  // You cannot use Collections.reverse on a Set because it only works for List
         Set<String> sortedSetI = new LinkedHashSet<>(tempList);
         System.out.println("Method #1 - Convert to ArrayList -> Sort -> Add to new Set :: SortedSetI: " + sortedSetI);
 
@@ -196,7 +229,6 @@ public class SetExample {
 
         // isEmpty()
         System.out.println("Is Set Empty: " + linkedHashSet.isEmpty());
-
 
     }
     //endregion

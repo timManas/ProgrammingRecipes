@@ -79,6 +79,38 @@ public class ListExample {
         stack1.add(1);
         stack1.add(8);
 
+
+        // You can also Create List from Sets, Maps and Queues
+        LinkedHashSet tempSet = new LinkedHashSet();
+        tempSet.add(3);
+        tempSet.add(6);
+        ArrayList<Integer> tempList1 = new ArrayList<>(tempSet);
+        System.out.println("Convert from Set to List: " + tempList1);
+
+        LinkedHashMap<String, String> tempMap = new LinkedHashMap<>();
+        tempMap.put("First", "Hello World");
+        tempMap.put("Second", "Bonjour Tim");
+        tempMap.put("Third", "Bonsoir Kira");
+        ArrayList<String> keys = new ArrayList<>(tempMap.keySet());
+        ArrayList<String> values = new ArrayList<>(tempMap.values());
+        System.out.println("Convert Map Keys to list: " + keys);
+        System.out.println("Convert Map Values to list: " + values);
+
+        LinkedList<String> tempLinkedList = new LinkedList<>();
+        tempLinkedList.add("Hello");
+        tempLinkedList.add("World");
+        tempLinkedList.add("Hi");
+        ArrayList<String> tempList2 = new ArrayList<>(tempLinkedList);
+        System.out.println("Convert LinkedList to List: " + tempList2);
+
+        PriorityQueue<String> tempQueue = new PriorityQueue<>();
+        tempQueue.add("First");
+        tempQueue.add("Second");
+        tempQueue.add("Third");
+        ArrayList<String> tempList3 = new ArrayList<>(tempQueue);
+        System.out.println("Convert Queue to List: " + tempList3);
+
+
     }
 
     private static void iterateList(List list) {
@@ -207,6 +239,10 @@ public class ListExample {
         // Swap values in an array
         Collections.swap(tempList, 0, tempList.size() - 1);
         System.out.println("\nSwap() TempList: " + tempList);
+
+        // Sort an ArrayList
+        Collections.sort(tempList);
+        System.out.println("\nSort() TempList: " + tempList);
 
         // Convert List to Set
         System.out.println("\nConverting List to Set");

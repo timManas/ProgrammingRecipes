@@ -80,6 +80,37 @@ public class QueueExample {
         tempQueue.add(1);
         tempQueue.add(6);
 
+        // You can also Create Queue from Sets, Maps and List
+        LinkedHashSet tempSet = new LinkedHashSet();
+        tempSet.add(3);
+        tempSet.add(6);
+        PriorityQueue<Integer> tempQueue1 = new PriorityQueue<>(tempSet);
+        System.out.println("Convert from Set to Queue: " + tempQueue1);
+
+        LinkedHashMap<String, String> tempMap = new LinkedHashMap<>();
+        tempMap.put("First", "Hello World");
+        tempMap.put("Second", "Bonjour Tim");
+        tempMap.put("Third", "Bonsoir Kira");
+        PriorityQueue<String> keys = new PriorityQueue<>(tempMap.keySet());
+        PriorityQueue<String> values = new PriorityQueue<>(tempMap.values());
+        System.out.println("Convert Map Keys to Queue: " + keys);
+        System.out.println("Convert Map Values to Queue: " + values);
+
+        LinkedList<String> tempLinkedList = new LinkedList<>();
+        tempLinkedList.add("Hello");
+        tempLinkedList.add("World");
+        tempLinkedList.add("Hi");
+        PriorityQueue<String> tempQueue2 = new PriorityQueue<>(tempLinkedList);
+        System.out.println("Convert LinkedList to Queue: " + tempQueue2);
+
+        PriorityQueue<String> tempQueue = new PriorityQueue<>();
+        tempQueue.add("First");
+        tempQueue.add("Second");
+        tempQueue.add("Third");
+        PriorityQueue<String> tempQueue3 = new PriorityQueue<>(tempQueue);
+        System.out.println("Convert Queue to Queue: " + tempQueue3);
+
+
     }
 
     private static void iterateQueue(Queue<String> queue) {
@@ -213,9 +244,6 @@ public class QueueExample {
             stringBuilder.append(element);
         System.out.println("Convert LinkedList to String: " + stringBuilder.toString());
 
-        // SubQueue
-        LinkedList <String> subQueue = new LinkedList<>(priorityQueue);
-
         // Concatenate two Queues
         Queue<String> concatentatedQueue = new LinkedList<>(linkedList);
         concatentatedQueue.addAll(priorityQueue);
@@ -240,6 +268,9 @@ public class QueueExample {
         // remove Object
         System.out.println("remove(object) :: Remove object 'Me': " + linkedList.remove("Me"));
         System.out.println("LinkedList: " + linkedList);
+
+        System.out.println("remove(object) :: Remove object 'Romero' from Priority Queue: " + priorityQueue.remove("Romero"));
+        System.out.println("Priority Queue: " + priorityQueue);
 
         // retainAll() - Removes All elements Except for the values inside parameter
         Queue retainList = new LinkedList();
