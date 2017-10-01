@@ -155,7 +155,6 @@ public class BinarySearchTree {
         Node parentTargetNode = search(targetNode.getParentValue(), BinarySearchTree.ITERATION_TYPE_ITERATIVE, rootNode);
 
 
-
         // Find number of Children
         if(targetNode.hasChildren() == 0) {
 
@@ -183,6 +182,8 @@ public class BinarySearchTree {
             if(parentTargetNode == null) {
 
                 // Find the Predecessor
+                Node predecessorNode = findPredecessor(targetNode.getValue());
+                System.out.println("Predecessor: " + predecessorNode.getValue());
 
                 // Move the Root Node to the Second Value
 
@@ -276,19 +277,10 @@ public class BinarySearchTree {
                     if(successorNode.getLeftChildNode() != null) {
                         parentSuccessorNode.setLeftChildNode(successorNode.getLeftChildNode());
 
-                        // Replace current Node with successor
-                        targetNode.setValue(successorValue);
-
-                        parentSuccessorNode.getLeftChildNode().setParentValue(parentSuccessorNode.getValue());
-
                     } else if(successorNode.getRightChildNode() != null) {
                         parentSuccessorNode.setRightChildNode(successorNode.getRightChildNode());
-
-                        // Replace current Node with successor
-                        targetNode.setValue(successorValue);
-
-                        parentSuccessorNode.getRightChildNode().setParentValue(parentSuccessorNode.getValue());
                     }
+
 
                 } else if(parentSuccessorNode.getRightChildNode() != null &&
                         parentSuccessorNode.getRightChildNode().getValue() == successorNode.getValue()) {
@@ -296,31 +288,19 @@ public class BinarySearchTree {
                     if(successorNode.getLeftChildNode() != null) {
                         parentSuccessorNode.setRightChildNode(successorNode.getLeftChildNode());
 
-                        // Replace current Node with successor
-                        targetNode.setValue(successorValue);
-
-                        parentSuccessorNode.getLeftChildNode().setParentValue(parentSuccessorNode.getValue());
-
-
                     } else if(successorNode.getRightChildNode() != null) {
                         parentSuccessorNode.setRightChildNode(successorNode.getRightChildNode());
 
-                        // Replace current Node with successor
-                        targetNode.setValue(successorValue);
-
-                        parentSuccessorNode.getRightChildNode().setParentValue(parentSuccessorNode.getValue());
                     }
-
                 }
 
+                // Replace current Node with successor
+                targetNode.setValue(successorValue);
+                setParentOfChildrenOfTargetNode(successorValue);
 
             } else if (successorNode.hasChildren() == 2) {
                 System.out.println("Wtf ???");
             }
-
-
-
-
 
         } else {
             System.out.println("Node has Some Weird ass number of Kids");
@@ -329,6 +309,8 @@ public class BinarySearchTree {
 
         System.out.println("Removal complete");
     }
+
+
 
     public Node findPredecessor(int target) {
 
@@ -495,6 +477,23 @@ public class BinarySearchTree {
             currentNode = currentNode.getRightChildNode();
         }
         return currentNode;
+    }
+
+    private void setParentOfChildrenOfTargetNode(int nodeValue) {
+
+        // Search for Node
+        Node parentNode = search(nodeValue, ITERATION_TYPE_ITERATIVE, rootNode);
+
+        // Set the Left Child Node to Parent
+        if(parentNode.getLeftChildNode() != null) {
+            parentNode.getLeftChildNode().setParentValue(parentNode.getValue());
+        }
+
+        // Set the Right Child Node to the Parent
+        if(parentNode.getRightChildNode() != null) {
+            parentNode.getRightChildNode().setParentValue(parentNode.getValue());
+        }
+
     }
 
     //endregion

@@ -60,25 +60,26 @@ public class BinSearchTreeMain {
 
         // Remove
         System.out.println("\n============= REMOVE =============");
-        binarySearchTree.remove(5);    // Upto here is good
+        binarySearchTree.remove(3);    // Upto here is good
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(3);
+        binarySearchTree.remove(6);
         binarySearchTree.preOrderTraversal(true, null);
 
-        binarySearchTree.remove(99);
-        binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(8);
-        binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(2);
-        binarySearchTree.preOrderTraversal(true, null);
-
-        binarySearchTree.remove(7);            // Removing Root Node when there are no left elements Left
+        binarySearchTree.remove(13);
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(9);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(19);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        // THE REAL ISSUE: The Parent Values are All fucked =(
+        binarySearchTree.remove(15);            // Removing Root Node when there are no left elements Left
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(17);
         binarySearchTree.preOrderTraversal(true, null);
 
 ////
