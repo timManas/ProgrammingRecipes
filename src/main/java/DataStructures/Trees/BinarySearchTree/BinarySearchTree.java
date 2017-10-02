@@ -190,8 +190,6 @@ public class BinarySearchTree {
                 // Delete the targetNode
                 targetRootNode.setLeftChildNode(null);
 
-
-
                 return;
             }
 
@@ -266,8 +264,6 @@ public class BinarySearchTree {
                     parentSuccessorNode.setRightChildNode(null);
                 }
 
-                // Replace current Node with successor
-                targetNode.setValue(successorValue);
 
             } else if(successorNode.hasChildren() == 1) {
 
@@ -294,13 +290,15 @@ public class BinarySearchTree {
                     }
                 }
 
-                // Replace current Node with successor
-                targetNode.setValue(successorValue);
-                setParentOfChildrenOfTargetNode(successorValue);
+
 
             } else if (successorNode.hasChildren() == 2) {
                 System.out.println("Wtf ???");
             }
+
+            // Replace current Node with successor
+            targetNode.setValue(successorValue);
+            setParentOfChildrenOfTargetNode(successorValue);
 
         } else {
             System.out.println("Node has Some Weird ass number of Kids");

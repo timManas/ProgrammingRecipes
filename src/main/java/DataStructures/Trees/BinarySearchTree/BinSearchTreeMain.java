@@ -13,8 +13,9 @@ public class BinSearchTreeMain {
     public static void main(String [] args) {
 
         // List - 15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 16, 5, 99, 18
-        // Remove - 3, 6, 13, 9, 19, 15, 17, 18, 20
-        // Remove 2 - 15, 17, 18, 19, 20
+        // Remove 1 - 3, 6, 13, 9, 19, 15, 17, 18, 20, 99, 4, 7
+        // Remove 2 - 15, 16, 17, 18, 19, 20, 99
+        // Remove 3 - 6, 3, 7, 2, 4, 13, 5, 9
         int [] input = {15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 16};
 
         // Create Binary Search Tree
@@ -34,23 +35,11 @@ public class BinSearchTreeMain {
 
         // Find Predecessor
         System.out.println("\n============= SEARCH PREDECESSOR =============");
-        binarySearchTree.findPredecessor(15).getValue();
-        binarySearchTree.findPredecessor(5).getValue();
-        binarySearchTree.findPredecessor(9).getValue();
-        binarySearchTree.findPredecessor(4).getValue();
-        binarySearchTree.findPredecessor(20).getValue();
-        binarySearchTree.findPredecessor(13).getValue();
-        binarySearchTree.findPredecessor(3).getValue();
+        testPredecessor();
 
         // Find Successor
         System.out.println("\n============= SEARCH SUCCESSOR =============");
-        binarySearchTree.findSuccessor(5);
-        binarySearchTree.findSuccessor(3);
-        binarySearchTree.findSuccessor(15);
-        binarySearchTree.findSuccessor(19);
-        binarySearchTree.findSuccessor(3);
-        binarySearchTree.findSuccessor(18);
-        binarySearchTree.findSuccessor(99);
+        testSucessor();
 
         // Find Min Value
         System.out.println("\n============= MIN VALUE =============");
@@ -74,7 +63,62 @@ public class BinSearchTreeMain {
 
         // Remove
         System.out.println("\n============= REMOVE =============");
-        binarySearchTree.remove(3);    // Upto here is good
+//        testRemove1();
+//        testRemove2();
+        testRemove3();
+
+        System.out.println("=========== END ===========");
+    }
+    //endregion
+
+    //region TestMethods
+    private static void testPredecessor() {
+        binarySearchTree.findPredecessor(15).getValue();
+        binarySearchTree.findPredecessor(5).getValue();
+        binarySearchTree.findPredecessor(9).getValue();
+        binarySearchTree.findPredecessor(4).getValue();
+        binarySearchTree.findPredecessor(20).getValue();
+        binarySearchTree.findPredecessor(13).getValue();
+        binarySearchTree.findPredecessor(3).getValue();
+    }
+
+    private static void testSucessor() {
+        binarySearchTree.findSuccessor(5);
+        binarySearchTree.findSuccessor(3);
+        binarySearchTree.findSuccessor(15);
+        binarySearchTree.findSuccessor(19);
+        binarySearchTree.findSuccessor(3);
+        binarySearchTree.findSuccessor(18);
+        binarySearchTree.findSuccessor(99);
+    }
+
+    private static void testSearch() {
+
+        int target = 3;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 6;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 57;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 12434;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 10;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 23;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+        target = 5;
+        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
+
+    }
+
+    private static void testRemove1() {
+        binarySearchTree.remove(3);
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(6);
@@ -109,36 +153,78 @@ public class BinSearchTreeMain {
 
         binarySearchTree.remove(7);
         binarySearchTree.preOrderTraversal(true, null);
+    }
+
+    private static void testRemove2() {
+        // Remove 2 - 15, 16, 17, 18, 19, 20, 99, 4, 6, 13, 9
+        binarySearchTree.remove(15);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(16);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(17);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(18);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(19);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(20);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(99);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(4);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(6);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(13);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(9);
+        binarySearchTree.preOrderTraversal(true, null);
+
+    }
+
+    private static void testRemove3() {
+        // Remove 3 - 6, 3, 7, 2, 4, 13, 5, 9
+
+        binarySearchTree.remove(6);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(3);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(7);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(2);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(4);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(13);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(5);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(9);
+        binarySearchTree.preOrderTraversal(true, null);
 
 
     }
 
-    private static void testSearch() {
 
-        int target = 3;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
 
-        target = 6;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-        target = 57;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-        target = 12434;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-        target = 10;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-        target = 23;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-        target = 5;
-        System.out.println("Search Result for Target: " + target + "    = " + (binarySearchTree.search(target, "Iterative", binarySearchTree.getRootNode()) != null));
-
-    }
     //endregion
-
 
 }
 
