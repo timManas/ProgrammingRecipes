@@ -12,8 +12,10 @@ public class BinSearchTreeMain {
     //region Main
     public static void main(String [] args) {
 
-        // List - 15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 5, 99, 18
-        int [] input = {15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9};
+        // List - 15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 16, 5, 99, 18
+        // Remove - 3, 6, 13, 9, 19, 15, 17, 18, 20
+        // Remove 2 - 15, 17, 18, 19, 20
+        int [] input = {15, 6, 19, 3, 7, 17, 20, 2, 4, 13, 9, 16};
 
         // Create Binary Search Tree
         System.out.println("============= CreateBST =============");
@@ -58,6 +60,18 @@ public class BinSearchTreeMain {
         System.out.println("\n============= MAX VALUE =============");
         binarySearchTree.findMax();
 
+        // Pre Order Traversal
+        System.out.println("\n============= PREORDER =============");
+        binarySearchTree.preOrderTraversal(true, null);
+
+        // In Order Traversal
+        System.out.println("\n============= INORDER =============");
+        binarySearchTree.inOrderTraversal(true, null);
+
+        // Post Order Traversal
+        System.out.println("\n============= POSTORDER =============");
+        binarySearchTree.postOrderTraversal(true, null);
+
         // Remove
         System.out.println("\n============= REMOVE =============");
         binarySearchTree.remove(3);    // Upto here is good
@@ -75,25 +89,26 @@ public class BinSearchTreeMain {
         binarySearchTree.remove(19);
         binarySearchTree.preOrderTraversal(true, null);
 
-        // THE REAL ISSUE: The Parent Values are All fucked =(
-        binarySearchTree.remove(15);            // Removing Root Node when there are no left elements Left
+        binarySearchTree.remove(15);
         binarySearchTree.preOrderTraversal(true, null);
 
         binarySearchTree.remove(17);
         binarySearchTree.preOrderTraversal(true, null);
 
-////
-//        // Pre Order Traversal
-//        System.out.println("\nPrinting PreOrder Traversal");
-//        binarySearchTree.preOrderTraversal(true, null);
-//
-//        // In Order Traversal
-//        System.out.println("\nPrinting InOrder Traversal");
-//        binarySearchTree.inOrderTraversal(true, null);
-//
-//        // Post Order Traversal
-//        System.out.println("\nPrinting PostOrder Traversal");
-//        binarySearchTree.postOrderTraversal(true, null);
+        binarySearchTree.remove(18);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(20);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(99);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(4);
+        binarySearchTree.preOrderTraversal(true, null);
+
+        binarySearchTree.remove(7);
+        binarySearchTree.preOrderTraversal(true, null);
 
 
     }

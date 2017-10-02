@@ -178,18 +178,19 @@ public class BinarySearchTree {
 
         } else if(targetNode.hasChildren() == 1) {
 
-            // Scenario #1 - Root Node
+            // Scenario #1 - Root Node & Right Node is Done
             if(parentTargetNode == null) {
 
-                // Find the Predecessor
-                Node predecessorNode = findPredecessor(targetNode.getValue());
-                System.out.println("Predecessor: " + predecessorNode.getValue());
+                // Set the TargetNode to the RootNode
+                Node targetRootNode = rootNode;
 
-                // Move the Root Node to the Second Value
+                // Place the Root Node to the Left Child Node
+                rootNode = rootNode.getLeftChildNode();
 
-                // Create tempNode Reference to delete the Root Node
+                // Delete the targetNode
+                targetRootNode.setLeftChildNode(null);
 
-                // Delete tempNode
+
 
                 return;
             }
@@ -220,7 +221,6 @@ public class BinarySearchTree {
                     parentTargetNode.setRightChildNode(targetNode.getRightChildNode());
                     targetNode.getRightChildNode().setParentValue(parentTargetNode.getValue());      // Set the Parent Node of the child of the Target Node to the Parent node
                 }
-
             }
 
 
