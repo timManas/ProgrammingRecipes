@@ -262,3 +262,52 @@ greedy algorithm (array)
   repeat above two steps until all differences have been found
   return largest difference
 ```
+
+####What is difference between Heap and Stack Memory?
+Major difference between Heap and Stack memory are as follows:
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
+Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it.
+Stack memory only contains local primitive variables and reference variables to objects in heap space.
+Memory management in stack is done in LIFO manner whereas it’s more complex in Heap memory because it’s used globally.
+
+
+What is thread?
+A thread is a lightweight subprocess.It is a separate path of execution.
+It is called separate path of execution because each thread runs in a separate stack frame.
+
+
+What does join() method?
+The join() method waits for a thread to die.
+In other words, it causes the currently running threads to stop executing until the thread it joins with
+completes its task.
+
+
+What is synchronization?
+Synchronization is the capabilility of control the access of multiple threads to any shared resource.It is used:
+To prevent thread interference.
+To prevent consistency problem.
+
+
+What is static synchronization?
+If you make any static method as synchronized, the lock will be on the class not on object.
+
+
+What is the difference between notify() and notifyAll()?
+The notify() is used to unblock one waiting thread whereas notifyAll() method is used to unblock all the
+threads in waiting state.
+
+
+What is deadlock?
+Deadlock is a situation when two threads are waiting on each other to release a resource.
+Each thread waiting for a resource which is held by the other waiting thread.
+
+
+What is the difference between Iterator and ListIterator?
+
+Iterator traverses the elements in forward direction only whereas ListIterator traverses the elements in forward and backward direction.
+No.	Iterator	ListIterator
+1)	Iterator traverses the elements in forward direction only.
+2)	Iterator can be used in List, Set and Queue.
+
+1.) ListIterator traverses the elements in backward and forward directions both.
+2.)	ListIterator can be used in List only.
