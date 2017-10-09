@@ -1,8 +1,7 @@
-package DataStructures.Graphs.GraphExample;
+package DataStructures.Graphs.GraphExample.AdjacencyListExample;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.LinkedList;
 
 /**
  * Created by timmanas on 2017-09-19.

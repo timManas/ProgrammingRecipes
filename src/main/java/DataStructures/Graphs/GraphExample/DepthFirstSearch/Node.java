@@ -1,4 +1,4 @@
-package DataStructures.Graphs.DepthFirstSearch;
+package DataStructures.Graphs.GraphExample.DepthFirstSearch;
 
 /**
  * Created by timmanas on 2017-10-09.

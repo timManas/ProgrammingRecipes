@@ -1,6 +1,4 @@
-package DataStructures.Graphs.BreadthFirstSearch.ModifiedCode;
-
-import java.util.ArrayList;
+package DataStructures.Graphs.GraphExample.BreadthFirstSearch.ModifiedCode;
 
 /**
  * Created by timmanas on 2017-10-09.

@@ -1,4 +1,4 @@
-package DataStructures.Graphs.DepthFirstSearch;
+package DataStructures.Graphs.GraphExample.DepthFirstSearch;
 
 import java.util.Stack;
 
@@ -33,7 +33,7 @@ public class DFSGraphExample {
         node7.setNeighbours(new Node[]{node4, node8});
         node8.setNeighbours(new Node[]{node7, node0});
 
-        depthFirstSearch(node1, 8);
+        depthFirstSearch(node6, 8);
     }
 
     //endregion

@@ -1,6 +1,5 @@
-package DataStructures.Graphs.BreadthFirstSearch.ModifiedCode;
+package DataStructures.Graphs.GraphExample.BreadthFirstSearch.ModifiedCode;
 
-import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -36,7 +35,7 @@ public class BFSGraphExample {
 
         
         // BreadthFirstSearch
-        breathFirstSearch(node3, 8);
+        breathFirstSearch(node1, 8);
     }
 
 
@@ -51,7 +50,7 @@ public class BFSGraphExample {
 
         if(root.getValue() == target)
             System.out.println("Found in Root Node");
-        
+
 
         // Create a Queue
         Queue<Node> queue = new LinkedList<>();
