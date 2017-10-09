@@ -1,4 +1,4 @@
-package DataStructures.Graphs.GraphExample.DepthFirstSearch;
+package DataStructures.Graphs.GraphTraversal.DepthFirstSearch;
 
 import java.util.Stack;
 

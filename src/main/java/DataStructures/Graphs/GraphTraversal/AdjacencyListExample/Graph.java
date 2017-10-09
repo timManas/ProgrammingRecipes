@@ -1,4 +1,4 @@
-package DataStructures.Graphs.GraphExample.AdjacencyListExample;
+package DataStructures.Graphs.GraphTraversal.AdjacencyListExample;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

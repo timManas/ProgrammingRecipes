@@ -1,4 +1,4 @@
-package DataStructures.Graphs.GraphExample.BreadthFirstSearch.ModifiedCode;
+package DataStructures.Graphs.GraphTraversal.BreadthFirstSearch.ModifiedCode;
 
 import java.util.LinkedList;
 import java.util.Queue;

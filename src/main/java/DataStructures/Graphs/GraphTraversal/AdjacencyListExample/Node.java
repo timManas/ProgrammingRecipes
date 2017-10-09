@@ -1,4 +1,4 @@
-package DataStructures.Graphs.GraphExample.AdjacencyListExample;
+package DataStructures.Graphs.GraphTraversal.AdjacencyListExample;
 
 /**
  * Created by timmanas on 2017-09-20.

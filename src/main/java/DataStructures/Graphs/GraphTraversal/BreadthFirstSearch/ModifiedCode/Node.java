@@ -1,4 +1,4 @@
-package DataStructures.Graphs.GraphExample.BreadthFirstSearch.ModifiedCode;
+package DataStructures.Graphs.GraphTraversal.BreadthFirstSearch.ModifiedCode;
 
 /**
  * Created by timmanas on 2017-10-09.
