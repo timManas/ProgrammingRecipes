@@ -1,13 +1,12 @@
-package DataStructures.Graphs.BreadthFirstSearch.ModifiedCode;
+package DataStructures.Graphs.DepthFirstSearch;
 
-import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Stack;
 
 /**
  * Created by timmanas on 2017-10-09.
  */
-public class BFSGraphExample {
+public class DFSGraphExample {
+
 
     //region Main
     public static void main(String [] args) {
@@ -22,7 +21,7 @@ public class BFSGraphExample {
         Node node6 = new Node(6);
         Node node7 = new Node(7);
         Node node8 = new Node(8);
-        
+
         // Populate Neighbours
         node0.setNeighbours(new Node[]{node8});
         node1.setNeighbours(new Node[]{node2,node3,node5});
@@ -34,58 +33,52 @@ public class BFSGraphExample {
         node7.setNeighbours(new Node[]{node4, node8});
         node8.setNeighbours(new Node[]{node7, node0});
 
-        
-        // BreadthFirstSearch
-        breathFirstSearch(node3, 8);
+        depthFirstSearch(node1, 8);
     }
-
 
     //endregion
 
-
     //region Helpers
-    private static void breathFirstSearch(Node root, int target) {
+    private static void depthFirstSearch(Node root, int target) {
 
-        System.out.println("=========== BreathFirst Search ===========");
+        System.out.println("=========== DepthFirst Search ===========");
         System.out.println("Target: " + target);
 
         if(root.getValue() == target)
             System.out.println("Found in Root Node");
-        
 
-        // Create a Queue
-        Queue<Node> queue = new LinkedList<>();
+        // Create a Stack
+        Stack<Node> stack = new Stack<>();
         root.setVisited(true);
-        queue.add(root);                           // Add Node to Root
+        stack.push(root);
 
+        while(!stack.isEmpty()) {
 
-        while(!queue.isEmpty()){
-
-            Node currentNode = queue.remove();          // Remove the Element in the Queue
+            Node currentNode = stack.pop();
             System.out.println("\n-- Current Node: " + currentNode.getValue());
 
-            for(Node node: currentNode.getNeighbours()){
+            for(Node node : currentNode.getNeighbours()) {
 
-                // If Node has Not been Visited ->  Search the neighbours of this Node
-                if(!node.isVisited()){
+                // If Node has NOT been visited -> Search the next Node
+                if(!node.isVisited()) {
 
                     System.out.println("Node: " + node.getValue());
                     node.setVisited(true);
-                    if(node.getValue() == target)  {
-                        System.out.println("Found "+ node.getValue());             // Found Value
-                    }
-                    queue.add(node);                            // Add to the Head
-                }else {
+                    if(node.getValue() == target)
+                        System.out.println("Found: " + node.getValue());
+
+                    stack.push(node);
+                } else {
                     System.out.println("Node Already Visited: " + node.getValue());
                 }
 
+
             }
+
         }
-
-
-
 
     }
     //endregion
+
 
 }
