@@ -36,20 +36,6 @@ public class MergeSort {
         // Merge
         merge(inputArray, startIndex, midIndex, endIndex);
 
-        // Solution from the VisualAlgo
-//        if(startIndex < endIndex) {
-//            int midIndex = (endIndex + startIndex) / 2;
-//
-//            // Divide Left Half
-//            mergeSort(inputArray, startIndex, midIndex);
-//
-//            // Divide Right Half
-//            mergeSort(inputArray,midIndex + 1, endIndex);
-//
-//            // Merge
-//            merge(inputArray, startIndex, midIndex, endIndex);
-//        }
-
     }
 
     private static void merge(int[] inputArray, int startIndex, int midIndex, int endIndex) {
@@ -60,8 +46,9 @@ public class MergeSort {
         int left = startIndex;
         int right = midIndex + 1;
 
-        System.out.println("==========" );
+        System.out.println("==========");
 
+        // Insert elements into the SORTED tempArray 
         while(left <= midIndex && right <= endIndex) {
 
             if(inputArray[left] <= inputArray[right]) {

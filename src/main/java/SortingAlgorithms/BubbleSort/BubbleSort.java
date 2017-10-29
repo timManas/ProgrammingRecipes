@@ -9,10 +9,9 @@ public class BubbleSort {
 
         int [] input = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
 
-        int [] array = bubbleSort (input, "Desending");
+        int [] array = bubbleSort (input, "Descending");
 
         printSortedArray(array);
-
 
     }
 
@@ -63,3 +62,19 @@ public class BubbleSort {
     }
     //endregion
 }
+
+
+/**
+
+ Bubble Sort
+
+ What?
+ - Simplest Algorithm
+ - Works by repeatedly swapping two adjacent elements if they are in the wrong order
+
+
+ Notes
+ - RunTime O(n^2) - Worst case
+
+
+ */
