@@ -311,3 +311,15 @@ No.	Iterator	ListIterator
 
 1.) ListIterator traverses the elements in backward and forward directions both.
 2.)	ListIterator can be used in List only.
+
+
+Breath & Depth First Search
+use BFS - when you want to find the shortest path from a certain source node to a certain destination.
+(Or more generally, the smallest number of steps to reach the end state from a given initial state.)
+
+use DFS - when you want to exhaust all possibilities, and check which one is the best/count the number of all possible ways.
+
+use either BFS or DFS - when you just want to check connectedness between two nodes on a given graph.
+(Or more generally, whether you could reach a given state to another.)
+
+
