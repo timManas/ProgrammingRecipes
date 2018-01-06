@@ -51,7 +51,7 @@ public class VarArgsExample {
  - The number of inputs gets put in an array. Just FYI
  - VarArgs methods can be overloaded, but overloading may led to ambiguity
  - There can ONLY be ONE variable argument in a method, otherwise Compilation Error occurs
- - Theres can ONLY BE ONE argument. Period. 
+ - Theres can ONLY BE ONE argument. Period.
 
 
 
