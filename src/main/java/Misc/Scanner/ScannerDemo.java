@@ -32,9 +32,16 @@ public class ScannerDemo {
 
  Scanner
 
+
+ What ?
+ - A Class in the util package which is used to obtaining primitive types like int, double, etc.
+ - To read Strings, we use "nextLine()"
+ - To read Chars, we use "next.charAt(i)"
+
  Notes
  - "System.in" ask Input from the user
  - If the input does not match the type requested, an error will be produced ...DUH
  - We can have multiple types to fetch
+
  
  */
