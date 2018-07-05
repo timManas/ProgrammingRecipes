@@ -90,7 +90,7 @@ public class TransientExample implements Serializable{
 
 
  Why does just "transient" make the value disappear ?
- - Just transient + private/public will hide the value 
+ - Just transient + private/public will hide the value
 
  Why does "transient static" make the value NOT disappear ?
  -Since static fields are not part of state of the object, there is no use/impact of using

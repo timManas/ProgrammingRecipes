@@ -57,7 +57,8 @@ public class InterfaceExample {
 
  What ?
  - Can have methods and variables
- - Methods are by default abstract .. i.e Only method signature, no body
+ - Methods are by default public & abstract .. i.e Only method signature, no body
+ - all fields are declared public, static and final
 
  Why ?
  - Allows total abstraction
@@ -74,6 +75,8 @@ public class InterfaceExample {
  - Variables in interfaces are final, public and static
  - Methods in Interfaces are implicily defined as Abstract unless it is defined as Default or Static.
  - Interface can be inside  other interfaces or classes ...this is called "Nested interfaces"
+ - Interface can extend other interfaces (But only one interface)
+ - A class which implements an interface must implement all it's method, other it will be declared abstract
 
 
  References
