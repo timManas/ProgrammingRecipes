@@ -20,6 +20,7 @@ public class GenericsExample {
         printArray(intArray);
         printArray(doubleArray);
         printArray(charArray);
+        printMultipleArray(intArray, charArray);
 
         // Generic Bounded Type Example
         System.out.println("LastElement of Int Array: " + printLastElement(intArray));
@@ -51,6 +52,31 @@ public class GenericsExample {
             System.out.println("Element: " + element);
         System.out.println("=====");
     }
+
+    private static <A,B> void printMultipleArray(A[] array1, B[] array2) {
+
+
+        System.out.println("===== Array 1");
+        if(array1[0] instanceof Integer) {
+            System.out.println("Integer type");
+        }
+
+        for(A element : array1)
+            System.out.println("Element: " + element);
+
+        System.out.println("===== Array 2");
+
+
+        if(array2[0] instanceof Character) {
+            System.out.println("Char type");
+        }
+
+        for (B element : array2)
+            System.out.println("Element: " + element);
+
+
+    }
+
 
     private static <T extends Comparable <T>> T printLastElement(T[] inputArray) {
 

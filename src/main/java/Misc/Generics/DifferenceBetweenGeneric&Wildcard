@@ -1,0 +1,66 @@
+Example
+
+// Generic
+public static <E> void funct1  (List<E> listVariable) {
+}
+
+// Wildcard
+public static void funct2(List<?> listVariable) {
+}
+
+
+1. What is the difference between a wild card and Generic ?
+- For generics, you specify EXACTLY what type you will be passing into the method
+            - Therefore, for the above example we know that we will be passing a List of type "E". (Could be anything)
+
+- For wildcards, you DONT know at runtime what type will be passed in. You only know there something will be passed in
+            - Therefore, for the wildcard example, we have list instance of some type. We just dont know what.
+
+
+The difference becomes obvious when we try to add in a Second parameter
+    public static <T> void funct3(List<T> listVariable, T tVariable) {
+        listVariable.add(tVariable);                                                // Compiles fine
+    }
+
+    public static void funct4(List<?> listVariable, ? somethingVariable) {          // Error ... Wildcard can only be used as REFERENCE PARAMETERS
+    }
+
+    public static void funct5(List<?> listVariable, Object objectVariable) {
+        listVariable.add(objectVariable);                                           // Error  .... Cannot take in variable of type Object
+    }
+
+
+
+2. What are the advantages of Generic
+- Generics make collections more type safe since we know exactly which types will be used
+- Allows us to specify multiple types for the same Object ..ex. ArrayList<String>,  ArrayList<Integer>
+- Elimination of type casting
+
+For example
+
+List list = new ArrayList();
+list.add("hello");
+String s = (String) list.get(0);
+
+When re-written to use generics, the code does not require casting:
+
+List<String> list = new ArrayList<String>();
+list.add("hello");
+String s = list.get(0);   // no cast
+
+
+3. What are the advantages of WildCard
+- This is used in conjunction with Generics to define Upper or lower bound wild cards
+
+4. When to use Generics ?
+- When you pass in different types of which are NOT related to each other, then you pass in generics
+
+5. When to use Wildcards ?
+- When you want to pass in multiple types into an argument which is related ...you use wild cards
+
+ex.
+<T extends Integer>
+Upperbound -> Double, Float
+
+<T super Integer>
+Lowerbound -> Number, Object
