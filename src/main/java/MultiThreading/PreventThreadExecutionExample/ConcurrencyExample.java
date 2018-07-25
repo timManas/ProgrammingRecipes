@@ -18,17 +18,17 @@ public class ConcurrencyExample {
         for(int i = 0; i < 5; i++) {
             // Comment this code will yield unexpected results, since we dont know if the main thread or the child thread is accessing the method
             Thread.yield();                                                                 // Control passes to the child thread
-            System.out.println("Thread in Control: " + Thread.currentThread().getName());   // After execution of child thread, main thread takes over
+            System.out.println("Main Class Thread in Control: " + Thread.currentThread().getName());   // After execution of child thread, main thread takes over
         }
 
         // Sleep Example
-        System.out.println("=========== sleep() Example =========== ");
-        System.out.print("\nStarting 1st thread :: ");
+        System.out.println("\n=========== sleep() Example =========== ");
+        System.out.println("Starting 1st thread :: ");
         getThreadNameInControl();
         Thread thread1 = new Thread(new SleepDemo());
         thread1.setName("Thread #1");
         thread1.start();
-        thread1.join();             // Turn this off ...i dare you
+//        thread1.join();             // Turn this off ...i dare you
         System.out.println("Is Thread1 still alive ? " + thread1.isAlive());
 
         System.out.print("\nStarting 2nd thread :: ");
@@ -47,7 +47,7 @@ public class ConcurrencyExample {
         thread3.join();             // Turn this off ...i dare you
         System.out.println("Is Thread3 still alive ? " + thread3.isAlive());
 
-        System.out.print("Finished all Thread creation ");
+        System.out.println("Finished all Thread creation ");
         getThreadNameInControl();
 
 

@@ -24,6 +24,8 @@ public class ProducerConsumer {
             // Waits till other method invokes notify
             System.out.println("Produce Thread Resumed");
 
+
+            System.out.println("Produce Block finished");
         }
     }
 
@@ -42,6 +44,7 @@ public class ProducerConsumer {
             notify();                               // Notifies the produce thread which called the wait
             Thread.sleep(1000);
 
+            System.out.println("Consume Block finished");
         }
 
     }

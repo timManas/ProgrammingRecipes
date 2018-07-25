@@ -15,7 +15,7 @@ public class ThreadPriorityExample {
 
         ThreadDemo thread1 = new ThreadDemo();
         thread1.setName("Thread1");
-        thread1.setPriority(Thread.MAX_PRIORITY);
+        thread1.setPriority(Thread.MIN_PRIORITY);
 
         ThreadDemo thread7 = new ThreadDemo();
         thread7.setName("Thread7");
@@ -35,7 +35,7 @@ public class ThreadPriorityExample {
 
         ThreadDemo thread4 = new ThreadDemo();
         thread4.setName("Thread4");
-        thread4.setPriority(7);
+        thread4.setPriority(10);
 
         ThreadDemo thread5 = new ThreadDemo();
         thread5.setName("Thread5");
@@ -47,13 +47,15 @@ public class ThreadPriorityExample {
 
 
         thread1.start();
+        thread7.start();
         thread2.start();
         thread3.start();
+        thread8.start();
         thread4.start();
         thread5.start();
         thread6.start();
-        thread7.start();
-        thread8.start();
+
+
 
         try {
 
@@ -99,6 +101,7 @@ public class ThreadPriorityExample {
  What ?
  - Threads can be given a priority depending on the urgency/severity of the problem
  - Has value of 1 - 10
+ - The value of 1 is the HIGHEST PRIORITY and Value of 10 is the lowest prority
  - Has three default static variables - MIN_PRIORITY, NORM_PRIORITY & MAX_PRIORITY
  - User can get/set priority value
 

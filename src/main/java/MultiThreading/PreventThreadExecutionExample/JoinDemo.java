@@ -9,9 +9,9 @@ public class JoinDemo implements Runnable {
     @Override
     public void run() {
         Thread childThread = Thread.currentThread();
-        System.out.println("Current Thread: " + childThread.getName());
+        System.out.println("JoinDemo - Current Thread: " + childThread.getName());
 
-        System.out.println("Is current thread still alive ? " + childThread.isAlive());
+        System.out.println("JoinDemo - Is current thread still alive ? " + childThread.isAlive());
 
     }
 

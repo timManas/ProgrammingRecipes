@@ -11,7 +11,7 @@ public class YieldDemo extends Thread{
     public void run() {
         System.out.println("In YieldDemo");
         for(int i = 0; i < 5; i++) {
-            System.out.println("Thread in Control: " + Thread.currentThread().getName());
+            System.out.println("In YieldDemo - Thread in Control: " + Thread.currentThread().getName());
         }
     }
     //endregion

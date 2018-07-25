@@ -19,24 +19,27 @@ public class ObjectDemo extends Object {
         System.out.println("::: Notify() / NotifyAll() Demo :::");
 
         final ObjectDemo demo = new ObjectDemo();
-        Runnable runA = new Runnable() {
-            @Override
-            public void run() {
-                try{
-                    String item = demo.removeElement();
-                    System.out.println("Item: " + item );
-                }catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-
+        Runnable runA = () -> {
+            try{
+                String item = demo.removeElement();
+                System.out.println("Item: " + item );
+            }catch (Exception e) {
+                e.printStackTrace();
             }
+
         };
 
         Runnable runB = new Runnable() {
             @Override
             public void run() {
                 demo.addElement("Hello");
+            }
+        };
+
+        Runnable runC = new Runnable() {
+            @Override
+            public void run() {
+                demo.addElement("Oh Hey Mark!");
             }
         };
 
@@ -47,8 +50,8 @@ public class ObjectDemo extends Object {
 
             Thread.sleep(500);
 
-            Thread threadA2 = new Thread(runA, "Thread-A2");
-            threadA2.start();
+//            Thread threadA2 = new Thread(runA, "Thread-A2");
+//            threadA2.start();
 
             Thread.sleep(500);
 
@@ -57,8 +60,11 @@ public class ObjectDemo extends Object {
 
             Thread.sleep(1000);
 
+            System.out.println("ThreadA1 Interupt");
             threadA1.interrupt();
-            threadA2.interrupt();
+//            threadA2.interrupt();
+
+            System.out.println("ThreadB Interupt");
             threadB.interrupt();
 
 
@@ -76,7 +82,7 @@ public class ObjectDemo extends Object {
             while (synchronizedList.isEmpty()){
                 System.out.println("List is Empty ....");
                 synchronizedList.wait();
-                System.out.println("Waiting....");
+                System.out.println("Waiting....In removeElement()");
             }
             String element = (String) synchronizedList.remove(0);
 
@@ -86,7 +92,7 @@ public class ObjectDemo extends Object {
     }
 
     private void addElement(String element) {
-        System.out.println("Opening ...");
+        System.out.println("\nOpening ...");
 
         synchronized (synchronizedList) {
 
@@ -94,7 +100,7 @@ public class ObjectDemo extends Object {
             System.out.println("New Element: " + element);
 
             synchronizedList.notifyAll();
-            System.out.println("NotifAll has been called");
+            System.out.println("\nNotifAll has been called");
         }
 
         System.out.println("Closing ...");
