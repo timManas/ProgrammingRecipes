@@ -1,0 +1,15 @@
+we override the run() function, but we start a thread by calling the start() function.
+So why don’t we directly call the oveerridden run() function?
+Why always the start function is called to execute a thread?
+
+What happens when a function is called?
+When a function is called the following operations take place:
+1. The arguments are evaluated.
+2. A new stack frame is pushed into the call stack.
+3. Parameters are initialized.
+4. Method body is executed.
+5. Value is retured and current stack frame is popped from the call stack.
+
+
+The purpose of start() is to create a separate call stack for the thread.
+A separate call stack is created by it, and then run() is called by JVM.
