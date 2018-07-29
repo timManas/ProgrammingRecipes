@@ -66,7 +66,7 @@ public class CallableFutureExample {
  - For implementing a Runnable, a run() is required to be implemented which does NOT return anytthing
  - For implementing a Callable, a call() is required to be implementred which returns the result of the completion.
 
- 
+
  Future
 
  What ?
