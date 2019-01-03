@@ -39,5 +39,6 @@ public class FactoryDesignPattern {
 
  Notes
  - Provides a centralized methodology for creating objects
+ - The "Override" annotation is not needed
 
  */

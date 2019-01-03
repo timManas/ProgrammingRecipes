@@ -5,6 +5,10 @@ package DesignPatterns.Creational.AbstractFactory;
  */
 public abstract class AbstractFactory {
 
+    public AbstractFactory() {
+        System.out.println("\nCreated new Abstract Factory");
+    }
+
     public abstract Shape getShape(String shape);
     public abstract Colour getColour(String colour);
 
