@@ -10,6 +10,7 @@ public class Derived extends Base {
     private String type;
     protected String info;
     protected final String derivedCase;
+    public String id;
     //endregion
 
     //region Constructors
@@ -24,6 +25,7 @@ public class Derived extends Base {
         //        info = Base.info;           // Does not work since Abstract variables are not Static
         info = super.info;
         derivedCase = super.finalCase;
+        id = "DerivedID";
 
     }
     //endregion
@@ -44,6 +46,10 @@ public class Derived extends Base {
 //    }
 
     public static void staticMethod() {System.out.println("Derived Static Method is called");}
+
+    public String getId() {
+        return id;
+    }
 
     //endregion
 

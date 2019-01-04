@@ -7,23 +7,37 @@ public class AbstractExample {
 
     public static void main (String [] args) {
 
+
+        // Case #1 BASE = BASE
         //This does not work since we cannot instantiate Abstract Classes
 //        Base base = new Base();
+        System.out.println("Case #1 BASE = BASE ");
+        System.out.println("This does not work since we cannot instantiate Abstract Classes \n");
 
+        // Case #2 BASE = DERIVED
         // We can REFERENCE Base types
+        System.out.println("Case #2 BASE = DERIVED ");
         Base base = new Derived();      // Note that the Base Constructor gets called first then the Derived Constructor
         base.baseHelperMethod();        // This works
         base.finalBaseMethod();
         base.staticMethod();            // When a method is declared static, Runtime Polymorphism does not Happen !!!
+//        base.getID();                 // BASE CANNOT INVOKE THIS METHOD !! because it is of type Base
+        String id = ((Derived)base).getId();        // THIS WORKS because we type case the BASE reference to now become type Derived
+        System.out.println("Base ID: " + id + "\n");
 
-        System.out.println("\n =========\n");
+        // Case #3 DERIVED = BASE
+        System.out.println("Case #3 DERIVED = BASE");
+//        Derived derived1 = new Base();
+        System.out.println("This does not work since we cannot instantiate Abstract Classes \n");
 
+        // Case #4 DERIVED = DERIVED
         // We can call Non-abstract methods in an abstract class
+        System.out.println("Case #4 DERIVED = DERIVED");
         Derived derived = new Derived();
         derived.baseHelperMethod();        // This Works
+        derived.getId();                    // Dervied CAN invoke this method because it is of type Derived.
 
-        System.out.println("\n =========\n");
-
+        
         // Abstract classes can also have final methods (Methods which cannot be overriden)
         derived.finalBaseMethod();        // This works
 
@@ -32,6 +46,14 @@ public class AbstractExample {
 //        System.out.println("Derived Type: " + derived.type);     // Does not work since type is private
         System.out.println("Derived Info: " + derived.info);
         System.out.println("Derived Case: " + derived.derivedCase);
+
+
+
+
+
+
+
+
 
 
     }
@@ -59,6 +81,7 @@ public class AbstractExample {
  - Abstract Classes can contain constructors
  - When you instantiate the SubClass, the Parent class constructor is called first then the subclass constructor ex.  Base base = new Derived();
  - When a method is declared static, Runtime Polymorphism does not Happen !!!
+ - Base variable CANNOT invoke Derived methods because it is of type Base
 
 
  References
