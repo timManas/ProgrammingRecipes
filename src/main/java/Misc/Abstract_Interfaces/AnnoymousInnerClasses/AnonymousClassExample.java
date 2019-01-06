@@ -17,9 +17,12 @@ public class AnonymousClassExample {
         AnonymousInterface object1 = new AnonymousInterface() {
             @Override
             public void show() {
-                System.out.println("Type is: " + type);
+                System.out.println("Type: " + type);
+                System.out.println("Name: " + name);            // Notice interfaces can store members... This is true for Abstract classes as well
 //                System.out.println("ID is: " + ID);         // Does not work since, Anon classes cannot fetch members outside it's block
                 System.out.println("ID is: " + ID_inner);
+//                type = "modified_Type";                         // Does not work since interface members are declared by default "final public static"
+
             }
         };
 

@@ -3,7 +3,7 @@ package Misc.Abstract_Interfaces.Interface.NestedInterfaces;
 /**
  * Created by timmanas on 2017-08-21.
  */
-public class Base {
+public abstract class Base {
 
     //region Members
     public String name = "BaseClass";
@@ -19,7 +19,9 @@ public class Base {
         public void printPublic();
     }
 
-    private interface InnerPrivateInterface {           // This will NEVER BE SHOWN since it is private
+    // This will NEVER BE SHOWN since it is private
+    // We can still declare them but not use them at all
+    private interface InnerPrivateInterface {
         public void showPrivate();
         public void printPrivate();
     }
@@ -32,5 +34,8 @@ public class Base {
 
     //endregion
 
+
+    //region Abstract Methods
+    public abstract String getAbstractName();
 
 }

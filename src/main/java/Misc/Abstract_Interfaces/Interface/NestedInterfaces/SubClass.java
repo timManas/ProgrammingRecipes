@@ -3,7 +3,7 @@ package Misc.Abstract_Interfaces.Interface.NestedInterfaces;
 /**
  * Created by timmanas on 2017-08-21.
  */
-public class SubClass implements Base.InnerPublicInterface,
+public class SubClass extends Base implements Base.InnerPublicInterface,
                                  Base.InnerProtectedInterface,
                                  ParentInterface.SubInterface,
                                  ParentInterface {        // Cannot Reference Private or Protected
@@ -60,5 +60,11 @@ public class SubClass implements Base.InnerPublicInterface,
 
     }
     //endregion
+
+    //region Abstract Methods
+    @Override
+    public String getAbstractName() {
+        return null;
+    }
 
 }
