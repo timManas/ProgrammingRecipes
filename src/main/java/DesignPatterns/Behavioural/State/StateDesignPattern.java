@@ -12,7 +12,6 @@ public class StateDesignPattern {
 
         StartState startState = new StartState();
         startState.doAction(context);
-
         System.out.println(context.getState().toString());
 
         StopState stopState = new StopState();
@@ -39,6 +38,7 @@ public class StateDesignPattern {
 
  Notes
  - State objects are often singletons
+ - For every state, the object has to DO something
 
 
 

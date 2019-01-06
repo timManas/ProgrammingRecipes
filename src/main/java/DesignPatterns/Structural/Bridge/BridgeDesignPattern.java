@@ -11,7 +11,7 @@ public class BridgeDesignPattern {
         Shape redCircle = new Circle(10, 10, 50 , new RedCircle());
         Shape blueCircle = new Circle(10, 10, 100, new BlueCircle());
 
-        redCircle.draw();
+        redCircle.draw();               // notice here we defined already "new RedCircle()" so it new it had to create redCircle Object with method draw
         blueCircle.draw();
 
     }

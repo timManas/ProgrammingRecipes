@@ -9,12 +9,12 @@ public class BuilderDesignPattern {
         System.out.println("::: Builder Design Pattern :::");
         MealBuilder mealBuilder = new MealBuilder();
 
-        System.out.println("Vegetarian Meal");
+        System.out.println("Preparing Vegetarian Meal");
         Meal vegetarianMeal = mealBuilder.prepareVegMeal();
         vegetarianMeal.showItems();
         System.out.println("Cost: " + vegetarianMeal.getCost());
 
-        System.out.println("Chicken Meal");
+        System.out.println("Preparing Chicken Meal");
         Meal meatMeal = mealBuilder.prepareNonVegMeal();
         meatMeal.showItems();
         System.out.println("Cost: " + meatMeal.getCost());
@@ -26,10 +26,13 @@ public class BuilderDesignPattern {
 /**
  *
  Builder Design Pattern .... i.e  "Customizer" Design Pattern
+ Builds Objects step by step (i.e build one object at a time and returns final product)
+
 
  What ?
  - Creational
  - Builds complex objects using a Step by Step approach
+ - Returns final finish product, complete with customization
  - Allows encapsulation
 
  Why ?

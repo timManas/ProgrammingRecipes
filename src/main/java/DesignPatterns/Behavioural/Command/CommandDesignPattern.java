@@ -20,6 +20,8 @@ public class CommandDesignPattern {
 
         Broker broker = new Broker();
 
+        // Broker takes in List of commands
+        // Single object but takes in multiple requests
         broker.takeOrders(buyStockOrder);
         broker.takeOrders(sellStockOrder);
         broker.takeOrders(buyFacebookStockOrder);
@@ -47,6 +49,7 @@ public class CommandDesignPattern {
 
  Notes
  - Notice that "Broker" has to receive the same Object (Order) which can be composed of multiple requests
+ - List of commands to take in
 
  Reference
  https://www.tutorialspoint.com/design_pattern/command_pattern.htm

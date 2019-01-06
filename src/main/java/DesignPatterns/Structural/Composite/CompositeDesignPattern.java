@@ -61,6 +61,7 @@ public class CompositeDesignPattern {
  - We can create groups which can represent hierarchies
  - "Directories can contain entries, which also be another directory"
  - Utilize recursion for finding child elements
+ - Nodes HAVE TO BE OF THE SAME TYPE ...otherwise you cant store a particular object with another object
 
 
 

@@ -27,7 +27,7 @@ public class PrototypeDesignPattern {
 
 /**
 
- Prototype Design Pattern  .... i.e  "Attack of the Clones" Design Pattern
+ Prototype Design Pattern  .... i.e  Clone Design Pattern
 
  What ?
  - Creational

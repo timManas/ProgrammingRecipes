@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Broker {
 
-    public List<Order> orderList = new ArrayList<>();
+    public List<Order> orderList = new ArrayList<>();       // This is the requests accepted by the broker object
 
     public void takeOrders(Order order){
         orderList.add(order);

@@ -8,6 +8,8 @@ import java.util.List;
  */
 public class Subject {
 
+    // In this case, the subject contains a list of all observers
+    // Therefore, if the subject changes, then the other objects should change as well
     private List<Observer> observers = new ArrayList<>();
     private int state;
 

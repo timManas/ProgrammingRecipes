@@ -11,6 +11,7 @@ public class ChainOfResponsibilityDesignPattern {
         AbstractLogger fileLogger = new FileLogger(AbstractLogger.DEBUG);
         AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.INFO);
 
+        // This is the chain which allows the error to be chained together
         errorLogger.setNextLogger(fileLogger);
         fileLogger.setNextLogger(consoleLogger);
 
@@ -46,7 +47,8 @@ public class ChainOfResponsibilityDesignPattern {
  - When the data might need multiple objects to resolve the issue (Think of Atm which dispenses money, each bill represent an object)
 
  Notes
- - Kinda like a massive If statements =/ which allows multiple objects to handle the data
+ - Pointer to the next object of the same type (i.e in this case it is AbstractLogger)
+ - One directional linked list
 
  Reference
 
