@@ -12,6 +12,14 @@ public interface AnonymousInterface {
 //    private String interfaceTag2 = "tag2-777";    #Notice this also does not work
 
     public void show();
+
+    public abstract void abstractMethod();
+
+//    protected void protectedMethod();           // Does not work ... cannot be protected or private
+//    private void privateMethod();
+
+    public void randomMethod();
+
 }
 
 

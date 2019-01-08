@@ -70,6 +70,7 @@ public class InterfaceExample {
  - Can now define static methods in interfaces
 
  Notes
+ - ONLY .. ONLY ...default and static methods CAN have implementations
  - Specifies what a class MUST do, not How
  - If class cannot provide bodies to method signatures, then the class MUST be declared abstract
  - Variables in interfaces are final, public and static

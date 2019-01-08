@@ -24,6 +24,18 @@ public class AnonymousClassExample {
 //                type = "modified_Type";                         // Does not work since interface members are declared by default "final public static"
 
             }
+
+            @Override
+            public void abstractMethod() {
+                System.out.println("Anonymous Abstract Method has been called");
+            }
+
+            @Override
+            public void randomMethod() {            // NOTICE THIS ALSO has to be overwritten
+
+            }
+
+
         };
 
         object1.show();

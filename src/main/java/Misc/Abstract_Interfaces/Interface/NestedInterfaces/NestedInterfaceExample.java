@@ -14,13 +14,14 @@ public class NestedInterfaceExample {
 
         SubClass subClassObject = new SubClass();
 
-        // Interface in a class
+        // Example #1: Interface within a class
         System.out.println("========= Interface Within a Class ========= ");
         subClassObject.showPublic();
         subClassObject.printPublic();
 
         System.out.println("\n========= Now this gets Interesting ========= ");
 
+        // Example #2: Interface inside a Abstract Class
         Base.InnerPublicInterface testObject = subClassObject;
         testObject.showPublic();                                          // Remember testObject is JUST a reference
         testObject.printPublic();                                         // subClassObject is the REAL Object

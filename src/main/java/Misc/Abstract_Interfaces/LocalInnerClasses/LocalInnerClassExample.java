@@ -12,13 +12,13 @@ public class LocalInnerClassExample {
     //region Main Method
     public static void main (String [] args) {
 
-        // Class Inside a method body
+        // Example #1: Class Inside a method body
         System.out.println("========== Inside Method Body ==========");
         LocalInnerClassExample example = new LocalInnerClassExample();
         example.getValue();
 
 
-        // Class Inside an If/Else statement
+        // Example #2: Class Inside an If/Else statement
         System.out.println("\n========== Inside If/Else Statement ==========");
         if(!example.isInsideMethod) {
 
@@ -64,6 +64,7 @@ public class LocalInnerClassExample {
         // The inner Class needs to be instantiated in the same block as it is created
         InnerClass_MethodBlock innerClassObject = new InnerClass_MethodBlock();
         System.out.println("Type: " + innerClassObject.getType());
+
         innerClassObject.setType("Method_InnerClass_Changed");
         System.out.println("Type: " + innerClassObject.getType());
 
