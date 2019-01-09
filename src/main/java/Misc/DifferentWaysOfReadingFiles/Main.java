@@ -24,7 +24,7 @@ public class Main {
 
 
         try {
-            // Buffered Reader
+            // Example #1: Buffered Reader ...The best one
             System.out.println("\n\n ======= Buffered Reader =======");
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             String stringElements;
@@ -32,26 +32,41 @@ public class Main {
                 System.out.print(stringElements);
 
 
-            // FileReader Class
+
+            // Example #2: FileReader Class
             System.out.println("\n\n ======= File Reader =======");
             FileReader fileReader = new FileReader(filePath);
             int index;
-            while ((index = fileReader.read()) != -1){
+            while ((index = fileReader.read()) != -1){      // Note "-1" is the EOF
                 System.out.print((char) index);
             }
 
-            // Scanner Class
+            System.out.println("Notice how Buffered Reader requires a File Reader as one of its arguments");
+
+
+
+
+
+            // Example #3: Scanner Class
+            System.out.println("DO NOT USE SCANNERS !! Not synchronous and does not work with multi-threading");
+            System.out.print("Slower than Buffered Reader");
             System.out.println("\n\n ======= Scanner Class =======");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine())
                 System.out.print(scanner.nextLine());
 
 
-            // Scanner Class without using loops
+            // Example #3a: Scanner Class without using loops
             System.out.println("\n\n ======= Scanner without using Loops =======");
             Scanner scannerNoLoops = new Scanner(file);
             scannerNoLoops.useDelimiter("\\Z");
             System.out.println(scannerNoLoops.next());
+
+
+            // Example #4: Using readAllBytes .... Reading a text File as a String
+            System.out.println("\n\n ======= Reading a text File as a String =======");
+            String data = readFileAsString(filePath);
+            System.out.println(data);
 
             // Reading the whole file in a List
             System.out.println("\n\n ======= Reading whole file in a list =======");
@@ -60,10 +75,7 @@ public class Main {
             while (iterator.hasNext())
                 System.out.print(iterator.next());
 
-            // Reading a text File as a String
-            System.out.println("\n\n ======= Reading a text File as a String =======");
-            String data = readFileAsString(filePath);
-            System.out.println(data);
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -108,12 +120,17 @@ public class Main {
     Different ways of Reading a file
 
     1. Buffered Reader
+        - Synchronous
+        - Works with multi threading while Scanner does not
+        - Reads line by line
         - Reads text from a Character input stream
         - Wrap BuffReader around any Reader which may be performance heavy... ex. FileReader & InputStreamReader
         - Syntax: BufferedReader in = new BufferedReader(Reader in, int size);
 
+
     2. File Reader Class
         - Best works for reading Character Files
+        - Reads character by character
             Constructors for this class are     - FileReader(File file)
                                                 - FileReader(FileDescriptor descriptor)
                                                 - FileReader(String file)
@@ -137,6 +154,12 @@ public class Main {
         - Make sure you use UTF_8, otherwise you get some funky looking characters (Japanese characters)
 
     6. Reading a text file as a String
+
+
+
+    Notes:
+    - Notice how Buffered Reader requires a File Reader in one of its contructor arguements
+
 
 
     References

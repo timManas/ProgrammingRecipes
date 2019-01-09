@@ -41,15 +41,18 @@ public class Derived extends Base {
         System.out.println("Derived Method2 was called");
     }
 
-    // The following does NOT work because finalBaseHelperMethod is declared Final... i.e CANNOT OVERRIDE =)
-//    public void finalBaseHelperMethod () {
-//    }
+    // NOTICE YOU DO NOT OVERRIDE This method, despite it being in the abstract class !! Why ?
+    // Because it was NOT declared abstract, hence you dont need to formally overrite it
+    public void finalBaseHelperMethod () {
+    }
 
     public static void staticMethod() {System.out.println("Derived Static Method is called");}
 
     public String getId() {
         return id;
     }
+
+
 
     //endregion
 

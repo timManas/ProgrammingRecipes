@@ -30,6 +30,11 @@ public class Main {
 
 /**
 
+ Comporable
+ - This is a built in interface
+ - You need to specify the default behaviour when implementing this interface
+ - Provide a default behaviour
+
  Notes
  - A comparable object is capable of comparing itself with another object
  - If we have multiple things we need to compare we should use Comparator instead because it allows interchangeable algorithms

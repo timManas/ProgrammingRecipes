@@ -43,6 +43,9 @@ public class Main {
 
 /**
 
+ Comparator
+ - Provides customizated way of comparing. In this case, we compare by Name, Year or Rating
+
  Notes
  - Notice we had to create multiple comparator classes, each with their own unique comparison algorithm
  - We can implement both comparable and comporator together. Comparable with the default comparing algorithm while comparator provides a customized way to sorting
