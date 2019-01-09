@@ -27,7 +27,7 @@ public class PassingArgumentsToMain {
  - When we convert this application to a jar file, we need to invoke this file
  - We can pass arguments (i.e Config files) to be read by the application
  - We can pass an infinite # of arguments which are seperated by spaces .. Note: Use "" if there are spaces if the argument contains spaces
- 
+
 
 
  */
