@@ -56,6 +56,7 @@ public class MultiThreadDemo {
     Notes
     - When you extend a Thread class, you cannot extend any other class  since Java does not support multiple inheritance
       But if we implement the Runnable interface, we can still extend other classes
+    - Both will require you to override the run() method
 
     References
     - http://www.geeksforgeeks.org/multithreading-in-java/

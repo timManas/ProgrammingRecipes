@@ -1,0 +1,22 @@
+Best Practices for Multi Threading
+
+1. Use immutable objects as much as possible
+- Removes issue of changing the data structure altogether
+
+
+2. Use synchronized keyword
+- Ensures only one thread at time is allowed to change the object
+- Make sure to choose which object and what block to add synchronization too
+    - Might cause illegal state error
+
+
+3. Use the Actor Model
+- Organizes objects into actors which pass immutable messages to each other
+- Each actor has only one thread at a time
+
+4. Use atomic classes
+- Have methods like get and set
+- Has many effects of synchronized without the overhead
+
+5. Use concurrent data structures
+- Is thread safe

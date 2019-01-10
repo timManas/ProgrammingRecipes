@@ -13,15 +13,22 @@ public class SynchronizedExample {
         ThreadDemo threadDemo2 = new ThreadDemo("Thread#2", printDemo);
 
         threadDemo1.start();
+        System.out.println("Main Method: Started Thread1\n");
         threadDemo2.start();
+        System.out.println("Main Method: Started Thread2\n");
 
         try {
+            System.out.println("Main Method: Inside Try Statement");
             threadDemo1.join();
+            System.out.println("Main Method: Started Thread1 Join\n");
+
             threadDemo2.join();
+            System.out.println("Main Method: Started Thread2 Join\n");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+        System.out.println("Finished Main");
 
     }
 }

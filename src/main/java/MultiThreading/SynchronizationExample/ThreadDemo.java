@@ -35,7 +35,7 @@ public class ThreadDemo extends Thread {
 
         // Synchronized block
         synchronized (printDemo) {
-            printDemo.printCount();
+            printDemo.printCount(threadName);
         }
 
         System.out.println("Exiting: " + threadName);
