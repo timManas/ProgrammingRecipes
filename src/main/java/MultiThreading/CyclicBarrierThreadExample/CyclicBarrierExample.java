@@ -37,11 +37,16 @@ public class CyclicBarrierExample implements Runnable {
         Thread thread1 = new Thread(computation1);
         Thread thread2 = new Thread(computation2);
 
+        System.out.println("\nStarting Thread1");
         thread1.start();
+
+
+        System.out.println("\nStarting Thread2");
         thread2.start();
 
 
         try {
+            System.out.println("\nStarting Cyclic Barrier Await");
             CyclicBarrierExample.cyclicBarrier.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -49,7 +54,7 @@ public class CyclicBarrierExample implements Runnable {
             e.printStackTrace();
         }
 
-        System.out.println("AfterStart: Sum of both computations: " + (Computation1.product  + Computation2.product));
+        System.out.println("\nAfterStart: Sum of both computations: " + (Computation1.product  + Computation2.product));
         cyclicBarrier.reset();
 
         System.out.println("Barrier reset successful");
@@ -94,11 +99,11 @@ class Computation2 implements Runnable{
     @Override
     public void run() {
 
-        System.out.println("Check if Barrier is Broken: " + CyclicBarrierExample.cyclicBarrier.isBroken());
+        System.out.println("Computation2: Check if Barrier is Broken: " + CyclicBarrierExample.cyclicBarrier.isBroken());
         Random random = new Random();
         product = random.nextInt(1000);
 
-        System.out.println("Random Number in ComputationRun2: " + product);
+        System.out.println("ComputationRun2: Random Number: " + product);
 
         try {
             CyclicBarrierExample.cyclicBarrier.await(3000, TimeUnit.MILLISECONDS);

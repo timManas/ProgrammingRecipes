@@ -12,7 +12,7 @@ public class CallableExample implements Callable {
         Random random = new Random();
         Integer randomInteger = random.nextInt(10000);
 
-        System.out.print("RandomInteger: " + randomInteger);
+        System.out.println("RandomInteger: " + randomInteger);
 
         return randomInteger;
 

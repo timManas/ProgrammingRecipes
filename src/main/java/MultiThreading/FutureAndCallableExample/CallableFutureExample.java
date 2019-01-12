@@ -26,10 +26,12 @@ public class CallableFutureExample {
 
             // Create a thread with Runnable which executes the thread
             Thread thread = new Thread(randomNumberTasks[index]);
+            thread.setName("Thread" + index);
+            System.out.println("Starting: " + thread.getName());
             thread.start();
         }
 
-
+        System.out.println("\nFinished For Loop\n");
         // Display the values of Array of Future Tasks
         for(int index=0; index < randomNumberTasks.length; index++) {
             try {
