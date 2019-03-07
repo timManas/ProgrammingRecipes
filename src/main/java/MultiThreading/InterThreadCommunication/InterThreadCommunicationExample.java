@@ -11,6 +11,7 @@ public class InterThreadCommunicationExample {
 
         Thread produceThread = new Thread(() -> {
             try {
+                System.out.println("\nStarted Produce Thread");
                 pcObject.produce();
             } catch (InterruptedException e) {
 
@@ -21,6 +22,7 @@ public class InterThreadCommunicationExample {
             @Override
             public void run() {
                 try {
+                    System.out.println("\nStarted Consume Thread");
                     pcObject.consume();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -28,11 +30,19 @@ public class InterThreadCommunicationExample {
             }
         });
 
+        // Technically the program starts here first
+        System.out.println("\nStarting Produce Thread");
         produceThread.start();
+
+        System.out.println("Starting Consume Thread");
         consumeThread.start();
 
         try {
+
+            System.out.println("\nJoining Produce Thread");
             produceThread.join();
+
+            System.out.println("\nJoining Consume Thread");
             consumeThread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -58,7 +68,8 @@ public class InterThreadCommunicationExample {
 
  How this program works
  - In the main class a new PC object is created.
- - It runs produce and consume methods of PC object using two different threads namely t1 and t2 and wait for these threads to finish.
+ - It runs produce and consume methods of PC object using two different threads namely
+ t1 and t2 and wait for these threads to finish.
 
  Lets understand how our produce and consume method works.
 
@@ -66,9 +77,12 @@ public class InterThreadCommunicationExample {
  Also since there is a sleep method just at the beginning of consume loop, the produce thread gets a kickstart.
 
  - When the wait is called in produce method, it does two things.
- Firstly it releases the lock it holds on PC object.
- Secondly it makes the produce thread to go on a waiting state until all other threads have terminated, that is it can again acquire a lock on PC object and some other method wakes it up by invoking notify or notifyAll on the same object.
- Therefore we see that as soon as wait is called, the control transfers to consume thread and it prints -“Waiting for return key”.
+    Firstly it releases the lock it holds on PC object.
+    Secondly it makes the produce thread to go on a waiting state until all other threads have terminated,
+    that is it can again acquire a lock on PC object and some other method wakes it up by
+    invoking notify or notifyAll on the same object.
+    Therefore we see that as soon as wait is called, the control transfers to consume
+    thread and it prints -“Waiting for return key”.
 
  - After we press the return key, consume method invokes notify().
  It also does 2 things:

@@ -89,6 +89,8 @@ public class Client {
  Note
  - the accept() method just sits there until a connection has been established with the client
  - The server makes a new socket to communicate with client
+ - ServerSocket only Exists on the Server side
+ - Socket only exists within the client side
 
  Server
 

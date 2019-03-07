@@ -1,0 +1,43 @@
+What is a graph ?
+- is a pictorial representation of a set of objects where some pairs of objects are connected by links.
+- The points (aka nodes) are called  vertices
+- The links that connects points (aka nodes) together are called Edges
+
+Ex #1:
+
+A --- B
+|     |
+C --- D -- E
+
+Formally a graph is represented as (V,E)  where V is the set of vertices and E is the set of Edges
+Therefore, for Ex #1
+
+V = {A,B,C,D,E}
+E = {AB, AC, BD, CD, DE}            # Notice Edges are NON-repeating. I.E we do not have BA or CA since it is the same thing as AB, AC
+
+
+
+
+Vertex - Each node of the graph is represented as a vertex. Therefore A,B,C,D,E are all vertices
+Edges - A path between two vertices (nodes)
+Adjacent - Two nodes are adjacent if they connected to each other by an Edge
+Path - A sequence of of edges between two vertices
+
+Depth First Search
+- Traverses a graph in a downward motion
+- Uses Stack to remember to get to the next vertex to start when dead end is encountered
+
+Rules for DFS
+1. Visit the Adjacent unvisited Vertex. Mark it as visited. Display it. Push it into Stack
+2. If no adjacent vertex is found. Pop up from vertex from the stack
+3. Repeat #1 and 2 until stack is empty
+
+
+Breath First Search
+- Traverses a graph in breathward motion
+- Uses queue to remember to get to the next vertex to start when dead end is encountered
+
+Rules for BFS
+1. Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it in queue
+2. If no adjacent vertex is found, remove the first vertex from the queue
+3. Repeat #1 and 2 until queue is Empty

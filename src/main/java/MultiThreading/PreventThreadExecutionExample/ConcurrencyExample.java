@@ -28,7 +28,10 @@ public class ConcurrencyExample {
         Thread thread1 = new Thread(new SleepDemo());
         thread1.setName("Thread #1");
         thread1.start();
-//        thread1.join();             // Turn this off ...i dare you
+        thread1.join();             // Turn this off ...i dare you...
+        // Whats basically happening is that once the run() stuff finishes,
+        // this thread will continue with this main thread and
+        // will not proceed until it the first thread has done so
         System.out.println("Is Thread1 still alive ? " + thread1.isAlive());
 
         System.out.print("\nStarting 2nd thread :: ");

@@ -17,6 +17,7 @@ public class ProducerConsumer {
     public void produce() throws InterruptedException {
 
         synchronized (this) {
+            System.out.println("Produce HashCode: " + this.hashCode());
             System.out.println("Produce Thread Running :: ");
 
             wait();                                             // Release the lock on shared resource
@@ -35,9 +36,10 @@ public class ProducerConsumer {
         Scanner scannerObject = new Scanner(System.in);
 
         synchronized (this) {
+            System.out.println("Consume HashCode: " + this.hashCode());
             System.out.println("Consume Thread Running :: ");
-
             System.out.println("Waiting for return key ");
+
             scannerObject.nextLine();
             System.out.println("Return Key Pressed");
 
