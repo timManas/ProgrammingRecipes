@@ -67,7 +67,46 @@ public class DijkstraExample {
         HashSet<String> unvisitedSet = new HashSet<>(nodeMap.keySet());
         LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker = new LinkedHashMap<>();
 
-        // Construct the nodeTracker
+        // Initialize and Construct the nodeTracker
+        initializeNodeTracker(nodeTracker, nodeMap);
+
+        // Traverse through all Nodes
+        int index = 0;
+        while(index < nodeMap.size()) {
+
+
+            String smallestWeightNode;
+            if (index == 0) {
+                // Start with the StartNode First
+                LinkedHashMap<String, String> node = nodeTracker.get(startNode);
+                node.put("weight", "0");
+                node.put("parentNode", null);
+
+                nodeTracker.put(startNode, node);
+                smallestWeightNode = startNode;
+
+            } else {
+                // Find the Node with smallest weight
+                smallestWeightNode = fetchSmallestWeightNode(nodeTracker, visitedSet);
+            }
+
+            // Calculcate the adjacent Node weights
+            calcAdjNodeWeights(nodeTracker, nodeMap, smallestWeightNode, visitedSet);
+
+            // Modify Visited/Unvisited Set
+            visitedSet.add(smallestWeightNode);
+            unvisitedSet.remove(smallestWeightNode);
+
+            index++;
+        }
+
+
+        System.out.println("Node Tracker Finished");
+
+    }
+
+    private static void initializeNodeTracker(LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker, LinkedHashMap<String, Node> nodeMap) {
+
         for(Map.Entry<String, Node> node : nodeMap.entrySet()) {
             String id = node.getValue().getId();
 
@@ -82,48 +121,10 @@ public class DijkstraExample {
 
             nodeTracker.put(id, childMap);
         }
-
-
-        // Traverse through the number of times there are Node =)
-        int index = 0;
-        while(index < nodeMap.size()) {
-
-            if (index == 0) {
-                // Start with the StartNode First
-                nodeTracker.put(startNode, modifyNode(nodeTracker, startNode, "0", null));
-
-                // Calculcate the adjacent Node weights
-                adjectAdjNodeWeights(nodeTracker, nodeMap, startNode, visitedSet);
-
-                // Modify Visited/Unvisited Set
-                visitedSet.add(startNode);
-                unvisitedSet.remove(startNode);
-            } else {
-
-                // Find the Node with smallest weight
-                String smallestWeightNode = fetchSmallestWeightNode(nodeTracker, visitedSet);
-
-                // Calculcate the adjacent Node weights
-                adjectAdjNodeWeights(nodeTracker, nodeMap, smallestWeightNode, visitedSet);
-
-                // Modify Visited/Unvisited Set
-                visitedSet.add(smallestWeightNode);
-                unvisitedSet.remove(smallestWeightNode);
-
-
-            }
-
-            index++;
-        }
-
-
-        System.out.println("Node Tracker Finished");
-
     }
 
 
-
-    private static void adjectAdjNodeWeights(LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker,
+    private static void calcAdjNodeWeights(LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker,
                                              LinkedHashMap<String, Node> nodeMap,
                                              String currentNodeId,
                                              HashSet<String> visitedSet) {
@@ -165,17 +166,6 @@ public class DijkstraExample {
 
     }
 
-
-
-    private static LinkedHashMap<String,String> modifyNode(LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker,
-                                                           String currentNode,
-                                                           String value,
-                                                           String parentNode) {
-        LinkedHashMap<String, String> node = nodeTracker.get(currentNode);
-        node.put("weight", value);
-        node.put("parentNode", parentNode);
-        return node;
-    }
 
 
     private static String fetchSmallestWeightNode(LinkedHashMap<String, LinkedHashMap<String, String>> nodeTracker,
