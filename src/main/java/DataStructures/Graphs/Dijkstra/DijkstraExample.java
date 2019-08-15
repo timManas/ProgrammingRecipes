@@ -51,14 +51,14 @@ public class DijkstraExample {
         nodeMap.put("d", nodeD);
         nodeMap.put("e", nodeE);
 
-        calculateShortestPath("a", nodeMap); //Change this around
+        calculateDijkstraShortestPath("a", nodeMap); //Change this around
     }
 
 
     //endregion
 
     //region Helpers
-    private static void calculateShortestPath(String startNode, LinkedHashMap<String, Node> nodeMap) {
+    private static void calculateDijkstraShortestPath(String startNode, LinkedHashMap<String, Node> nodeMap) {
 
 //        To Construct this we need:
 //        - 2 x HashSets
