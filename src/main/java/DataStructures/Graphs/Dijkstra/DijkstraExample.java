@@ -231,6 +231,9 @@ public class DijkstraExample {
 
  Note:
  - This is different from Prim since Prim creates a minimum spanning tree (MST)
+ - If Weight is all the same, use BFS. Why ? it checks shortest distance to one node to all nodes
+    -> BFS -> Dijsktra -> Bellman Ford -> Floyd Warshall
+    - Remember BFS fetches the Shortest path (JUST ONE PATH) WHILE DFS checks all the PATH
 
  Ex:)
 
