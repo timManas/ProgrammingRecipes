@@ -1,0 +1,79 @@
+Dynamic Programming
+
+What ?
+- DP is "remembering stuff to save time later"
+- Optimization of a recursive problem
+- Most of DP can be categorized into two types:
+    - Optimization Problems
+        -   Select feasible solutions so value of the required function is maximized or minimized
+    - Combinatorial Problems
+        - Figure out # ways to do something
+        - Figure out probability of some event happening
+
+How ?
+- Break down problems into collection of simpler sub problems
+- Store results of subproblems so we dont have to compute them later when needed
+
+Why ?
+- Reduces Time complexity form exponential to polynomial
+
+
+Realistic way to solve DP:
+
+PartI: Solve the Problem Manually
+1. Show problem can be broken down into optimal sub-problems
+2. Use Recursion to get the value to the solution by solving smaller sub-problems
+3. Construct a formula OR algorithm to solution from bottom-up fashion
+
+PartII: Code up Solution
+4. Construct programming solution ONCE we have a manual solution
+
+Bottom Up
+- Build solution from smaller problems all the way to the final solution
+
+Tom Down
+- Start building big solution right away by explaining how you build smaller solutions
+
+
+
+Great Analogy
+- Think of DP as a table-filling algorithm
+- You know the calculations you have to do, so you pick the best order to do them
+- Ignore the ones you dont have to fill in
+
+
+
+Ex. Fibonacci #
+
+Recursive Solution:
+
+public int fib(int n) {
+
+    if(n <= 1)
+        return;
+
+    return fib(n-1) + f(n-2);
+}
+
+
+Dynamic Problem
+
+public int fib(int n) {
+    f[0] = 0;
+    f[1] = 0;
+
+    for (i = 2; i<=n ; i++) {
+        f[i] = f[i-1] + f[i-2];
+    }
+    return f[n]
+}
+
+
+
+How to classify a problem as Dynamic Programming ?
+- Any problem which require to maximize or minimize certain quantity
+- Counting problems that count different arrangements under certain conditions
+- Probability problems
+
+
+
