@@ -60,7 +60,7 @@ public class TreeTraversalExample {
         System.out.println("\nPostOrder Traversal");
         postOrderTraversal(node7);
 
-        // Depth First Traversal by Queue
+        // Depth First Traversal by Stack
         System.out.println("\nDepth First Traveral using Stack");
         depthFirstTraversal_ByStack(node7);
 
@@ -207,5 +207,9 @@ public class TreeTraversalExample {
  Breath First Search
  - Level Order
  - Find Nodes with same Parent
+
+
+ Shortcut
+ DS-BQ
 
  */

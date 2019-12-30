@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="OutputJar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7e5c9c91-32cb-4995-99d2-7a8f8a1ed2d6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AdapterDesignPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AdvancedMediaPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AudioPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MP4Player.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MediaAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MediaPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/VLCPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/BlueCircle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/BridgeDesignPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/Circle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/DrawAPI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/RedCircle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/Shape.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgrammingRecipes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgrammingRecipes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/Prim/PrimsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/Prim/PrimsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MultiThreading/NotifyExample/ObjectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MultiThreading/NotifyExample/ObjectDemo.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,79 +25,13 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FactoryDesignPattern.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/FactoryDesignPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShapeFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/ShapeFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Shape.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Circle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Circle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="45" />
-              <folding>
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Square.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-              <folding>
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Rectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,506 +41,230 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>binarySearchTree.remove(15, &quot;Recursive&quot;);</find>
+      <find>contain</find>
+      <find>GraphRersentation</find>
+      <find>Minimum Node</find>
+      <find>sort</find>
+      <find>sor</find>
+      <find>setFirst</find>
+      <find>newLinkedList</find>
+      <find>GraphNode</find>
+      <find>TestFile</find>
+      <find>instanceof</find>
+      <find>concurrent</find>
+      <find>Vertices</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Node</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/AdapterDesignPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/DrawAPI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/RedCircle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/BlueCircle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/BridgeDesignPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AudioPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AdvancedMediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/VLCPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MP4Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/MediaAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Adapter/AdapterDesignPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdapterDesignPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/Shape.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/ShapeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/Circle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/Square.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Factory/FactoryDesignPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/FactoryDesignPattern.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
-  </component>
+  <component name="ProjectId" id="1Vi3Adq0u9P34q7Rf4U3AtIMAFT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignPatterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Structural" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignPatterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Creational" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProgrammingRecipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesignPatterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/timmanas/ProgrammingProjects/ProgrammingRecipes/src/main/java/Misc/DifferentWaysOfReadingFiles/Main.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2678161" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="Application.FactoryDesignPattern">
-    <configuration default="false" name="AdapterDesignPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="DesignPatterns.Structural.Adapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Structural.Adapter.AdapterDesignPattern" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ProgrammingRecipes" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/TestDocuments" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DataStructures.Graphs.GraphExample" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="BridgeDesignPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="DesignPatterns.Structural.Bridge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Structural.Bridge.BridgeDesignPattern" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ProgrammingRecipes" />
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="FactoryDesignPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="DesignPatterns.Creational.Factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Creational.Factory.FactoryDesignPattern" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ProgrammingRecipes" />
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BellmanFordExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Graphs.BellmanFord.BellmanFordExample" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Graphs.BellmanFord.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DijkstraExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Graphs.Dijkstra.DijkstraExample" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Graphs.Dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Graphs.Prim.PrimsExample" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Graphs.Prim.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReversingLinkedListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.ReversingALinkedList.ReversingLinkedListExample" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.ReversingALinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.String.Test" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
@@ -619,74 +273,16 @@
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
-      <method />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ProgrammingRecipes" />
-      <envs />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -694,110 +290,83 @@
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.AdapterDesignPattern" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BridgeDesignPattern" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FactoryDesignPattern" />
+    <list>
+      <item itemvalue="Application.ReversingLinkedListExample" />
+      <item itemvalue="Application.DijkstraExample" />
+      <item itemvalue="Application.BellmanFordExample" />
+      <item itemvalue="Application.PrimsExample" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.FactoryDesignPattern" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AdapterDesignPattern" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BridgeDesignPattern" />
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.PrimsExample" />
+        <item itemvalue="Application.BellmanFordExample" />
+        <item itemvalue="Application.DijkstraExample" />
+        <item itemvalue="Application.ReversingLinkedListExample" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -810,348 +379,714 @@
       <workItem from="1491677348073" duration="265000" />
       <workItem from="1491678274122" duration="5143000" />
       <workItem from="1491684208359" duration="4598000" />
+      <workItem from="1492665675107" duration="2007000" />
+      <workItem from="1492907888009" duration="3320000" />
+      <workItem from="1493003590007" duration="2177000" />
+      <workItem from="1493091228382" duration="268000" />
+      <workItem from="1493160021996" duration="255000" />
+      <workItem from="1493585036992" duration="62000" />
+      <workItem from="1493776620232" duration="4000" />
+      <workItem from="1493776640268" duration="875000" />
+      <workItem from="1494976643846" duration="4000" />
+      <workItem from="1498849343326" duration="4981000" />
+      <workItem from="1498856398793" duration="1227000" />
+      <workItem from="1498861873348" duration="4517000" />
+      <workItem from="1498939871598" duration="3318000" />
+      <workItem from="1499063113215" duration="1111000" />
+      <workItem from="1500092786149" duration="545000" />
+      <workItem from="1500155389333" duration="2671000" />
+      <workItem from="1500166495433" duration="5008000" />
+      <workItem from="1500175498758" duration="589000" />
+      <workItem from="1500377360722" duration="2112000" />
+      <workItem from="1500463133306" duration="2678000" />
+      <workItem from="1500468362810" duration="1875000" />
+      <workItem from="1500506268048" duration="7173000" />
+      <workItem from="1500550743565" duration="6498000" />
+      <workItem from="1500637522691" duration="6004000" />
+      <workItem from="1500676213091" duration="5431000" />
+      <workItem from="1500754866108" duration="6840000" />
+      <workItem from="1500939883034" duration="1677000" />
+      <workItem from="1500983420354" duration="2196000" />
+      <workItem from="1501069879600" duration="4306000" />
+      <workItem from="1501109096772" duration="2068000" />
+      <workItem from="1501365337169" duration="3309000" />
+      <workItem from="1501371684418" duration="4994000" />
+      <workItem from="1501440706622" duration="5891000" />
+      <workItem from="1501448005640" duration="2448000" />
+      <workItem from="1501499404066" duration="4850000" />
+      <workItem from="1501538605337" duration="7339000" />
+      <workItem from="1501624214285" duration="315000" />
+      <workItem from="1501646050042" duration="598000" />
+      <workItem from="1501711811229" duration="112000" />
+      <workItem from="1501867616153" duration="1246000" />
+      <workItem from="1502053613039" duration="3834000" />
+      <workItem from="1502134024597" duration="565000" />
+      <workItem from="1502231757856" duration="822000" />
+      <workItem from="1502575380369" duration="2228000" />
+      <workItem from="1502579961060" duration="1568000" />
+      <workItem from="1502658496085" duration="3151000" />
+      <workItem from="1502679912638" duration="1556000" />
+      <workItem from="1502799096702" duration="279000" />
+      <workItem from="1502848311052" duration="6006000" />
+      <workItem from="1502923351894" duration="3444000" />
+      <workItem from="1502973468888" duration="3838000" />
+      <workItem from="1503024922230" duration="1554000" />
+      <workItem from="1503059016771" duration="4994000" />
+      <workItem from="1503164601223" duration="5000" />
+      <workItem from="1503164714038" duration="17000" />
+      <workItem from="1503176323598" duration="986000" />
+      <workItem from="1503181608168" duration="1360000" />
+      <workItem from="1503236141489" duration="845000" />
+      <workItem from="1503320681460" duration="3395000" />
+      <workItem from="1503354509332" duration="3767000" />
+      <workItem from="1503406218783" duration="3575000" />
+      <workItem from="1503441737891" duration="84000" />
+      <workItem from="1503442913002" duration="201000" />
+      <workItem from="1503494490708" duration="2281000" />
+      <workItem from="1503579993383" duration="166000" />
+      <workItem from="1503613136647" duration="1000000" />
+      <workItem from="1503785433764" duration="399000" />
+      <workItem from="1503870816574" duration="1329000" />
+      <workItem from="1503924739152" duration="3387000" />
+      <workItem from="1503958151504" duration="5446000" />
+      <workItem from="1503973117920" duration="510000" />
+      <workItem from="1504012021931" duration="193000" />
+      <workItem from="1504045661273" duration="3593000" />
+      <workItem from="1504099202063" duration="191000" />
+      <workItem from="1504100048897" duration="2263000" />
+      <workItem from="1504132791868" duration="1030000" />
+      <workItem from="1504271934917" duration="373000" />
+      <workItem from="1504555503706" duration="3310000" />
+      <workItem from="1504630435387" duration="9114000" />
+      <workItem from="1504643673993" duration="1256000" />
+      <workItem from="1504651189448" duration="4001000" />
+      <workItem from="1504666301552" duration="1514000" />
+      <workItem from="1504703028050" duration="4610000" />
+      <workItem from="1504737704162" duration="339000" />
+      <workItem from="1504757625082" duration="5238000" />
+      <workItem from="1504790024017" duration="4255000" />
+      <workItem from="1504823763501" duration="6707000" />
+      <workItem from="1504834003435" duration="3647000" />
+      <workItem from="1504850812825" duration="376000" />
+      <workItem from="1504911018935" duration="1307000" />
+      <workItem from="1504989854729" duration="146000" />
+      <workItem from="1505083423000" duration="380000" />
+      <workItem from="1505099511665" duration="2358000" />
+      <workItem from="1505135090344" duration="4440000" />
+      <workItem from="1505255317307" duration="1222000" />
+      <workItem from="1505512768223" duration="1316000" />
+      <workItem from="1505516916033" duration="6252000" />
+      <workItem from="1505540497151" duration="2583000" />
+      <workItem from="1505572668227" duration="12065000" />
+      <workItem from="1505597073304" duration="5080000" />
+      <workItem from="1505655134965" duration="10764000" />
+      <workItem from="1505738006474" duration="5857000" />
+      <workItem from="1505774122392" duration="5856000" />
+      <workItem from="1505824528368" duration="5864000" />
+      <workItem from="1505860587480" duration="3781000" />
+      <workItem from="1505876743872" duration="2817000" />
+      <workItem from="1505911818328" duration="4247000" />
+      <workItem from="1505946103543" duration="5494000" />
+      <workItem from="1505993693758" duration="1698000" />
+      <workItem from="1506085501229" duration="913000" />
+      <workItem from="1506117577775" duration="207000" />
+      <workItem from="1506117938739" duration="2742000" />
+      <workItem from="1506193841320" duration="6773000" />
+      <workItem from="1506211962280" duration="3048000" />
+      <workItem from="1506281801838" duration="537000" />
+      <workItem from="1506308846220" duration="1599000" />
+      <workItem from="1506379666968" duration="4081000" />
+      <workItem from="1506395464899" duration="238000" />
+      <workItem from="1506430191316" duration="537000" />
+      <workItem from="1506468629849" duration="3066000" />
+      <workItem from="1506519835935" duration="2324000" />
+      <workItem from="1506551476514" duration="1927000" />
+      <workItem from="1506566291444" duration="587000" />
+      <workItem from="1506604910962" duration="2817000" />
+      <workItem from="1506638140225" duration="1141000" />
+      <workItem from="1506690440408" duration="2881000" />
+      <workItem from="1506746284370" duration="2250000" />
+      <workItem from="1506783489735" duration="316000" />
+      <workItem from="1506790062232" duration="13530000" />
+      <workItem from="1506887831911" duration="7666000" />
+      <workItem from="1506901271170" duration="2444000" />
+      <workItem from="1506918740578" duration="1927000" />
+      <workItem from="1507031544348" duration="1936000" />
+      <workItem from="1507072421169" duration="2211000" />
+      <workItem from="1507122968081" duration="627000" />
+      <workItem from="1507327393615" duration="2774000" />
+      <workItem from="1507353958108" duration="1465000" />
+      <workItem from="1507390036439" duration="161000" />
+      <workItem from="1507399726822" duration="7846000" />
+      <workItem from="1507416217675" duration="5124000" />
+      <workItem from="1507486629530" duration="10438000" />
+      <workItem from="1507567570774" duration="5724000" />
+      <workItem from="1507577342516" duration="6200000" />
+      <workItem from="1507640629603" duration="1717000" />
+      <workItem from="1507674194222" duration="658000" />
+      <workItem from="1507685341574" duration="3395000" />
+      <workItem from="1507727860634" duration="2189000" />
+      <workItem from="1507760785658" duration="2570000" />
+      <workItem from="1507777905183" duration="350000" />
+      <workItem from="1507816973875" duration="338000" />
+      <workItem from="1508000682690" duration="3098000" />
+      <workItem from="1508010885425" duration="4840000" />
+      <workItem from="1508018998088" duration="4114000" />
+      <workItem from="1508029253836" duration="481000" />
+      <workItem from="1508079159591" duration="10913000" />
+      <workItem from="1508097584595" duration="593000" />
+      <workItem from="1508104719144" duration="2284000" />
+      <workItem from="1508115369162" duration="892000" />
+      <workItem from="1508194083619" duration="292000" />
+      <workItem from="1508594755692" duration="6684000" />
+      <workItem from="1508617874448" duration="1994000" />
+      <workItem from="1509218038348" duration="3647000" />
+      <workItem from="1509302287673" duration="6646000" />
+      <workItem from="1509314982708" duration="4057000" />
+      <workItem from="1509489548361" duration="879000" />
+      <workItem from="1509498118695" duration="118000" />
+      <workItem from="1509662284928" duration="3140000" />
+      <workItem from="1509665789032" duration="578000" />
+      <workItem from="1509825518168" duration="839000" />
+      <workItem from="1509843864789" duration="1088000" />
+      <workItem from="1509942313788" duration="1873000" />
+      <workItem from="1510027294307" duration="598000" />
+      <workItem from="1510185854577" duration="115000" />
+      <workItem from="1510271395548" duration="823000" />
+      <workItem from="1510361875094" duration="136000" />
+      <workItem from="1510514606601" duration="1227000" />
+      <workItem from="1510594033615" duration="1763000" />
+      <workItem from="1511042261485" duration="584000" />
+      <workItem from="1511045899259" duration="892000" />
+      <workItem from="1511315268053" duration="729000" />
+      <workItem from="1514856205837" duration="160000" />
+      <workItem from="1514934922736" duration="3144000" />
+      <workItem from="1515023510957" duration="2600000" />
+      <workItem from="1515121905805" duration="1367000" />
+      <workItem from="1515210390221" duration="4124000" />
+      <workItem from="1515269025612" duration="6273000" />
+      <workItem from="1515356745976" duration="696000" />
+      <workItem from="1515374209639" duration="777000" />
+      <workItem from="1515541147832" duration="3592000" />
+      <workItem from="1515555013488" duration="216000" />
+      <workItem from="1515626364210" duration="2548000" />
+      <workItem from="1515873850871" duration="1086000" />
+      <workItem from="1515895491443" duration="2073000" />
+      <workItem from="1515968746609" duration="137000" />
+      <workItem from="1516146367173" duration="1054000" />
+      <workItem from="1516567921219" duration="1999000" />
+      <workItem from="1516571588251" duration="122000" />
+      <workItem from="1517086637864" duration="115000" />
+      <workItem from="1517770168510" duration="13000" />
+      <workItem from="1524615453077" duration="36000" />
+      <workItem from="1529264317609" duration="1540000" />
+      <workItem from="1529704834300" duration="212000" />
+      <workItem from="1530748629350" duration="1984000" />
+      <workItem from="1530753731896" duration="2796000" />
+      <workItem from="1530916845405" duration="151000" />
+      <workItem from="1531177709948" duration="984000" />
+      <workItem from="1531366723152" duration="2257000" />
+      <workItem from="1531454149495" duration="1339000" />
+      <workItem from="1531584450395" duration="3943000" />
+      <workItem from="1532391299853" duration="523000" />
+      <workItem from="1532395368092" duration="2435000" />
+      <workItem from="1532479437393" duration="2507000" />
+      <workItem from="1532484349473" duration="2533000" />
+      <workItem from="1532569372751" duration="2978000" />
+      <workItem from="1532892605366" duration="9179000" />
+      <workItem from="1532998533489" duration="98000" />
+      <workItem from="1533085949744" duration="291000" />
+      <workItem from="1538347889924" duration="358000" />
+      <workItem from="1538950647015" duration="200000" />
+      <workItem from="1539141382492" duration="138000" />
+      <workItem from="1540657471085" duration="106000" />
+      <workItem from="1542254713250" duration="1677000" />
+      <workItem from="1542847130297" duration="178000" />
+      <workItem from="1543703353546" duration="86000" />
+      <workItem from="1543972688792" duration="228000" />
+      <workItem from="1544066961544" duration="456000" />
+      <workItem from="1544141929187" duration="48000" />
+      <workItem from="1546390223155" duration="1716000" />
+      <workItem from="1546478783922" duration="2741000" />
+      <workItem from="1546564144756" duration="3907000" />
+      <workItem from="1546639592138" duration="2501000" />
+      <workItem from="1546720720336" duration="3910000" />
+      <workItem from="1546912031958" duration="1188000" />
+      <workItem from="1546994358241" duration="2138000" />
+      <workItem from="1547088456198" duration="3058000" />
+      <workItem from="1547164051328" duration="3840000" />
+      <workItem from="1547210047850" duration="1326000" />
+      <workItem from="1547317129151" duration="4208000" />
+      <workItem from="1547402440941" duration="2238000" />
+      <workItem from="1547525387784" duration="1674000" />
+      <workItem from="1547775526600" duration="8021000" />
+      <workItem from="1549148099741" duration="1177000" />
+      <workItem from="1551227484451" duration="2961000" />
+      <workItem from="1551402428851" duration="11679000" />
+      <workItem from="1551917580759" duration="5212000" />
+      <workItem from="1552159127769" duration="422000" />
+      <workItem from="1552612871674" duration="771000" />
+      <workItem from="1552787963280" duration="137000" />
+      <workItem from="1553639523934" duration="102000" />
+      <workItem from="1553649128955" duration="534000" />
+      <workItem from="1553651037885" duration="104000" />
+      <workItem from="1554058401173" duration="139000" />
+      <workItem from="1555182330966" duration="307000" />
+      <workItem from="1555190648787" duration="116000" />
+      <workItem from="1556015510158" duration="1404000" />
+      <workItem from="1556060450377" duration="470000" />
+      <workItem from="1556101844137" duration="1585000" />
+      <workItem from="1556480028305" duration="1308000" />
+      <workItem from="1556493273753" duration="150000" />
+      <workItem from="1556797765852" duration="399000" />
+      <workItem from="1557448937384" duration="459000" />
+      <workItem from="1557543531344" duration="206000" />
+      <workItem from="1557580971919" duration="409000" />
+      <workItem from="1557682682994" duration="162000" />
+      <workItem from="1557790603850" duration="459000" />
+      <workItem from="1557887539621" duration="408000" />
+      <workItem from="1558052073370" duration="214000" />
+      <workItem from="1558197851611" duration="447000" />
+      <workItem from="1558573893579" duration="323000" />
+      <workItem from="1558839783036" duration="120000" />
+      <workItem from="1558930983443" duration="71000" />
+      <workItem from="1558973535768" duration="115000" />
+      <workItem from="1558982582523" duration="466000" />
+      <workItem from="1559502697712" duration="214000" />
+      <workItem from="1559535635919" duration="232000" />
+      <workItem from="1560134127051" duration="231000" />
+      <workItem from="1560305903238" duration="116000" />
+      <workItem from="1560445607272" duration="159000" />
+      <workItem from="1560450249047" duration="101000" />
+      <workItem from="1560636833136" duration="128000" />
+      <workItem from="1561113722698" duration="3473000" />
+      <workItem from="1561303082544" duration="597000" />
+      <workItem from="1561328669956" duration="131000" />
+      <workItem from="1561515402869" duration="151000" />
+      <workItem from="1561601773142" duration="164000" />
+      <workItem from="1561637055888" duration="108000" />
+      <workItem from="1561677829017" duration="385000" />
+      <workItem from="1561778557296" duration="539000" />
+      <workItem from="1561864295833" duration="777000" />
+      <workItem from="1562016011469" duration="335000" />
+      <workItem from="1562107930700" duration="1897000" />
+      <workItem from="1562428984963" duration="140000" />
+      <workItem from="1562431994533" duration="864000" />
+      <workItem from="1562438385778" duration="452000" />
+      <workItem from="1562463840779" duration="87000" />
+      <workItem from="1562467436290" duration="55000" />
+      <workItem from="1562511839130" duration="365000" />
+      <workItem from="1562544477250" duration="107000" />
+      <workItem from="1562559776140" duration="306000" />
+      <workItem from="1563041444941" duration="114000" />
+      <workItem from="1563054032832" duration="487000" />
+      <workItem from="1563122289878" duration="124000" />
+      <workItem from="1563130698728" duration="132000" />
+      <workItem from="1563161927649" duration="143000" />
+      <workItem from="1563333049748" duration="100000" />
+      <workItem from="1563416452016" duration="125000" />
+      <workItem from="1563506658748" duration="373000" />
+      <workItem from="1563609714081" duration="312000" />
+      <workItem from="1563635805554" duration="378000" />
+      <workItem from="1563656844568" duration="110000" />
+      <workItem from="1563675861660" duration="398000" />
+      <workItem from="1564022199061" duration="348000" />
+      <workItem from="1564098454164" duration="129000" />
+      <workItem from="1564151280097" duration="138000" />
+      <workItem from="1564331967582" duration="127000" />
+      <workItem from="1564344357028" duration="137000" />
+      <workItem from="1564442581909" duration="167000" />
+      <workItem from="1564528505323" duration="145000" />
+      <workItem from="1564765650663" duration="1576000" />
+      <workItem from="1564777182046" duration="121000" />
+      <workItem from="1564954134272" duration="507000" />
+      <workItem from="1565016251630" duration="573000" />
+      <workItem from="1565026421914" duration="7934000" />
+      <workItem from="1565050908974" duration="121000" />
+      <workItem from="1565132639139" duration="11348000" />
+      <workItem from="1565664313944" duration="331000" />
+      <workItem from="1565740207441" duration="8082000" />
+      <workItem from="1566066893889" duration="258000" />
+      <workItem from="1566083748436" duration="342000" />
+      <workItem from="1566094276702" duration="139000" />
+      <workItem from="1566143342962" duration="322000" />
+      <workItem from="1566269925470" duration="192000" />
+      <workItem from="1566348578659" duration="7079000" />
+      <workItem from="1566437244577" duration="741000" />
+      <workItem from="1566532774721" duration="133000" />
+      <workItem from="1566535880489" duration="430000" />
+      <workItem from="1566658123942" duration="407000" />
+      <workItem from="1566695443821" duration="492000" />
+      <workItem from="1566757813978" duration="364000" />
+      <workItem from="1566762569710" duration="492000" />
+      <workItem from="1566774545545" duration="222000" />
+      <workItem from="1566786294921" duration="106000" />
+      <workItem from="1566957379868" duration="334000" />
+      <workItem from="1567031487705" duration="346000" />
+      <workItem from="1567032158447" duration="422000" />
+      <workItem from="1567136884494" duration="336000" />
+      <workItem from="1567179428738" duration="292000" />
+      <workItem from="1567263970992" duration="143000" />
+      <workItem from="1567397235829" duration="256000" />
+      <workItem from="1567435581179" duration="285000" />
+      <workItem from="1567453119714" duration="353000" />
+      <workItem from="1567454332699" duration="160000" />
+      <workItem from="1567456861022" duration="70000" />
+      <workItem from="1567457318067" duration="431000" />
+      <workItem from="1567551004959" duration="398000" />
+      <workItem from="1567555112037" duration="307000" />
+      <workItem from="1567643662580" duration="212000" />
+      <workItem from="1567645860721" duration="170000" />
+      <workItem from="1567648294920" duration="291000" />
+      <workItem from="1567724485778" duration="335000" />
+      <workItem from="1567822496498" duration="604000" />
+      <workItem from="1567960421834" duration="352000" />
+      <workItem from="1574165531501" duration="193000" />
+      <workItem from="1577721947752" duration="38000" />
+      <workItem from="1577722000862" duration="212000" />
+      <workItem from="1577722717915" duration="708000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10260000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="false" />
-    <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23263328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/AdjacencyListExample/Graph.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/AdjacencyListExample/Graph.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/AdjacencyListExample/GraphExample.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Trees/BinarySearchTree/BinarySearchTree.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Trees/BinarySearchTree/BinSearchTreeMain.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Trees/BinarySearchTree/BinSearchTreeMain.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Trees/BinarySearchTree/BinarySearchTree.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/BreadthFirstSearch/ExampleCode/GraphTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/BreadthFirstSearch/ExampleCode/GraphTest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/GraphTraversal/BreadthFirstSearch/ExampleCode/GraphTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/PrimeNumber/FindPrimeNumberExample.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/PrimeNumber/FindPrimeNumberExample.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/PreventThreadExecutionExample/ConcurrencyExample.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/PreventThreadExecutionExample/ConcurrencyExample.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/SynchronizationExample/SynchronizedExample.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/SynchronizationExample/SynchronizedExample.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/SynchronizationExample/ThreadDemo.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/SynchronizationExample/ThreadDemo.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiThreading/ThreadBuiltInProperties/ThreadBuiltInPropertiesExample.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Server.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Client.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Client.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Client.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Server.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/BasicSocketConnectionExample/Server.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Client.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/ClientHandler.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Client.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Client.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/Abstract_Interfaces/AbstractClasses/AbstractExample.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/Abstract_Interfaces/Interface/InterfaceExample/Vehicle.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/Abstract_Interfaces/Interface/InterfaceExample/Vehicle.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Misc/DifferentWaysOfReadingFiles/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Server.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Server.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/MultiClientSocketConnection/Client.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/URLExample/URLExample.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/SocketProgramming/URLExample/URLExample.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Trees/SortedArrayToBST/SortedArrayToBSTExample.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/BellmanFord/BellmanFordExample.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/BellmanFord/BellmanFordExample.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/BellmanFord/BellmanFordExample.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/Prim/PrimsExample.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdapterDesignPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AudioPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdvancedMediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdapterDesignPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Bridge/BridgePatternDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/BlueCircle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#174#175#0" expanded="false" />
-            <element signature="e#248#249#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/DrawAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/RedCircle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="66" />
-          <folding>
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#246#247#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#183#184#0" expanded="false" />
-            <element signature="e#221#222#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#388#389#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/DesignPatterns.Bridge">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>DesignPatterns.Bridge</OriginalElement>
-          <nodes>
-            <node x="199.0" y="79.0">DesignPatterns.Bridge.BlueCircle</node>
-            <node x="0.0" y="79.0">DesignPatterns.Bridge.Shape</node>
-            <node x="90.0" y="79.0">DesignPatterns.Bridge.RedCircle</node>
-            <node x="93.0" y="0.0">DesignPatterns.Bridge.DrawAPI</node>
-            <node x="2.0" y="158.0">DesignPatterns.Bridge.Circle</node>
-            <node x="55.0" y="237.0">DesignPatterns.Bridge.BridgeDesignPattern</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="DesignPatterns.Bridge.BridgeDesignPattern" target="DesignPatterns.Bridge.RedCircle">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.RedCircle" target="DesignPatterns.Bridge.DrawAPI">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.Shape" target="DesignPatterns.Bridge.DrawAPI">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.BlueCircle" target="DesignPatterns.Bridge.DrawAPI">
-              <point x="0.0" y="-14.5" />
-              <point x="245.5" y="54.0" />
-              <point x="162.16666666666669" y="54.0" />
-              <point x="27.666666666666686" y="14.5" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.BridgeDesignPattern" target="DesignPatterns.Bridge.BlueCircle">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.Circle" target="DesignPatterns.Bridge.Shape">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="DesignPatterns.Bridge.BridgeDesignPattern" target="DesignPatterns.Bridge.Circle">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="422.0" y="188.0" />
-          <SelectedNodes>
-            <node>DesignPatterns.Bridge.BridgeDesignPattern</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Bridge/BridgeDesignPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdvancedMediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AudioPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/VLCPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="e#202#203#0" expanded="false" />
-            <element signature="e#264#265#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/MP4Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#329#330#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/MediaAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Structural/Adapter/AdapterDesignPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/ShapeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DesignPatterns/Creational/Factory/FactoryDesignPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+              <type id="jpa-descriptors" />
+              <type id="javaee-facet-resources" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>OutputJar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2678161" />
+                <option value="0.7281554" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ProgrammingRecipes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2678161" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2678161" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

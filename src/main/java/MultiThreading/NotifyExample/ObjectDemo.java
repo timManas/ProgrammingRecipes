@@ -1,5 +1,7 @@
 package MultiThreading.NotifyExample;
 
+import DesignPatterns.Behavioural.State.StartState;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,7 +24,7 @@ public class ObjectDemo extends Object {
         Runnable runA = () -> {
             try{
                 String item = demo.removeElement();
-                System.out.println("Item: " + item );
+                System.out.println("Removed Item: " + item );
             }catch (Exception e) {
                 e.printStackTrace();
             }
@@ -36,16 +38,10 @@ public class ObjectDemo extends Object {
             }
         };
 
-        Runnable runC = new Runnable() {
-            @Override
-            public void run() {
-                demo.addElement("Oh Hey Mark!");
-            }
-        };
-
         try{
 
             Thread threadA1 = new Thread(runA, "Thread-A");
+            System.out.println("Starting Thread A");
             threadA1.start();
 
             Thread.sleep(500);
@@ -56,6 +52,7 @@ public class ObjectDemo extends Object {
             Thread.sleep(500);
 
             Thread threadB = new Thread(runB, "Thread-B");
+            System.out.println("Starting Thread B");
             threadB.start();
 
             Thread.sleep(1000);

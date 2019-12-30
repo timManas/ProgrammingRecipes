@@ -1,3 +1,7 @@
-.target/*
-.idea/*
-OutputJar.*
+target/*
+*idea/*
+META*
+OutputJar*
+*.iml
+*.DS_Store
+

@@ -199,7 +199,30 @@ public class PrimsExample {
                 nodeTracker.get(nodeNeighbourId).put("parentNode", currentNodeId);
             }
         }
-
-
     }
 }
+
+/**
+
+ Prims Algorithm
+
+ What ?
+ - Greedy algorithm
+ - Creates minimum spanning tree (Shortest distance between all the nodes, therefore creating a tree)
+
+ How ?
+ - Functions very similarly to Dijsktra
+
+ Steps
+ - Pick Random Node to start
+    - If not the first, Pick smallest Node
+ - Add Node to visited Set
+ - Modify the nodeTracker Table with the neighbour nodes (if needed)
+    - If original Weight on the graph  is smaller than the NodeTracker Weight
+        -> Set the nodeTracker to the original weight (Weight drawn on the graph)
+ - Repeat
+
+
+ Note: Funcitons very similary to Dijkstra algorithm
+
+ */
