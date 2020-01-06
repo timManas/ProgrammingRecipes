@@ -61,12 +61,17 @@ public class TreeTraversalExample {
         postOrderTraversal(node7);
 
         // Depth First Traversal by Stack
-        System.out.println("\nDepth First Traveral using Stack");
+        System.out.println("\nDepth First Traveral using Stack using Recursion");
         depthFirstTraversal_ByStack(node7);
+
+        // Depth First Traversal by Stack using Iteration
+        System.out.println("\nDepth First Traversal using Stack with ITERATION");
+        depthFirstTraversal_Iteratively(node7);
 
         // Breath First Traversal by Queue
         System.out.println("\nBreath First Traversal using Queue");
         breathFirstTraversal_ByQueue(node7);
+
 
     }
 
@@ -171,6 +176,34 @@ public class TreeTraversalExample {
 
             }
         }
+
+    }
+
+    public static void depthFirstTraversal_Iteratively(Node startNode) {
+
+            Boolean isSubTree = false;
+
+            Stack<Node> nodeStack = new Stack<Node>();
+
+            // Pushing Head Node
+            nodeStack.push(startNode);
+            
+            // Traverse Tree Iteratively instead of Recursively
+            while (nodeStack.isEmpty() == false) {
+
+
+                Node currentNode = nodeStack.pop();
+                System.out.print(currentNode.getValue() + " --> ");
+
+                if (currentNode.getRightNode() != null) {
+                    nodeStack.push(currentNode.getRightNode());
+                }
+
+                if (currentNode.getLeftNode() != null) {
+                    nodeStack.push(currentNode.getLeftNode());
+                }
+
+            }
 
     }
 
