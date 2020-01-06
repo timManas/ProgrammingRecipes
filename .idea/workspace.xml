@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5c9c91-32cb-4995-99d2-7a8f8a1ed2d6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgrammingRecipes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgrammingRecipes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -747,7 +746,7 @@
       <workItem from="1577812503019" duration="1500000" />
       <workItem from="1577828414721" duration="3163000" />
       <workItem from="1578166816546" duration="4578000" />
-      <workItem from="1578252557399" duration="2836000" />
+      <workItem from="1578252557399" duration="4886000" />
     </task>
     <servers />
   </component>

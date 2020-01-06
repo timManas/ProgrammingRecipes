@@ -181,9 +181,17 @@ public class TreeTraversalExample {
 
     public static void depthFirstTraversal_Iteratively(Node startNode) {
 
-            Boolean isSubTree = false;
+        /**
+         * Note: Remember: For DFS using iteration,
+         * we have to push the right first, then left because the it is a stack
+         * Why ? So that the stack pops the LEFT one first then the RIGHT. Hence we put the right first
+         * in the stack.
+         *
+         * ONLY for iteration with Stacks
+         */
 
-            Stack<Node> nodeStack = new Stack<Node>();
+
+        Stack<Node> nodeStack = new Stack<Node>();
 
             // Pushing Head Node
             nodeStack.push(startNode);
