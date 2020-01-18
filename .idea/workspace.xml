@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5c9c91-32cb-4995-99d2-7a8f8a1ed2d6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Graphs/TreeTraversalExample/TreeTraversalExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,29 +33,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>binarySearchTree.remove(15, &quot;Recursive&quot;);</find>
-      <find>contain</find>
-      <find>GraphRersentation</find>
-      <find>Minimum Node</find>
-      <find>sort</find>
-      <find>sor</find>
-      <find>setFirst</find>
-      <find>newLinkedList</find>
-      <find>GraphNode</find>
-      <find>TestFile</find>
-      <find>instanceof</find>
-      <find>concurrent</find>
-      <find>Vertices</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Node</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeTraversalExample">
+  <component name="RunManager" selected="Application.SubTreeOfAnotherTree">
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -201,13 +177,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.String.Test" />
+    <configuration name="SubTreeOfAnotherTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Trees.SubTreeOfAnotherTree.SubTreeOfAnotherTree" />
       <module name="ProgrammingRecipes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructures.String.*" />
+          <option name="PATTERN" value="DataStructures.Trees.SubTreeOfAnotherTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -342,18 +318,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.ReversingLinkedListExample" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.ReversingLinkedListExample (1)" />
       <item itemvalue="Application.ReversingLinkedListExample (2)" />
       <item itemvalue="Application.TreeTraversalExample" />
+      <item itemvalue="Application.SubTreeOfAnotherTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SubTreeOfAnotherTree" />
         <item itemvalue="Application.TreeTraversalExample" />
         <item itemvalue="Application.ReversingLinkedListExample (2)" />
         <item itemvalue="Application.ReversingLinkedListExample (1)" />
         <item itemvalue="Application.ReversingLinkedListExample" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -746,7 +722,17 @@
       <workItem from="1577812503019" duration="1500000" />
       <workItem from="1577828414721" duration="3163000" />
       <workItem from="1578166816546" duration="4578000" />
-      <workItem from="1578252557399" duration="4886000" />
+      <workItem from="1578252557399" duration="6400000" />
+      <workItem from="1578352898970" duration="3566000" />
+      <workItem from="1578439299558" duration="3959000" />
+      <workItem from="1578542576234" duration="1251000" />
+      <workItem from="1578615388782" duration="1507000" />
+      <workItem from="1578770695112" duration="7178000" />
+      <workItem from="1578958281734" duration="4684000" />
+      <workItem from="1579045095209" duration="4975000" />
+      <workItem from="1579148210294" duration="1115000" />
+      <workItem from="1579229796424" duration="1721000" />
+      <workItem from="1579375475568" duration="5900000" />
     </task>
     <servers />
   </component>
