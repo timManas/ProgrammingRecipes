@@ -55,14 +55,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="DataStructures.Graphs.GraphExample" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/TestDocuments" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Resources/TestDocuments" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/DataStructures/Trees" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DataStructures.Graphs.GraphExample" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -736,7 +739,7 @@
       <workItem from="1579453703646" duration="3427000" />
       <workItem from="1579563170291" duration="7063000" />
       <workItem from="1579649123806" duration="2425000" />
-      <workItem from="1579751829967" duration="2827000" />
+      <workItem from="1579751829967" duration="3587000" />
     </task>
     <servers />
   </component>
