@@ -80,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryTreePaths">
+  <component name="RunManager" selected="Application.SameTree">
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -152,20 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReversingLinkedListExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReversingALinkedList.ReversingLinkedListExample" />
-      <module name="ProgrammingRecipes" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReversingALinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReversingLinkedListExample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DataStructures.ReversingALinkedList.ReversingLinkedListExample" />
       <module name="ProgrammingRecipes" />
@@ -173,6 +159,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DataStructures.ReversingALinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SameTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Trees.SameTree.SameTree" />
+      <module name="ProgrammingRecipes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.Trees.SameTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,19 +320,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ReversingLinkedListExample (1)" />
       <item itemvalue="Application.ReversingLinkedListExample (2)" />
       <item itemvalue="Application.TreeTraversalExample" />
       <item itemvalue="Application.SubTreeOfAnotherTree" />
       <item itemvalue="Application.BinaryTreePaths" />
+      <item itemvalue="Application.SameTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SameTree" />
         <item itemvalue="Application.BinaryTreePaths" />
         <item itemvalue="Application.SubTreeOfAnotherTree" />
         <item itemvalue="Application.TreeTraversalExample" />
         <item itemvalue="Application.ReversingLinkedListExample (2)" />
-        <item itemvalue="Application.ReversingLinkedListExample (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -739,7 +739,14 @@
       <workItem from="1579453703646" duration="3427000" />
       <workItem from="1579563170291" duration="7063000" />
       <workItem from="1579649123806" duration="2425000" />
-      <workItem from="1579751829967" duration="3587000" />
+      <workItem from="1579751829967" duration="4167000" />
+      <workItem from="1579908983192" duration="2353000" />
+      <workItem from="1580002127559" duration="2994000" />
+      <workItem from="1580066429069" duration="719000" />
+      <workItem from="1580093228530" duration="485000" />
+      <workItem from="1580168325117" duration="2949000" />
+      <workItem from="1580255856705" duration="1886000" />
+      <workItem from="1580356494674" duration="2089000" />
     </task>
     <servers />
   </component>
