@@ -15,6 +15,7 @@ public class MapExample {
     private static LinkedHashMap linkedHashMap;
     private static TreeMap treeMap;
     private static LinkedHashMap<Integer, String> tempLinkedHashMap;
+    private static Map<Integer, Integer> map;
     //endregion
 
     //region Main
@@ -29,6 +30,7 @@ public class MapExample {
 
         // Comparator
         compareMap(map1, map1);
+
 
         // Useful Methods
         usefulMethods();
@@ -55,10 +57,16 @@ public class MapExample {
 
         tempLinkedHashMap = new LinkedHashMap<Integer, String>();
 
+        // Create map to be sorted by Value
+        map = new TreeMap<>();
+
         populateMaps();
 
         // Create a HashMap from another Map
         map4 = new HashMap(map1);
+
+
+
     }
 
     private static void populateMaps() {
@@ -98,6 +106,17 @@ public class MapExample {
         tempLinkedHashMap.put(5, "Tim");
         tempLinkedHashMap.put(6, "We meet");
         tempLinkedHashMap.put(2, "Again !!");
+
+        map.put(1, 15);
+        map.put(2, 10);
+        map.put(5, 14);
+        map.put(3, 20);
+        map.put(6, 15);
+        map.put(7, 15);
+        map.put(4, 20);
+        map.put(8, 10);
+        map.put(0, 14);
+        map.put(9, 17);
 
     }
 
@@ -214,6 +233,14 @@ public class MapExample {
         }
         System.out.println("Reverse a Key/Value to Value/Key: " + reverseLinkedHashMap);
 
+        // Sort Map by Value
+        System.out.println("\nSort HashMap by Value");
+        System.out.println("Before Sort: " + map);
+        map =  sortByValue(map);
+        System.out.println("After Sort: " + map);
+        System.out.print("Notice Both Keys are sorted along with VALUES !!!!!!");
+
+
         // clear
         System.out.println("\nClearing Map");
         linkedHashMap.clear();
@@ -223,6 +250,26 @@ public class MapExample {
         System.out.println("isEmpty() :: linkedHashMap :: " + linkedHashMap.isEmpty());
         System.out.println("isEmpty() :: treeMap :: " + treeMap.isEmpty());
 
+    }
+
+    private static Map<Integer, Integer> sortByValue(Map<Integer, Integer> treeMap) {
+        Map<Integer, Integer> sortedMap = new LinkedHashMap<>();
+        List<Map.Entry> list = new LinkedList<>(treeMap.entrySet());
+
+        // Sort List
+        Collections.sort(list, new Comparator<Map.Entry>() {
+            @Override
+            public int compare(Map.Entry o1, Map.Entry o2) {
+                return ((Comparable)o1.getValue()).compareTo(o2.getValue());
+            }
+        });
+
+        // Place in LinkedList
+        for (Map.Entry mapEntry : list) {
+            sortedMap.put((Integer) mapEntry.getKey(), (Integer) mapEntry.getValue());
+        }
+
+        return sortedMap;
     }
 
     //endregion

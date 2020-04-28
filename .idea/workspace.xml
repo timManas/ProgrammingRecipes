@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5c9c91-32cb-4995-99d2-7a8f8a1ed2d6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,9 +56,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Resources/TestDocuments" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -66,6 +64,9 @@
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="DataStructures.Graphs.GraphExample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/TestDocuments" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SameTree">
+  <component name="RunManager" selected="Application.MapExample">
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -152,13 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReversingLinkedListExample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.ReversingALinkedList.ReversingLinkedListExample" />
+    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Map.MapExample" />
       <module name="ProgrammingRecipes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructures.ReversingALinkedList.*" />
+          <option name="PATTERN" value="DataStructures.Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,19 +321,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ReversingLinkedListExample (2)" />
       <item itemvalue="Application.TreeTraversalExample" />
       <item itemvalue="Application.SubTreeOfAnotherTree" />
       <item itemvalue="Application.BinaryTreePaths" />
       <item itemvalue="Application.SameTree" />
+      <item itemvalue="Application.MapExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapExample" />
         <item itemvalue="Application.SameTree" />
         <item itemvalue="Application.BinaryTreePaths" />
         <item itemvalue="Application.SubTreeOfAnotherTree" />
         <item itemvalue="Application.TreeTraversalExample" />
-        <item itemvalue="Application.ReversingLinkedListExample (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -746,7 +747,48 @@
       <workItem from="1580093228530" duration="485000" />
       <workItem from="1580168325117" duration="2949000" />
       <workItem from="1580255856705" duration="1886000" />
-      <workItem from="1580356494674" duration="2089000" />
+      <workItem from="1580356494674" duration="2607000" />
+      <workItem from="1580442429283" duration="167000" />
+      <workItem from="1580671986261" duration="4159000" />
+      <workItem from="1580872517940" duration="1255000" />
+      <workItem from="1580959963588" duration="1454000" />
+      <workItem from="1581047105988" duration="529000" />
+      <workItem from="1581296462304" duration="1076000" />
+      <workItem from="1581379651855" duration="1689000" />
+      <workItem from="1581464135809" duration="1274000" />
+      <workItem from="1581487076042" duration="496000" />
+      <workItem from="1581567347563" duration="2076000" />
+      <workItem from="1581638206606" duration="725000" />
+      <workItem from="1581658863373" duration="235000" />
+      <workItem from="1582044825383" duration="1668000" />
+      <workItem from="1582061540832" duration="129000" />
+      <workItem from="1582086010199" duration="180000" />
+      <workItem from="1582170162608" duration="452000" />
+      <workItem from="1582243964699" duration="110000" />
+      <workItem from="1582269659706" duration="470000" />
+      <workItem from="1582407756982" duration="356000" />
+      <workItem from="1584487676654" duration="596000" />
+      <workItem from="1584655004997" duration="475000" />
+      <workItem from="1584763413358" duration="78000" />
+      <workItem from="1584818226006" duration="712000" />
+      <workItem from="1584896648530" duration="502000" />
+      <workItem from="1585001334220" duration="1000000" />
+      <workItem from="1585085863130" duration="641000" />
+      <workItem from="1585175093263" duration="597000" />
+      <workItem from="1585228781986" duration="433000" />
+      <workItem from="1585343002906" duration="598000" />
+      <workItem from="1585415987576" duration="593000" />
+      <workItem from="1585430381653" duration="593000" />
+      <workItem from="1585521165784" duration="596000" />
+      <workItem from="1585602952984" duration="3490000" />
+      <workItem from="1585691862875" duration="1275000" />
+      <workItem from="1585920491297" duration="2934000" />
+      <workItem from="1586191598311" duration="3468000" />
+      <workItem from="1586350969936" duration="1477000" />
+      <workItem from="1586464589118" duration="952000" />
+      <workItem from="1586484465114" duration="268000" />
+      <workItem from="1586532670953" duration="232000" />
+      <workItem from="1588113953849" duration="2026000" />
     </task>
     <servers />
   </component>
@@ -771,7 +813,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java</url>
-          <line>158</line>
+          <line>177</line>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -988,6 +1030,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Graphs/Prim/PrimsExample.java</url>
           <line>112</line>
           <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="374" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
