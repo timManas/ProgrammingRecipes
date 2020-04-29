@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5c9c91-32cb-4995-99d2-7a8f8a1ed2d6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/Map/MapExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -788,7 +787,8 @@
       <workItem from="1586464589118" duration="952000" />
       <workItem from="1586484465114" duration="268000" />
       <workItem from="1586532670953" duration="232000" />
-      <workItem from="1588113953849" duration="2026000" />
+      <workItem from="1588113953849" duration="2632000" />
+      <workItem from="1588166646531" duration="581000" />
     </task>
     <servers />
   </component>
