@@ -80,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FloodFill">
+  <component name="RunManager" selected="Application.MatrixSort">
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -194,13 +194,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SameTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.Trees.SameTree.SameTree" />
+    <configuration name="MatrixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortingAlgorithms.MatrixSort.MatrixSort" />
       <module name="ProgrammingRecipes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructures.Trees.SameTree.*" />
+          <option name="PATTERN" value="SortingAlgorithms.MatrixSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,19 +320,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.SameTree" />
       <item itemvalue="Application.MapExample" />
       <item itemvalue="Application.CyclicBarrierExample" />
       <item itemvalue="Application.CallableFutureExample" />
       <item itemvalue="Application.FloodFill" />
+      <item itemvalue="Application.MatrixSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MatrixSort" />
         <item itemvalue="Application.FloodFill" />
         <item itemvalue="Application.CallableFutureExample" />
         <item itemvalue="Application.CyclicBarrierExample" />
         <item itemvalue="Application.MapExample" />
-        <item itemvalue="Application.SameTree" />
       </list>
     </recent_temporary>
   </component>
@@ -791,7 +791,8 @@
       <workItem from="1588166646531" duration="581000" />
       <workItem from="1588642415719" duration="1005000" />
       <workItem from="1588715434088" duration="26000" />
-      <workItem from="1588780302271" duration="1811000" />
+      <workItem from="1588780302271" duration="1876000" />
+      <workItem from="1588807870769" duration="546000" />
     </task>
     <servers />
   </component>
