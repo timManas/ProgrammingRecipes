@@ -62,6 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/DataStructures/Trees" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="MultiThreading.ExchangersDemo" />
       <recent name="MultiThreading.ThreadPoolsExample" />
       <recent name="DataStructures.Graphs.GraphExample" />
     </key>
@@ -82,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadPoolsDemo">
+  <component name="RunManager" selected="Application.ExchangersDemo">
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -168,13 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DataStructures.Map.MapExample" />
+    <configuration name="ExchangersDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreading.ExchangersDemo.ExchangersDemo" />
       <module name="ProgrammingRecipes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DataStructures.Map.*" />
+          <option name="PATTERN" value="MultiThreading.ExchangersDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,13 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreading.SemaphoreExample.SemaphoreDemo" />
+    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Map.MapExample" />
       <module name="ProgrammingRecipes" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreading.SemaphoreExample.*" />
+          <option name="PATTERN" value="DataStructures.Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -322,19 +323,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.SemaphoreDemo" />
       <item itemvalue="Application.MapExample" />
       <item itemvalue="Application.CountDownLatchDemo" />
       <item itemvalue="Application.BlockingQueueDemo" />
       <item itemvalue="Application.ThreadPoolsDemo" />
+      <item itemvalue="Application.ExchangersDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExchangersDemo" />
         <item itemvalue="Application.ThreadPoolsDemo" />
         <item itemvalue="Application.BlockingQueueDemo" />
         <item itemvalue="Application.CountDownLatchDemo" />
         <item itemvalue="Application.MapExample" />
-        <item itemvalue="Application.SemaphoreDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -799,7 +800,7 @@
       <workItem from="1589321735464" duration="79000" />
       <workItem from="1589334510736" duration="2447000" />
       <workItem from="1590384529097" duration="1398000" />
-      <workItem from="1590408938737" duration="6056000" />
+      <workItem from="1590408938737" duration="9595000" />
     </task>
     <servers />
   </component>
