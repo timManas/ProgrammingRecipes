@@ -129,7 +129,7 @@ class MyThread extends Thread {
 
  Why use a Semaphore ?
  - Both threads would access the resource simulatoneously and shared resource is no longer synchronized
- 
+
 
  Notes:
  - Notice we have thread.sleep() inside the run ?
