@@ -1,9 +1,11 @@
 package DataStructures.Graphs.TreeTraversalExample;
 
 
-import sun.misc.Queue;
+//import sun.misc.Queue;
 
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -154,25 +156,25 @@ public class TreeTraversalExample {
 
     private static void breathFirstTraversal_ByQueue(Node startNode) throws InterruptedException {
 
-        Queue<Node> queue = new Queue<>();
+        Queue<Node> queue = new LinkedList<>();
 
         // Enter the starting Node
         System.out.print(startNode.getValue() + " -->");
-        queue.enqueue(startNode);
+        queue.add(startNode);
 
         while(!queue.isEmpty()) {
 
             // Print the child Element
-            Node node = queue.dequeue();
+            Node node = queue.poll();
 
             if(node.getLeftNode() != null) {
                 System.out.print(node.getLeftNode().getValue() + " --> ");
-                queue.enqueue(node.getLeftNode());
+                queue.add(node.getLeftNode());
             }
 
             if(node.getRightNode()!= null) {
                 System.out.print(node.getRightNode().getValue() + " --> ");
-                queue.enqueue(node.getRightNode());
+                queue.add(node.getRightNode());
 
             }
         }
